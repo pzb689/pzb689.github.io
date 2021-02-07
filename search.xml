@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>v2ray的使用方法与节点分享</title>
+    <url>/posts/3be63484.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; v2ray相比ss系列提高了安全性，减少被<strong>防火墙</strong>封锁的风险，同时可以使用ss的节点(但是不支持SSR节点)。 想了解详细的安装说明信息可以在去<a href="www.v2ray.com">官方网站</a>或者去github <a href="https://github.com/v2ray/v2ray-core">v2ray</a>开源项目的教程说明。</p>
+<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><h3 id="安卓系统"><a href="#安卓系统" class="headerlink" title="安卓系统"></a>安卓系统</h3><ol>
+<li>v2rayNG（推荐使用）</li>
+</ol>
+<ul>
+<li>下载地址<br><a href="https://github.com/2dust/v2rayNG/releases">https://github.com/2dust/v2rayNG/releases</a></li>
+</ul>
+<ul>
+<li>导入下面节点<br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/0027ef05f989a975.jpg" alt=""><br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/0027ef05f989a975.jpg" alt=""></li>
+</ul>
+<ol>
+<li>Surfboard （强烈推荐 ）<blockquote>
+<p>推荐使用速度非常快，可以扫描二维码和配合v2rayNG节点导出剪切板然后到Surfboard点击加号选择使用连接下载或添加订阅 保存即可；youtube上有人评测Surfboard是最快的，想了解详细情况点击下面网址<a href="https://jsproxy.pzb.workers.dev/-----https://m.youtube.com/watch?v=oG8y-6s6Aek">https://jsproxy.pzb.workers.dev/-----https://m.youtube.com/watch?v=oG8y-6s6Aek</a></p>
+</blockquote>
+</li>
+<li>Pharos Pro (支持最全面)<blockquote>
+<p><a href="https://pi-pi.gitbook.io/pharos-pro/">Pharos Pro</a> 支持Android和iOS，支持 Trojan、V2ray-Core、SS、SS+Simple obfs、SSR、socks5、Https协议。目前还在测试中。详细情况可以点击前面链接访问开发者的文档。<br>下面附上下载地址<a href="https://tg.pzb.workers.dev/">Pharos Pro</a></p>
+</blockquote>
+</li>
+<li>Clash<br>Clash 是一个使用 Go 语言编写、基于规则的跨平台代理核心程序。Clash目前有Windows、MacOS、Android等多个平台的GUI程序，支持SS/V2ray/Trojan多种协议，功能强大。<blockquote>
+<p>支持把所有的节点全部托管 ，然后按照速度自动选择连接</p>
+</blockquote>
+</li>
+<li>下载<br>官网下载 ：<a href="https://github.com/Kr328/ClashForAndroid/releases">https://github.com/Kr328/ClashForAndroid/releases</a></li>
+<li>制作托管链接<br><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
+<li>复制下面的节点</li>
+<li>粘贴到上面网页</li>
+<li>点击生成链接并复制</li>
+<li>粘贴到clash配置新配置URL导入</li>
+<li>点击启动开始使用<h3 id="WIN系统"><a href="#WIN系统" class="headerlink" title="WIN系统"></a>WIN系统</h3></li>
+<li>下载下面两个压缩包<br><a href="https://github.com/v2ray/v2ray-core/releases">https://github.com/v2ray/v2ray-core/releases</a><br><a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></li>
+<li>把v2rayN.exe 及语言包放入v2ray基础文件解压包里面<br><img src = 'https://i.bmp.ovh/imgs/2019/02/59c05c1db8f6584b.jpg' /></li>
+<li>双击启动 v2rayN 并创建快捷方式。</li>
+</ol>
+<h3 id="Linux系统"><a href="#Linux系统" class="headerlink" title="Linux系统"></a>Linux系统</h3><p>使用Linux系统的都是大神级的，安装和使用都不在话下，这里就不出教程了。</p>
+<blockquote>
+<p>推荐使用Qv2ray详细说明请访问github</p>
+<h3 id="苹果系统"><a href="#苹果系统" class="headerlink" title="苹果系统"></a>苹果系统</h3><p>由于苹果系统相对封闭，不明国情原因，国区几乎所有软件全部下架；但是还是可以通过其他区域帐号下载个购买。详细情况可以看 <a href="https://pi-pi.gitbook.io/pharos-pro/zhi-shi-ku/ru-he-zhu-ce-bing-shi-yong-mei-qu-apple-id">https://pi-pi.gitbook.io/pharos-pro/zhi-shi-ku/ru-he-zhu-ce-bing-shi-yong-mei-qu-apple-id</a> 教程及下载地址，以上地址是Pharos Pro for iOS官方教程。</p>
+</blockquote>
+<escape><a id="more"></a></escape>
+
+<h2 id="节点分享"><a href="#节点分享" class="headerlink" title="节点分享"></a>节点分享</h2><p>以下节点我会不定期更新，请注意更新日期</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxLjEuMS43MiIsImFpZCI6IjAiLCJob3N0IjoiYXloby5wemIud29ya2Vycy5kZXYiLCJpZCI6ImE1Nzg0ODY0LTNhYTQtMTFlYi1iMzFlLTViMDM0OGFiNTRlZSIsIm5ldCI6IndzIiwicGF0aCI6Ii8yM3hHZGpscS8iLCJwb3J0IjoiNDQzIiwicHMiOiJheWhvLnB6Yi53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">ss:&#x2F;&#x2F;Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjM0NTZANDUuMTQ4LjguMTcxOjg4Mzg&#x3D;#https%3A%2F%2Fgtv.org</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDIxMi4xMDIuNDIuMTk0OjQwMDkz#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDg0LjE3LjU3LjczOjQwMDkz#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDg0LjE3LjU3LjY2OjQwMDkz#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDg0LjE3LjU3LjE0ODo0MDA5Mw&#x3D;&#x3D;#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDIxMi4xMDIuNDIuMjA0OjQwMDkz#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDg0LjE3LjM3LjE1ODo0MDA5Mw&#x3D;&#x3D;#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">ss:&#x2F;&#x2F;YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDIxMi4xMDIuNDIuMjA5OjQwMDkz#%E4%BA%8C%E7%88%B7%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%E7%BD%91+https%3A%2F%2F5414.ml</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiI2Ni4xODEuNDUuMTY5IiwiYWlkIjoiMiIsImhvc3QiOiIiLCJpZCI6IjQ3NWU3MTEzLWEzNGMtNDU1YS1lMmE0LTFlYzhlYzkzMDEwOCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNTIzMzMiLCJwcyI6Il8wMSB8NDMuMjVNYiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMDcuMTc1LjIxLjE1OCIsImFpZCI6IjIiLCJob3N0IjoiIiwiaWQiOiI0NzVlNzExMy1hMzRjLTQ1NWEtZTJhNC0xZWM4ZWM5MzAxMDgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjUyMzMzIiwicHMiOiJfMDIgfDE2MS4wMU1iIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiI3NS4yLjMxLjE2NiIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiNDEwYTQzNDEtMTg3Mi00MTA5LWVjYmEtZGE4MzAyZGMzZDcwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3YycmF5IiwicG9ydCI6IjQ4NjA3IiwicHMiOiJfMDMgfDE5Ljg2TWIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMDMuMjE5LjE1NC4xNzAiLCJhaWQiOiIyIiwiaG9zdCI6IiIsImlkIjoiNDc1ZTcxMTMtYTM0Yy00NTVhLWUyYTQtMWVjOGVjOTMwMTA4IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI1MjMzMyIsInBzIjoiXzA1IHwzMC43OU1iIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMDcuMTc1LjAuMjAxIiwiYWlkIjoiMiIsImhvc3QiOiIiLCJpZCI6IjQ3NWU3MTEzLWEzNGMtNDU1YS1lMmE0LTFlYzhlYzkzMDEwOCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNTIzMzMiLCJwcyI6Il8wNiB8NzMuNDBNYiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiJoa2FnYS45OWlwbGMueHl6IiwiYWlkIjoiMSIsImhvc3QiOiIiLCJpZCI6Ijc2MmY1MGY3LTIyNjQtMzUxMC05ZmJhLTZkM2UzOWFjNjIzZSIsIm5ldCI6IndzIiwicGF0aCI6Ii92MiIsInBvcnQiOiIyMDAwMCIsInBzIjoiXzA4IHwgMi44Nk1iIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxNTQuODQuMS4xNDAiLCJhaWQiOiI2NCIsImhvc3QiOiIiLCJpZCI6IjJhNzM0OWQ2LTk5NGEtNDM0Yi05NTg5LWMwMDIwNjg1ZTUyOCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjU0NjcxIiwicHMiOiJOTC3kuozniLflhY3otLnnv7vlopnnvZEgaHR0cHM6Ly81NDE0Lm1sIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiI4LjIxMC4zLjEzMyIsImFpZCI6IjIzMyIsImhvc3QiOiIiLCJpZCI6ImMyMTgxMTg0LWU0ODctNGIzNy1hMDI5LWY2MWQ5MDUyMzk1MCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjU2NjQ3IiwicHMiOiJTRy3kuozniLflhY3otLnnv7vlopnnvZEgaHR0cHM6Ly81NDE0Lm1sIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxLjAuMC4xIiwiYWlkIjoiMiIsImhvc3QiOiJ3LmJhaWR1MmIubWwiLCJpZCI6ImMyZmYyOTdlLTAzZWEtNGQ0My1hZjMyLTc5NTNhNGZiYjYzYyIsIm5ldCI6IndzIiwicGF0aCI6Ii8xZGE0MWQ3LyIsInBvcnQiOiI0NDMiLCJwcyI6IvCfh6bwn4e6IEFVXzIzNCIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxLjAuMC4xIiwiYWlkIjoiMiIsImhvc3QiOiJ3LmJhaWR1MmIubWwiLCJpZCI6ImMyZmYyOTdlLTAzZWEtNGQ0My1hZjMyLTc5NTNhNGZiYjYzYyIsIm5ldCI6IndzIiwicGF0aCI6Ii8xZGE0MWQ3LyIsInBvcnQiOiI0NDMiLCJwcyI6IvCfh6bwn4e6IEFVXzIzOCB8NTkuODhNYiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxLjEuMS4xMDAiLCJhaWQiOiIyIiwiaG9zdCI6InZpci5sYW9iYW42NjYueHl6IiwiaWQiOiI0ZjY3MmFiNi0yNWUzLTQ5ZTgtOTUxYS1kODdiMWZhNzU0NjciLCJuZXQiOiJ3cyIsInBhdGgiOiIvY2UwNC8iLCJwb3J0IjoiNDQzIiwicHMiOiLwn4em8J+HuiBBVV8yNzIgfDY0LjU5TWIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxLjAuMC4xIiwiYWlkIjoiMiIsImhvc3QiOiJ3LmJhaWR1MmIubWwiLCJpZCI6ImMyZmYyOTdlLTAzZWEtNGQ0My1hZjMyLTc5NTNhNGZiYjYzYyIsIm5ldCI6IndzIiwicGF0aCI6Ii8xZGE0MWQ3LyIsInBvcnQiOiI0NDMiLCJwcyI6IvCfh6bwn4e6IEFVXzI4MCB8MTM3LjQwTWIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiJ2Mi0wNC5zc3JzdWIub25lIiwiYWlkIjoiMzIiLCJob3N0IjoiIiwiaWQiOiIyOGFkYmVhOC03YzBkLTQwNzQtODE1Zi0xMGRlNjU3NGZiMmEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjQ0MyIsInBzIjoi8J+HqPCfh6YgQ0FfNTE5IHwgMi4wNk1iIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMjAuMjMyLjQzLjE5NSIsImFpZCI6IjIiLCJob3N0IjoiczgueXQwMDQueHl6IiwiaWQiOiI3YWM4ZjNmNy05MWQ2LTM1ODYtYmQxYi1hMDllM2Y1MzMwMzQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdjJyYXkiLCJwb3J0IjoiMTExMTYiLCJwcyI6IvCfh6jwn4ezIENOXzQ0MSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMjAuMjMyLjQzLjE5NSIsImFpZCI6IjIiLCJob3N0IjoiczgueXQwMDQueHl6IiwiaWQiOiI3YWM4ZjNmNy05MWQ2LTM1ODYtYmQxYi1hMDllM2Y1MzMwMzQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdjJyYXkiLCJwb3J0IjoiMTExMTYiLCJwcyI6IvCfh6jwn4ezIENOXzQ3OCB8MTEuNDBNYiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMjAuMjMyLjQzLjE5NSIsImFpZCI6IjIiLCJob3N0IjoiczgueXQwMDQueHl6IiwiaWQiOiI3YWM4ZjNmNy05MWQ2LTM1ODYtYmQxYi1hMDllM2Y1MzMwMzQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdjJyYXkiLCJwb3J0IjoiMTExMTYiLCJwcyI6IvCfh6jwn4ezIENOXzU4NyIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiJ1cy4xOTkzMDEueHl6IiwiYWlkIjoiMTYiLCJob3N0IjoidXMuMTk5MzAxLnh5eiIsImlkIjoiZmQwMDkyN2EtYjBjMi00NjI5LWFlZjctZDlmZjE1YTlkNzIyIiwibmV0Ijoid3MiLCJwYXRoIjoiL3dlYnNvY2tldCIsInBvcnQiOiIzMDAxMCIsInBzIjoi8J+HqPCfh7MgQ05fNTg5IHwgNC44ME1iIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMjQuMjQ0LjE4Ni4xMjEiLCJhaWQiOiIyIiwiaG9zdCI6ImNlbnRvcy5mdWNoYXUueHl6IiwiaWQiOiJiNzA3YzllNi0zYTYxLTRmMGItODg0NC05YTM5OGNmYWRmYjciLCJuZXQiOiJ3cyIsInBhdGgiOiIvYWRkNzYzMTQvIiwicG9ydCI6IjQ0MyIsInBzIjoi8J+HrfCfh7AgSEtfMTQ1NyIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxMzIuMTQ1LjExNS4xMjUiLCJhaWQiOiIyIiwiaG9zdCI6ImouMTk5MzAxLnh5eiIsImlkIjoiNmIzODYyN2ItYTA0NS00ZDc5LTk1YzgtZTUwNTA3M2RkMTJkIiwibmV0Ijoid3MiLCJwYXRoIjoiLzAzNjExMjUvIiwicG9ydCI6IjQ0MyIsInBzIjoi8J+Hr&#x2F;Cfh7UgSlBfMTUwNyIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ&#x3D;&#x3D;</span><br><span class="line">vmess:&#x2F;&#x2F;eyJhZGQiOiIxNzIuMTA0LjgxLjkyIiwiYWlkIjoiMiIsImhvc3QiOiIiLCJpZCI6IjU1Yjk0OWIyLTQyNDAtNDk4NS04ZDU0LWQxZjA4M2ZmNWZjNyIs</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>网络应用</category>
+      </categories>
+      <tags>
+        <tag>谷歌</tag>
+        <tag>翻墙</tag>
+        <tag>节点分享</tag>
+        <tag>v2rayNG</tag>
+        <tag>Surfboard</tag>
+        <tag>Pharos</tag>
+        <tag>v2rayN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云盘内测申请注册及下载和使用</title>
+    <url>/posts/186b5708.html</url>
+    <content><![CDATA[<p>&emsp;&emsp;阿里巴巴推出了一款名为 “阿里云网盘”的独立 App。定位为C端用户提供服务，网盘空间更大，下载速度更快；但之后很快这款App就下架了，也许是阿里没有准备好，在经历过几个月的完善之后现在又重新上架了。</p>
+<p>11月18日消息，阿里云网盘已经上架苹果App Store，并且更名为“阿里云盘”，最新版本为v1.0.1。</p>
+<p>之前因为一直是邀请制和内测中，所以知道的人并不多，如今更名后的 “阿里云盘”已重新上架。</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/pzb568/blog_filescdn@1.0/mmexport1606383058221.jpg" alt=""></p>
+<p>新上架的网盘有更优质的用户体验，亮点包括更快、更安全、更流畅、更智能，它还支持5G极速下载。同时，阿里云网盘还有企业级的数据安全防护，智能相册、AI分类、轻松找图等功。</p>
+<p>阿里云盘APP包含了首页、文件、拍摄/上传（文件、相册）、相册，以及个人中心5个主要功能模块,阿里云盘给内测用户的免费存储空间为1TB能够满足大部分人的使用。</p>
+<p><escape><a id="more"></a></escape></p>
+<h2 id="申请内测码"><a href="#申请内测码" class="headerlink" title="申请内测码"></a>申请内测码</h2><p><a href="https://www.aliyundrive.com/apply">https://www.aliyundrive.com/apply</a></p>
+<blockquote>
+<p>这里为大家提供一下我的邀请码<strong>JQQ55J</strong></p>
+</blockquote>
+<h2 id="下载应用软件"><a href="#下载应用软件" class="headerlink" title="下载应用软件"></a>下载应用软件</h2><h3 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h3><p><a href="https://qnmlgb.lanzoux.com/iVkO4idnzgf">https://qnmlgb.lanzoux.com/iVkO4idnzgf</a></p>
+<h3 id="IOS"><a href="#IOS" class="headerlink" title="IOS"></a>IOS</h3><p><a href="https://apps.apple.com/cn/app/%E9%97%83%E5%9D%97%E5%99%B7%E6%B5%9C%E6%88%A0%E6%B4%8F/id1494661473">https://apps.apple.com/cn/app/%E9%97%83%E5%9D%97%E5%99%B7%E6%B5%9C%E6%88%A0%E6%B4%8F/id1494661473</a></p>
+]]></content>
+      <categories>
+        <category>-软件应用</category>
+      </categories>
+      <tags>
+        <tag>-阿里云盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深圳随手拍图</title>
+    <url>/posts/14eb476b.html</url>
+    <content><![CDATA[<p>&emsp;&emsp;</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/pzb568/blog_filescdn@1.0/IMG_20201018_161925.jpg" alt=""><br><img data-src="https://cdn.jsdelivr.net/gh/pzb568/blog_filescdn@1.0/IMG_20201121_103343.jpg" alt="">}</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/docs/next.svg" alt=""></div><div class="group-picture-column"><img data-src="/images/docs/next.svg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/docs/next.svg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/docs/next.svg" alt=""></div><div class="group-picture-column"><img data-src="/images/docs/next.svg" alt=""></div><div class="group-picture-column"><img data-src="/images/docs/next.svg" alt=""></div></div></div>
+<div class="pdf-container" data-target="/path/to/your/file.pdf" data-height="500px"></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>安卓系统利用termux下载种子文件</title>
+    <url>/posts/486160a8.html</url>
+    <content><![CDATA[<h1 id="transmission"><a href="#transmission" class="headerlink" title="transmission"></a>transmission</h1><h2 id="1-termux里安装transmission"><a href="#1-termux里安装transmission" class="headerlink" title="1. termux里安装transmission"></a>1. termux里安装transmission</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install transmission</span><br></pre></td></tr></table></figure>
+<h2 id="2-启动transmission"><a href="#2-启动transmission" class="headerlink" title="2. 启动transmission"></a>2. 启动transmission</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">transmission-daemon -T</span><br></pre></td></tr></table></figure>
+<h2 id="下载管理器"><a href="#下载管理器" class="headerlink" title="下载管理器"></a>下载管理器</h2><h3 id="网页管理器"><a href="#网页管理器" class="headerlink" title="网页管理器"></a>网页管理器</h3><p>transmission GUI</p>
+<p><a href="http://localhost:9091/transmission/web/">http://localhost:9091/transmission/web/</a></p>
+<h2 id="Tremotesf"><a href="#Tremotesf" class="headerlink" title="Tremotesf"></a>Tremotesf</h2><p>软件直接谷歌市场下载<br>需要修改/data/data/com.termux/files/home/.config/transmission-daemon中settings.json文件</p>
+<blockquote>
+<p>按照下图修改用户名和密码按照自己的设置，其他设置如下一样。</p>
+</blockquote>
+<p><escape><a id="more"></a></escape><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;alt-speed-down&quot;: 50,</span><br><span class="line">    &quot;alt-speed-enabled&quot;: false,</span><br><span class="line">    &quot;alt-speed-time-begin&quot;: 540,</span><br><span class="line">    &quot;alt-speed-time-day&quot;: 127,</span><br><span class="line">    &quot;alt-speed-time-enabled&quot;: false,</span><br><span class="line">    &quot;alt-speed-time-end&quot;: 1020,</span><br><span class="line">    &quot;alt-speed-up&quot;: 50,</span><br><span class="line">    &quot;bind-address-ipv4&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">    &quot;bind-address-ipv6&quot;: &quot;::&quot;,</span><br><span class="line">    &quot;blocklist-enabled&quot;: false,</span><br><span class="line">    &quot;blocklist-url&quot;: &quot;http:&#x2F;&#x2F;www.example.com&#x2F;blocklist&quot;,</span><br><span class="line">    &quot;cache-size-mb&quot;: 2,</span><br><span class="line">    &quot;dht-enabled&quot;: true,</span><br><span class="line">    &quot;download-dir&quot;: &quot;&#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;Downloads&quot;,</span><br><span class="line">    &quot;download-queue-enabled&quot;: true,</span><br><span class="line">    &quot;download-queue-size&quot;: 5,</span><br><span class="line">    &quot;encryption&quot;: 0,</span><br><span class="line">    &quot;idle-seeding-limit&quot;: 30,</span><br><span class="line">    &quot;idle-seeding-limit-enabled&quot;: false,</span><br><span class="line">    &quot;incomplete-dir&quot;: &quot;&#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;Downloads&quot;,</span><br><span class="line">    &quot;incomplete-dir-enabled&quot;: false,</span><br><span class="line">    &quot;lpd-enabled&quot;: false,</span><br><span class="line">    &quot;message-level&quot;: 2,</span><br><span class="line">    &quot;peer-congestion-algorithm&quot;: &quot;&quot;,</span><br><span class="line">    &quot;peer-id-ttl-hours&quot;: 6,</span><br><span class="line">    &quot;peer-limit-global&quot;: 200,</span><br><span class="line">    &quot;peer-limit-per-torrent&quot;: 50,</span><br><span class="line">    &quot;peer-port&quot;: 51413,</span><br><span class="line">    &quot;peer-port-random-high&quot;: 65535,</span><br><span class="line">    &quot;peer-port-random-low&quot;: 49152,</span><br><span class="line">    &quot;peer-port-random-on-start&quot;: false,</span><br><span class="line">    &quot;peer-socket-tos&quot;: &quot;default&quot;,</span><br><span class="line">    &quot;pex-enabled&quot;: true,</span><br><span class="line">    &quot;port-forwarding-enabled&quot;: true,</span><br><span class="line">    &quot;preallocation&quot;: 1,</span><br><span class="line">    &quot;prefetch-enabled&quot;: false,</span><br><span class="line">    &quot;queue-stalled-enabled&quot;: true,</span><br><span class="line">    &quot;queue-stalled-minutes&quot;: 30,</span><br><span class="line">    &quot;ratio-limit&quot;: 2,</span><br><span class="line">    &quot;ratio-limit-enabled&quot;: false,</span><br><span class="line">    &quot;rename-partial-files&quot;: true,</span><br><span class="line">    &quot;rpc-authentication-required&quot;: false,</span><br><span class="line">    &quot;rpc-bind-address&quot;: &quot;0.0.0.0&quot;,</span><br><span class="line">    &quot;rpc-enabled&quot;: true,</span><br><span class="line">    &quot;rpc-host-whitelist&quot;: &quot;&quot;,</span><br><span class="line">    &quot;rpc-host-whitelist-enabled&quot;: true,</span><br><span class="line">    &quot;rpc-password&quot;: &quot;&#123;15ad59fc485380ee27c627519aac2ada787ea05734lHrHNa&quot;, ## 这里修改密码</span><br><span class="line">    &quot;rpc-port&quot;: 9091,</span><br><span class="line">    &quot;rpc-url&quot;: &quot;&#x2F;transmission&#x2F;&quot;,</span><br><span class="line">    &quot;rpc-username&quot;: &quot;termux&quot;, ## 这里修改用户名</span><br><span class="line">    &quot;rpc-whitelist&quot;: &quot;*&quot;,</span><br><span class="line">    &quot;rpc-whitelist-enabled&quot;: false,</span><br><span class="line">    &quot;scrape-paused-torrents-enabled&quot;: true,</span><br><span class="line">    &quot;script-torrent-done-enabled&quot;: false,</span><br><span class="line">    &quot;script-torrent-done-filename&quot;: &quot;&quot;,</span><br><span class="line">    &quot;seed-queue-enabled&quot;: false,</span><br><span class="line">    &quot;seed-queue-size&quot;: 10,</span><br><span class="line">    &quot;speed-limit-down&quot;: 100,</span><br><span class="line">    &quot;speed-limit-down-enabled&quot;: false,</span><br><span class="line">    &quot;speed-limit-up&quot;: 100,</span><br><span class="line">    &quot;speed-limit-up-enabled&quot;: false,</span><br><span class="line">    &quot;start-added-torrents&quot;: true,</span><br><span class="line">    &quot;trash-original-torrent-files&quot;: false,</span><br><span class="line">    &quot;umask&quot;: 18,</span><br><span class="line">    &quot;upload-slots-per-torrent&quot;: 14,</span><br><span class="line">    &quot;utp-enabled&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>Tremotesf配置如下图<br><img data-src="https://ftp.bmp.ovh/imgs/2020/04/f75db9e7ce757e66.jpg" alt=""></p>
+<h1 id="peerflix-server"><a href="#peerflix-server" class="headerlink" title="peerflix-server"></a>peerflix-server</h1><h2 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">yum insatll nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="debian-ubuntu"><a href="#debian-ubuntu" class="headerlink" title="debian/ubuntu"></a>debian/ubuntu</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt install nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="安装服务"><a href="#安装服务" class="headerlink" title="安装服务"></a>安装服务</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g peerflix-server</span><br></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">peerflix-server</span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>配置文件目录：~/.config/peerflix-server/config.json</p>
+<p>配置示例：<a href="https://github.com/mafintosh/torrent-stream#full-api">https://github.com/mafintosh/torrent-stream#full-api</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;connections&quot;: 100,</span><br><span class="line">  &quot;tracker&quot;: true,</span><br><span class="line">  &quot;verify&quot;: true,</span><br><span class="line">  &quot;uploads&quot;: 10,</span><br><span class="line">  &quot;trackers&quot;: [</span><br><span class="line">      &quot;udp:&#x2F;&#x2F;tracker.coppersurfer.tk:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;9.rarbg.to:2710&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;9.rarbg.me:2710&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.leechers-paradise.org:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.opentrackr.org:1337&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.internetwarriors.net:1337&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.openbittorrent.com:80&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;exodus.desync.com:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;retracker.lanta-net.ru:2710&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.tiny-vps.com:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;open.demonii.si:1337&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;bt.xxx-tracker.com:2710&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;open.stealth.si:80&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.torrent.eu.org:451&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;torrentclub.tech:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.cyberia.is:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;denis.stalker.upeer.me:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;tracker.moeking.me:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;explodie.org:6969&#x2F;announce&quot;,</span><br><span class="line">    &quot;udp:&#x2F;&#x2F;opentor.org:2710&#x2F;announce&quot;</span><br><span class="line">  ],</span><br><span class="line">   &quot;dht&quot;: true, </span><br><span class="line">   &quot;path&quot;: &quot;&#x2F;root&#x2F;Downloads&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="管理器"><a href="#管理器" class="headerlink" title="管理器"></a>管理器</h2><p><a href="http://localhost:9000">http://localhost:9000</a></p>
+]]></content>
+      <categories>
+        <category>工具应用</category>
+      </categories>
+      <tags>
+        <tag>下载</tag>
+        <tag>种子</tag>
+        <tag>磁力链接</tag>
+        <tag>transmission</tag>
+        <tag>Tremotesf</tag>
+        <tag>peerflix-server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>archlinux启动ssh服务</title>
+    <url>/posts/e1ab7e88.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; Archlinux和Manjaro开启ssh服务命令及使用方法。</p>
+<h1 id="开机启动"><a href="#开机启动" class="headerlink" title="开机启动"></a>开机启动</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl enable sshd.service</span><br></pre></td></tr></table></figure>
+<h1 id="立即启动"><a href="#立即启动" class="headerlink" title="立即启动"></a>立即启动</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl start sshd.service</span><br></pre></td></tr></table></figure>
+<h1 id="立即重启"><a href="#立即重启" class="headerlink" title="立即重启"></a>立即重启</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service  </span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>archlinux包工具pacman常用命令使用方法</title>
+    <url>/posts/57793a5c.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; Pacman 是一个软件包管理器,，作为ArchLinux发行版的一部分，是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来。不管软件包是来自官方的 Arch 库还是用户自己创建，Pacman 都能方便的管理。</p>
+<h1 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h1><h2 id="列出已经安装的软件包"><a href="#列出已经安装的软件包" class="headerlink" title="列出已经安装的软件包"></a>列出已经安装的软件包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Q</span><br></pre></td></tr></table></figure>
+<h2 id="查看clang包是否已经安装"><a href="#查看clang包是否已经安装" class="headerlink" title="查看clang包是否已经安装"></a>查看clang包是否已经安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Q clang</span><br></pre></td></tr></table></figure>
+<h2 id="查看已安装的包python的详细信息"><a href="#查看已安装的包python的详细信息" class="headerlink" title="查看已安装的包python的详细信息"></a>查看已安装的包python的详细信息</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Qi python</span><br></pre></td></tr></table></figure>
+<h2 id="列出已安装包python的所有文件"><a href="#列出已安装包python的所有文件" class="headerlink" title="列出已安装包python的所有文件"></a>列出已安装包python的所有文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Ql python</span><br></pre></td></tr></table></figure>
+<h2 id="查找某个文件属于哪个包"><a href="#查找某个文件属于哪个包" class="headerlink" title="查找某个文件属于哪个包"></a>查找某个文件属于哪个包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Qo &#x2F;etc&#x2F;passwd</span><br></pre></td></tr></table></figure>
+<h1 id="查看组"><a href="#查看组" class="headerlink" title="查看组"></a>查看组</h1><h2 id="查询包组"><a href="#查询包组" class="headerlink" title="查询包组"></a>查询包组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Sg</span><br></pre></td></tr></table></figure>
+<h2 id="查询包组所包含的软件包"><a href="#查询包组所包含的软件包" class="headerlink" title="查询包组所包含的软件包"></a>查询包组所包含的软件包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Sg gnome</span><br></pre></td></tr></table></figure>
+<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><h2 id="搜索virtualbox相关的包"><a href="#搜索virtualbox相关的包" class="headerlink" title="搜索virtualbox相关的包"></a>搜索virtualbox相关的包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Ss virtualbox</span><br></pre></td></tr></table></figure>
+<h2 id="从数据库中搜索virtualbox的信息"><a href="#从数据库中搜索virtualbox的信息" class="headerlink" title="从数据库中搜索virtualbox的信息"></a>从数据库中搜索virtualbox的信息</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Si virtualbox</span><br></pre></td></tr></table></figure>
+<h1 id="同步升级"><a href="#同步升级" class="headerlink" title="同步升级"></a>同步升级</h1><h2 id="仅同步源"><a href="#仅同步源" class="headerlink" title="仅同步源"></a>仅同步源</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Sy</span><br></pre></td></tr></table></figure>
+<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Su</span><br></pre></td></tr></table></figure>
+<h2 id="同步源并更新系统"><a href="#同步源并更新系统" class="headerlink" title="同步源并更新系统"></a>同步源并更新系统</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syu</span><br></pre></td></tr></table></figure>
+<h2 id="同步源后安装包"><a href="#同步源后安装包" class="headerlink" title="同步源后安装包"></a>同步源后安装包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Sy virtualbox</span><br></pre></td></tr></table></figure>
+<p>升级时不升级virtualbox包<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Su --ignore virtualbox</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="从本地数据库中获取git的信息，并下载安装"><a href="#从本地数据库中获取git的信息，并下载安装" class="headerlink" title="从本地数据库中获取git的信息，并下载安装"></a>从本地数据库中获取git的信息，并下载安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S git</span><br></pre></td></tr></table></figure>
+<h2 id="强制安装virtualbox包"><a href="#强制安装virtualbox包" class="headerlink" title="强制安装virtualbox包"></a>强制安装virtualbox包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Sf virtualbox</span><br></pre></td></tr></table></figure>
+<h2 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;var&#x2F;cache&#x2F;pacman&#x2F;pkg</span><br><span class="line">sudo pacman -U virtualbox-5.2.12-1-x86_64.pkg.tar.xz</span><br></pre></td></tr></table></figure>
+<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><h2 id="删除virtualbox"><a href="#删除virtualbox" class="headerlink" title="删除virtualbox"></a>删除virtualbox</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -R virtualbox</span><br></pre></td></tr></table></figure>
+<h2 id="强制删除被依赖的包慎用"><a href="#强制删除被依赖的包慎用" class="headerlink" title="强制删除被依赖的包慎用"></a>强制删除被依赖的包<strong><em>慎用</em></strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Rd virtualbox</span><br></pre></td></tr></table></figure>
+<h2 id="删除nodejs包及依赖其的包"><a href="#删除nodejs包及依赖其的包" class="headerlink" title="删除nodejs包及依赖其的包"></a>删除nodejs包及依赖其的包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Rc nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="删除nodejs包及其依赖的包"><a href="#删除nodejs包及其依赖的包" class="headerlink" title="删除nodejs包及其依赖的包"></a>删除nodejs包及其依赖的包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Rsc nodejs</span><br></pre></td></tr></table></figure>
+<h1 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h1><h2 id="清理-var-cache-pacman-pkg目录下的旧包"><a href="#清理-var-cache-pacman-pkg目录下的旧包" class="headerlink" title="清理/var/cache/pacman/pkg目录下的旧包"></a>清理/var/cache/pacman/pkg目录下的旧包</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Sc</span><br></pre></td></tr></table></figure>
+<h2 id="清除所有下载的包和数据库"><a href="#清除所有下载的包和数据库" class="headerlink" title="清除所有下载的包和数据库"></a>清除所有下载的包和数据库</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -Scc</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>]]></content>
+      <categories>
+        <category>系统工具</category>
+      </categories>
+      <tags>
+        <tag>pacman</tag>
+        <tag>arch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>批量重命名</title>
+    <url>/posts/46e7be8d.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; 经常大量导入或者插入批量图片、视频、音乐等等；文件名太长不方便记忆和输入，使用如下命令直接批量重命名以1开始.扩展名的文件。</p>
+<blockquote>
+<p>下面是批量重命名mp4，如果修改其他文件，需要修改扩展名。</p>
+</blockquote>
+<p><escape><a id="more"></a></escape><br>例如批量重命名mp4 文件<br>批量重命名为数字.mp4<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i&#x3D;1; for x in *; do mv $x $i.mp4; let i&#x3D;i+1; done</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>批量重命名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo网站permalink设置</title>
+    <url>/posts/a7ce4954.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; 网站搭建差不多2年了，没有设置过永久链接，所有的文章都是中文的以至于网站地址特别长，不方便记忆，不美观。利用<strong>hexo-abbrlink</strong>这个插件可以解决</p>
+<h1 id="安装hexo-abbrlink"><a href="#安装hexo-abbrlink" class="headerlink" title="安装hexo-abbrlink"></a>安装hexo-abbrlink</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<h1 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: post&#x2F;:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+<p><escape><a id="more"></a></escape></p>
+<h1 id="利用404跳转到主页"><a href="#利用404跳转到主页" class="headerlink" title="利用404跳转到主页"></a>利用404跳转到主页</h1><blockquote>
+<p>由于网址方式了变成百度谷歌抓取的信息是之前网站信息，以至于正常无法方法可以利用404网页使打不开的网页回到主页，当然你需要点击<strong>回我的主页</strong>。</p>
+<h1 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page 404</span><br></pre></td></tr></table></figure>
+<h1 id="编辑404-md"><a href="#编辑404-md" class="headerlink" title="编辑404.md"></a>编辑404.md</h1><p>添加Front-matter信息<strong>permalink: /404</strong>并替换自己的网站地址(homePageUrl后面的地址)，下面的网址是腾讯公益信息宝贝回家，寻找失踪儿童的信息。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404</span><br><span class="line">date: 2018-11-08 21:19:51</span><br><span class="line">permalink: &#x2F;404</span><br><span class="line">---</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;&#x2F;qzonestyle.gtimg.cn&#x2F;qzone&#x2F;hybrid&#x2F;app&#x2F;404&#x2F;search_children.js&quot; charset&#x3D;&quot;utf-8&quot; homePageUrl&#x3D;&quot;https:&#x2F;&#x2F;pzb568.github.io&quot; homePageName&#x3D;&quot;回到我的主页&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>下面你可以预览一下<br><a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/</a></p>
+<blockquote>
+<p>由于网站地址方式了变化，之前valine的数据地址不一样，所以所有的评论信息都会消失，请谨慎选择。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>permalink</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在termux里编译安装V语言</title>
+    <url>/posts/1feab083.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; V语言是一种静态类型的编译型编程语言，它与Go类似，也受到 Oberon、Rust、Swift语言的影响。</p>
+<p>V语言是一种非常简单的语言，阅读此文档将花费你大约半小时的时间来学习完几乎整个V语言。</p>
+<p>尽管很简单，但它为开发人员提供了很多动力。 任何你可以用其他语言完成的事情，你都可以使用V语言来做。</p>
+<p>V语言github地址:<a href="https://github.com/vlang/v">https://github.com/vlang/v</a><br>V语言中文社区地址: <a href="https://www.v-lang.cn/">https://www.v-lang.cn/</a> </p>
+<p>V语言的Linux MACOS安装这里就不演示了，网络上有很多的教程；我这里的教程是在比较小趴的安卓Linux环境程序<a href="https://termux.com">termux</a>上安装V语言</p>
+<h1 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;vlang&#x2F;v</span><br></pre></td></tr></table></figure>
+<h1 id="进入V语言项目文件夹"><a href="#进入V语言项目文件夹" class="headerlink" title="进入V语言项目文件夹"></a>进入V语言项目文件夹</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd v</span><br></pre></td></tr></table></figure>
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">make</span><br></pre></td></tr></table></figure>
+<h1 id="建立程序软链接"><a href="#建立程序软链接" class="headerlink" title="建立程序软链接"></a>建立程序软链接</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ln -s &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;v&#x2F;v &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;usr&#x2F;bin&#x2F;v</span><br></pre></td></tr></table></figure>
+<h1 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">which v</span><br></pre></td></tr></table></figure>
+<h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">v</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://i.bmp.ovh/imgs/2019/07/a0ffa8434fa5c47b.jpg" alt=""></p>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>软件开发</category>
+      </categories>
+      <tags>
+        <tag>编译</tag>
+        <tag>V语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MYSQL数据库使用记录</title>
+    <url>/posts/1f77a6f0.html</url>
+    <content><![CDATA[<h2 id="查看数据库版本"><a href="#查看数据库版本" class="headerlink" title="查看数据库版本"></a>查看数据库版本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT @@VERSION;</span><br></pre></td></tr></table></figure>
+<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
+<h2 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select user();</span><br></pre></td></tr></table></figure>
+<h2 id="查看用户权限"><a href="#查看用户权限" class="headerlink" title="查看用户权限"></a>查看用户权限</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">show grants;</span><br></pre></td></tr></table></figure>
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create database wordpress;</span><br></pre></td></tr></table></figure>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">drop database wordpress;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>MYSQL</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页插入pdf文件</title>
+    <url>/posts/4ac99040.html</url>
+    <content><![CDATA[<p>网页插入pdf文件<br>第一方法<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;http:&#x2F;&#x2F;lc-0ww4yxjs.cn-n1.lcfile.com&#x2F;510df791fa9b2590c109&#x2F;Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.pdf&quot; width&#x3D;&quot;830&quot; height&#x3D;&quot;800&quot; scroll&#x3D;&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure><br>第二和方法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;embed src&#x3D;&quot;http:&#x2F;&#x2F;lc-0ww4yxjs.cn-n1.lcfile.com&#x2F;510df791fa9b2590c109&#x2F;Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.pdf&quot; width&#x3D;&quot;840&quot; height&#x3D;&quot;800&quot;&gt; </span><br></pre></td></tr></table></figure>
+<p>这两种方法效果是一样的，但是不够完美，pdf文件不能随窗口大小变化，后读发现方法在更新。</p>
+<p>官方教程<br><a href="https://theme-next.org/docs/tag-plugins/pdf">https://theme-next.org/docs/tag-plugins/pdf</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% pdf http:&#x2F;&#x2F;lc-0ww4yxjs.cn-n1.lcfile.com&#x2F;510df791fa9b2590c109&#x2F;Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.pdf %&#125;</span><br></pre></td></tr></table></figure></p>
+<escape><a id="more"></a></escape>]]></content>
+      <categories>
+        <category>文档教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>pdf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客加密设置</title>
+    <url>/posts/456ff02a.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; 在添加 Hexo 博客 加密功能的模块有2个，一个是hexo-blog-encrypt，另一个是hexo-encrypt。可任选一个。</p>
+<h1 id="hexo-blog-encrypt插件"><a href="#hexo-blog-encrypt插件" class="headerlink" title="hexo-blog-encrypt插件"></a>hexo-blog-encrypt插件</h1><h2 id="安装hexo-blog-encrypt插件"><a href="#安装hexo-blog-encrypt插件" class="headerlink" title="安装hexo-blog-encrypt插件"></a>安装hexo-blog-encrypt插件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+<h2 id="配置启用插件"><a href="#配置启用插件" class="headerlink" title="配置启用插件"></a>配置启用插件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Security</span><br><span class="line">encrypt: # hexo-blog-encrypt</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+<h2 id="加密文章"><a href="#加密文章" class="headerlink" title="加密文章"></a>加密文章</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  ---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2016-03-30 21:18:02</span><br><span class="line">password: 123456  #密码</span><br><span class="line">abstract: Something was encrypted, please enter password to read.  #摘要</span><br><span class="line">message: Welcome to my blog, enter password to read. # 描述性文字</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>
+
+<h1 id="hexo-encrypt插件"><a href="#hexo-encrypt插件" class="headerlink" title="hexo-encrypt插件"></a>hexo-encrypt插件</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-encrypt --save</span><br></pre></td></tr></table></figure>
+<h2 id="博客设置-config-yml添加"><a href="#博客设置-config-yml添加" class="headerlink" title="博客设置_config.yml添加"></a>博客设置<strong>_config.yml</strong>添加</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># encrypt</span><br><span class="line">  encrypt:     </span><br><span class="line">  pwdfile: encrypt_password</span><br></pre></td></tr></table></figure>
+<h2 id="在需要加密的文章上添加"><a href="#在需要加密的文章上添加" class="headerlink" title="在需要加密的文章上添加"></a>在需要加密的文章上添加</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo博客加密设置</span><br><span class="line">tags:</span><br><span class="line">  - 加密模板</span><br><span class="line">categories:</span><br><span class="line">  - hexo加密</span><br><span class="line">comments: true</span><br><span class="line">mathjax: false</span><br><span class="line">date: 2019-07-05 02:31:41</span><br><span class="line">encrypt: true </span><br><span class="line">enc_pwd: 123456 #设置的密码</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>加密模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo主题更新问题处理</title>
+    <url>/posts/aaf37d53.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。</p>
+<ol>
+<li>进入主题目录并更新<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+因为修改了很多的配置项目，所以更新失败了<escape><a id="more"></a></escape></li>
+<li>将修改储藏到暂存区<br>我们可以通过<code>git stash</code>这句命令将对主题文件的修改储存到本地的暂存区：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure></li>
+<li>执行更新<br>我们现在需要再次使用 git pull 命令来获取最新的主题文件，别担心，这次不会再有上面的错误了<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure></li>
+<li>从暂存区取出修改<br>我们现在要通过执行 <strong>git stash pop</strong> 这句命令来从暂存区取出修改。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
+如果报错如下内容需要进入提示的文件修改<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git stash pop</span><br><span class="line">Auto-merging _config.yml</span><br><span class="line">CONFLICT (content): Merge conflict in _config.yml</span><br></pre></td></tr></table></figure></li>
+<li>进入文件<br>可以看到文中&lt;&lt;&lt;&lt;&lt;<HEAD，=======中间是上游分支，======，>&gt;&gt;&gt;&gt;&gt;b8e436中间是你自己的分支，删掉一个就可以了</li>
+<li>提交记录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add _config.yml</span><br><span class="line">git commit -m &quot;冲突处理&quot;</span><br></pre></td></tr></table></figure></li>
+<li>在更新<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+主题升级成功。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>主题更新</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux常用文件传输工具使用方法</title>
+    <url>/posts/b3144d70.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; Linux系统之间传送文件，包括Linux服务器和客户端之间，Linux主机和嵌入式Linux平台之间等，以及Linux和windows之间传送文件及同步工具；我们经常在不同的系统中或者主机设备中传输文件或者同步文件，以使用<strong>scp</strong>或者<strong>rsync</strong>及<strong>syncthing</strong></p>
+<h1 id="ssh登录服务器"><a href="#ssh登录服务器" class="headerlink" title="ssh登录服务器"></a>ssh登录服务器</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install ssh</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install ssh</span><br></pre></td></tr></table></figure>
+<h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install ssh</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install ssh</span><br></pre></td></tr></table></figure>
+<p>格式 ssh 端口 服务器$whoami@ip<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -p 22 user@192.168.1.154</span><br></pre></td></tr></table></figure></p>
+<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><blockquote>
+<p>scp使用的是ssh的传输方式如果安装了ssh就可以直接使用 </p>
+</blockquote>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ol>
+<li>复制本地文件Caddyfile到远程服务器Home目录  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -P 8022 Caddyfile u0_a82@192.168.1.105:~&#x2F;</span><br></pre></td></tr></table></figure></li>
+<li>把远程家目录下的Desktop/hello.py拷贝到本地当前目录下的hello.py  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -P 22 user@ip:Desktop&#x2F;hello.py hello.py</span><br></pre></td></tr></table></figure></li>
+<li>把本地当前目录下的demo拷贝到远程家目录下的Desktop  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -P port -r demo user@ip:Desktop</span><br></pre></td></tr></table></figure></li>
+<li>把远程家目录下的Desktop拷贝到本地当前目录下的demo<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp -P port -r user@ip:Desktop demo</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>
+
+</li>
+</ol>
+<h1 id="rsync"><a href="#rsync" class="headerlink" title="rsync"></a>rsync</h1><ol>
+<li>本地推送模式：<br>格式：rsync -选项 -本地源文件 -远程文件夹 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rsync -avz -e &quot;ssh -p 8022&quot; myblog&#x2F; u0_a82@192.168.1.104:~&#x2F;</span><br></pre></td></tr></table></figure>
+3、远程抓取模式<br>格式：rsync -选项 -远程文件夹 -本地目录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rsync -avz -P -e &quot;ssh -p 22&quot; user01@192.168.0.108:&#x2F;tmp&#x2F;test .&#x2F;tmp&#x2F;</span><br></pre></td></tr></table></figure>
+<h1 id="syncthing"><a href="#syncthing" class="headerlink" title="syncthing"></a>syncthing</h1><blockquote>
+<p><strong>Syncthing</strong>是一个开源免费的文件夹/文件同步神器，支持Android、Linux、Windows、Mac OS X等系统，可以使我们在2台任何系统任何设备之间，实现文件实时同步，很强大。而且数据很安全，不会存储在你的设备以外的其他地方。所有通信都使用TLS进行保护。所使用的加密包括完美的前向保密，以防止窃听者获得对您的数据的访问权限。很适合我们用来搭建私有同步网盘。  </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu-1"><a href="#ubuntu-1" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install syncthing</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS-1"><a href="#CentOS-1" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install syncthing</span><br></pre></td></tr></table></figure>
+<h3 id="MAC-1"><a href="#MAC-1" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install syncthing</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-1"><a href="#安卓termux-1" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install syncthing</span><br></pre></td></tr></table></figure>
+<h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><ul>
+<li>启动<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">syncthing</span><br></pre></td></tr></table></figure>
+<h1 id="ftp"><a href="#ftp" class="headerlink" title="ftp"></a>ftp</h1><h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu-2"><a href="#ubuntu-2" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install ftp</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS-2"><a href="#CentOS-2" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install ftp</span><br></pre></td></tr></table></figure>
+<h3 id="MAC-2"><a href="#MAC-2" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install ftp</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-2"><a href="#安卓termux-2" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install ftp</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="启动ftp服务"><a href="#启动ftp服务" class="headerlink" title="启动ftp服务"></a>启动ftp服务</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tcpsvd -vE 0.0.0.0 1024 ftpd -w &#x2F;</span><br></pre></td></tr></table></figure>
+<h2 id="使用-2"><a href="#使用-2" class="headerlink" title="使用"></a>使用</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ftp 192.168.1.3 1024</span><br></pre></td></tr></table></figure>
+<h1 id="lftp"><a href="#lftp" class="headerlink" title="lftp"></a>lftp</h1><h2 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu-3"><a href="#ubuntu-3" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install lftp</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS-3"><a href="#CentOS-3" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install lftp</span><br></pre></td></tr></table></figure>
+<h3 id="MAC-3"><a href="#MAC-3" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install lftp</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-3"><a href="#安卓termux-3" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install lftp</span><br></pre></td></tr></table></figure>
+<h2 id="使用-3"><a href="#使用-3" class="headerlink" title="使用"></a>使用</h2><h3 id="启动lftp服务"><a href="#启动lftp服务" class="headerlink" title="启动lftp服务"></a>启动lftp服务</h3><h3 id="CentOS-4"><a href="#CentOS-4" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo service vsftpd start</span><br></pre></td></tr></table></figure>
+<h3 id="termux"><a href="#termux" class="headerlink" title="termux"></a>termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tcpsvd -vE 0.0.0.0 8021 lftpd &#x2F;sdcard</span><br></pre></td></tr></table></figure>
+<h2 id="使用-4"><a href="#使用-4" class="headerlink" title="使用"></a>使用</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lftp 192.168.1.106 </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>scp</tag>
+        <tag>rsync</tag>
+        <tag>syncthing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux中优秀的命令工具</title>
+    <url>/posts/ee59f1b1.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; Linux系统是非常强大的，期中有很多内置命令，随和用户的增加很多人自己贡献了很多优秀的工具，使我们可以更加方便捷的使用及工作。</p>
+<h1 id="exa"><a href="#exa" class="headerlink" title="exa"></a>exa</h1><blockquote>
+<p>exa是使用 <a href="https://www.rust-lang.org/zh-CN/">Rust</a>语言编写的<strong>ls</strong>文件列表命令替代品；同时还可以替代<strong>tree</strong>命令。</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装"><a href="#ubuntu安装" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install exa </span><br></pre></td></tr></table></figure>
+<h3 id="archLinux"><a href="#archLinux" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S exa</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install exa</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install exa</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
+<li>查看全部文件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">exa -a</span><br></pre></td></tr></table></figure></li>
+<li>查看列表<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">exa -l</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>树形结构查看替代<strong>tree</strong></li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">exa -T</span><br></pre></td></tr></table></figure>
+<p><a href="#exa">点击这里回到exa</a></p>
+<h1 id="bat"><a href="#bat" class="headerlink" title="bat"></a>bat</h1><blockquote>
+<p><code>bat</code> 是一个语法高亮显示和<strong>Git</strong>集成的cat高级版本，也就是说，bat 有 cat的所有功能，且已经集成了代码高亮，和git版本管理的工具，并且会对过长的文件进行自动分页，不会像 cat 一样全部一次打印，所以<strong>bat</strong>完全可以替代cat。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install bat</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux-1"><a href="#archLinux-1" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S bat</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-1"><a href="#安卓termux-1" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install bat</span><br></pre></td></tr></table></figure>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li>使用 bat 命令创建一个新的文件:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bat &gt; file.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>使用 bat 命令来查看文件内容，只需要:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bat file.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>你能同时查看多个文件:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bat file1.txt file2.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>将多个文件的内容合并至一个单独文件中:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bat file1.txt file2.txt file3.txt &gt; document.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>就像我之前提到的那样，除了浏览和编辑文件以外，bat 命令有一些非常酷的特性。</li>
+</ul>
+</blockquote>
+<ul>
+<li>cat 命令以纯文本格式显示文件的内容，而 bat 命令显示了语法高亮和整齐的文本对齐格式</li>
+</ul>
+<ul>
+<li>bat 命令也支持 Git 集成(GIT integration)，这样您就可以轻松查看/编辑 Git 存储库中的文件。 它与 Git 连接可以显示关于索引的修改。</li>
+</ul>
+<h1 id="fd"><a href="#fd" class="headerlink" title="fd"></a>fd</h1><blockquote>
+<p><strong><a href="https://github.com/chinanf-boy/fd-zh">fd</a></strong>是一种简单又快速和用户友好的find替代方案。</p>
+<h2 id="1-安装-1"><a href="#1-安装-1" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-1"><a href="#ubuntu安装-1" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><p>下载最新<strong>.deb</strong>包装从<a href="https://github.com/sharkdp/fd/releases">releases</a>页面并通过以下方式安装:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i fd_7.0.0_amd64.deb</span><br></pre></td></tr></table></figure></p>
+<h3 id="archLinux-2"><a href="#archLinux-2" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fd</span><br></pre></td></tr></table></figure>
+<h3 id="Gentoo-Linux"><a href="#Gentoo-Linux" class="headerlink" title="Gentoo Linux"></a>Gentoo Linux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">emerge -av fd</span><br></pre></td></tr></table></figure>
+<h3 id="Fedora"><a href="#Fedora" class="headerlink" title="Fedora"></a>Fedora</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dnf install fd-find</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-2"><a href="#安卓termux-2" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install fd</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-1"><a href="#2-使用-1" class="headerlink" title="2. 使用"></a>2. 使用</h2></blockquote>
+<p>演示</p>
+<p><img data-src="df.svg" alt=""></p>
+<embed src="df.svg" type="image/svg+xml" >
+
+<object data="df.svg" type="image/svg+xml" ></object>
+
+<p><img data-src="df.svg" alt="df"></p>
+<p><a href="#fd">点击这里回到fd</a></p>
+<escape><a id="more"></a></escape>
+
+<h1 id="ag"><a href="#ag" class="headerlink" title="ag"></a>ag</h1><blockquote>
+<p>silversearcher-ag—— The silver searcher，这个软件用c编写的，速度极快，用它替代grep。</p>
+<h2 id="1-安装-2"><a href="#1-安装-2" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-2"><a href="#ubuntu安装-2" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install silversearcher-ag</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux-3"><a href="#archLinux-3" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S silversearcher-ag</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-3"><a href="#安卓termux-3" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install silversearcher-ag</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-2"><a href="#2-使用-2" class="headerlink" title="2. 使用"></a>2. 使用</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ifconfig | ag inet</span><br></pre></td></tr></table></figure>
+<p><img data-src="ag.svg" alt="ag" width="100%" height="100%" ></p>
+</blockquote>
+<p><a href="#ag">点击这里回到ag</a></p>
+<h1 id="axel"><a href="#axel" class="headerlink" title="axel"></a>axel</h1><blockquote>
+<p> Axel 是 Linux 下一个不错的HTTP/FTP高速下载工具。支持多线程下载、断点续传，且可以从多个地址或者从一个地址的多个连接来下载同一个文件。适合网速不给力时多线程下载提高下载速度;可以用来替代curl wget 。  </p>
+</blockquote>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><h3 id="ubuntu-1"><a href="#ubuntu-1" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install axel</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS安装"><a href="#CentOS安装" class="headerlink" title="CentOS安装"></a>CentOS安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install axel</span><br></pre></td></tr></table></figure>
+<h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install axel</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-3"><a href="#2-使用-3" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
+<li>下载Beyond-光辉岁月<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">axel http:&#x2F;&#x2F;music.163.com&#x2F;song&#x2F;media&#x2F;outer&#x2F;url?id&#x3D;346576.mp3</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>指定每移最大下载比特<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">exel -s 1024000 htps:&#x2F;&#x2F;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>设置线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">axel -n 10 https:&#x2F;&#x2F;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>下载到指定位置<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">axel -o &#x2F;sdcard&#x2F; https:&#x2F;&#x2F;</span><br></pre></td></tr></table></figure>
+<a href="##axel">点击这里回到axel</a></li>
+</ul>
+<h1 id="mosh"><a href="#mosh" class="headerlink" title="mosh"></a>mosh</h1><blockquote>
+<p>Mosh表示移动Shell(Mobile Shell)，是一个用于从客户端跨互联网连接远程服务器的命令行工具。它能用于SSH连接，但是比Secure Shell功能更多。它是一个类似于SSH而带有更多功能的应用。程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下；Mosh最大的特点是基于UDP方式传输，支持在服务端创建一个临时的Key供客户端一次性连接，退出后失效；也支持通过SSH的配置进行认证，但数据传输本身还是自身的UDP方式，mosh的稳定性是替代ssh最好选择。</p>
+</blockquote>
+<h2 id="1-安装-3"><a href="#1-安装-3" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-3"><a href="#ubuntu安装-3" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install mosh</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux-4"><a href="#archLinux-4" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S mosh</span><br></pre></td></tr></table></figure>
+<h3 id="MAC-1"><a href="#MAC-1" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install mosh</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-4"><a href="#2-使用-4" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
+<li>mosh用ssh连接方式<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mosh --ssh&#x3D;&quot;ssh -p 22&quot; roor@ip</span><br></pre></td></tr></table></figure>
+<a href="#mosh">点击这里回到mosh</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>exa</tag>
+        <tag>bat</tag>
+        <tag>fd</tag>
+        <tag>ag</tag>
+        <tag>axel</tag>
+        <tag>mosh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>历史不能被忘记</title>
+    <url>/posts/6e5168ba.html</url>
+    <content><![CDATA[<p><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559703827511&amp;di=6efb4998df82d1b1341e07d23d3cca26&amp;imgtype=0&amp;src=http%3A%2F%2Ftxt22262.book118.com%2F2017%2F0706%2Fbook120694%2F120693205.jpg" alt=""></p>
+<p>&emsp;&emsp; 对于一个国家，一个民族，一个人有一些历史是不能被忘记的。</p>
+<escape><a id="more"></a></escape>]]></content>
+      <categories>
+        <category>随心所写</category>
+      </categories>
+      <tags>
+        <tag>自由</tag>
+        <tag>民主</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流浪地球在线观看</title>
+    <url>/posts/c4f8d5b0.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; 流浪地球根据刘慈欣同名小说改编,故事设定在2075年,讲述了太阳即将毁灭,已经不适合人类生存,而面对绝境，人类将开启“流浪地球”计划,试图带着地球一起逃离太阳系,寻找人类新家园的故事。</p>
+<h2 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h2><p>&emsp;&emsp; 太阳即将毁灭，过去无数岁月中做为人类精神支柱的存在，变成了死亡和恐怖的象征。<br>比起坐以待毙，人类选择挣扎到底。<br>庞大的地球逃脱计划开始实施。然而人类所能制造的普通尺寸人造环境无法承受漫长的逃脱之旅。所以人类只得在地球的一侧安装上巨大的地球发动机，将整个巨大地球环境圈化为移民方舟，以此逃离太阳系，前往新家园。<br>代价是高昂的，艺术、伦理、常识，一件又一件曾经无比熟悉的特色从人性中消失，逝去的生命更是多如繁星。剩下的只有对生存的强烈渴望。疑惑和猜忌一度在人类当中引发叛乱之火，然而太阳最后的灭亡瞬间平息了一切，人类终于怀揣希望踏上漫长的流浪之旅。<br>“地球啊，我的流浪地球啊”成为无数生活在这个时代的人弥留之际的遗言。它包含着人类这个种族亘古不变的永恒心声————我们要活下去。</p>
+<p><strong>本站可在线播放</strong></p>
+<escape><a id="more"></a></escape>
+
+
+
+<video controls="controls" src="http://tx.stream.kg.qq.com/vqzone.gtimg.com/1006_75854151d6734e3db2d37d6dfc688c78.f0.mp4?vkey=687B4557D663C4EB9F204204EE81C5F489BF8563429AB219173F23D81B485022827B84E8EECB341760989FF3791DD3317C29ABF18C509636" poster="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559321641532&di=a718940e0e45c65e93e354c7f6868d0f&imgtype=0&src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3242151534%2C2562079379%26fm%3D193" width="100%" height="100%"></video>
+]]></content>
+      <categories>
+        <category>精彩视频</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+        <tag>流浪地球</tag>
+        <tag>高清视频</tag>
+        <tag>在线观看</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown编辑器日常使用语法记录</title>
+    <url>/posts/4703653d.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br>&emsp;&emsp; hexo默认支持Markdown编辑文章，学习好Markdown 编辑器语法有利于更方便友好的写作;下面我会用一些事例分享Markdown 编辑器使用中的各种技巧。</p>
+<h2 id="段首缩进"><a href="#段首缩进" class="headerlink" title="段首缩进"></a>段首缩进</h2><blockquote>
+<p>在文章编辑排版中首先经常使用到的就是段首缩进；那可以看到我的大标题是有缩进使用技巧非常简单就是在段道输入如下代码<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&amp;emsp;&amp;emsp;</span><br></pre></td></tr></table></figure><br>下面用菜根谭中一段做例<br>&emsp;&emsp; 好丑心太明，则物不契；贤愚心太明，则人不亲。士君子须是内精明而外浑厚，使好丑两得其平，贤愚共受其益，才是生成的德量。</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>标题我在之前的文章中己有教程，具体可以跳转<a href="https://pzb568.github.io/2019/04/30/Mathjax%E8%AF%AD%E6%B3%95%E6%B8%B2%E6%9F%93/">hexo开启Mathjax语法渲染配置折腾记</a>这里查看。</p>
+</blockquote>
+<h1 id="文本局中"><a href="#文本局中" class="headerlink" title="文本局中"></a>文本局中</h1><blockquote>
+<p>在诗词歌曲中使用局中显示，可以更好的显示诗词的排版，看起来更加工整。  </p>
+</blockquote>
+<ul>
+<li>使用也非常简单代码如下<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;</span><br><span class="line">夜宿山寺 </span><br><span class="line">唐 · 李白</span><br><span class="line">危楼高百尺，手可摘星辰。</span><br><span class="line">不敢高声语，恐惊天上人。</span><br><span class="line">&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+下面用唐诗一首演示</li>
+</ul>
+<blockquote class="blockquote-center">
+<p>夜宿山寺<br>唐 · 李白<br>危楼高百尺，手可摘星辰。<br>不敢高声语，恐惊天上人。</p>
+
+</blockquote>
+<h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><blockquote>
+<p>可以插入网络中和本的的图片<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](images&#x2F;1.jpg)</span><br></pre></td></tr></table></figure><br>美女图片镇楼<br><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559150762962&amp;di=89f86d08e03074713a0d4f9114f9b9ec&amp;imgtype=0&amp;src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3210444378%2C1295390531%26fm%3D193" alt=""></p>
+<h1 id="分页显示"><a href="#分页显示" class="headerlink" title="分页显示"></a>分页显示</h1><p>哦😊到这里应该要分页了<br>代码如下<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;escape&gt;&lt;!-- more --&gt;&lt;&#x2F;escape&gt;</span><br></pre></td></tr></table></figure></p>
+<escape><a id="more"></a></escape>
+
+</blockquote>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><ol>
+<li><p>文字链接</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[github](www.github.com)</span><br></pre></td></tr></table></figure>
+<p><a href="www.github..com">github</a></p>
+</li>
+<li><p>网址链接</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;www.Google.hk&gt;</span><br></pre></td></tr></table></figure>
+<www.Google.hk>
+
+<h1 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h1><ol>
+<li>安装<br>在blog文件夹下安装<strong>hexo-tag-aplayer</strong>插件</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure>
+<ol>
+<li>使用<br>代码如下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;飘向北方&quot; &quot;黄明志,王力宏&quot; &quot;http:&#x2F;&#x2F;music.163.com&#x2F;song&#x2F;media&#x2F;outer&#x2F;url?id&#x3D;461864856.mp3&quot; &quot;https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1559501443630&amp;di&#x3D;5d355fdbb782fb5bc06c476af70ba19a&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fsource.upupoo.com%2Ftheme%2F1800037383%2FpreviewFix.jpg&quot; &quot;lrc:lrc.txt&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>由于新版本aplayer插件异常放弃</p>
+</blockquote>
+<h1 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h1><ol>
+<li>安装  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-tag-dplayer</span><br></pre></td></tr></table></figure></li>
+<li>使用<br>输入 如下代码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% dplayer &quot;url&#x3D;https:&#x2F;&#x2F;vodkgeyttp8.vod.126.net&#x2F;cloudmusic&#x2F;YCEhICAiIWI1ISAxMSEiMA&#x3D;&#x3D;&#x2F;mv&#x2F;5617127&#x2F;36fb72932c6a0682fe09f201e2fdda0b.mp4?wsSecret&#x3D;bd2a79912d92c40a0557933e82a43f57&amp;wsTime&#x3D;1562298067&quot;  &quot;pic&#x3D;http:&#x2F;&#x2F;p1.music.126.net&#x2F;xrLKWowydpr7W_g8YgKBRQ&#x3D;&#x3D;&#x2F;18730180580875994.jpg&quot; &quot;loop&#x3D;yes&quot; &quot;theme&#x3D;#FADFA3&quot; &quot;autoplay&#x3D;false&quot; &quot;token&#x3D;tokendemo&quot; %&#125;</span><br></pre></td></tr></table></figure>
+**&gt;新版本异常放弃使用dplayer<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 姓名 | 性别 | 电话 |</span><br><span class="line">| :--- | :----: | ----: |</span><br><span class="line">| 张三 | 男 | 123456789123 |</span><br></pre></td></tr></table></figure>
+| 姓名 | 性别 | 电话 |<br>| :—- | :——: | ——: |<br>| 张三 | 男 | 123456789123 |</li>
+</ol>
+<h1 id="图片墙"><a href="#图片墙" class="headerlink" title="图片墙"></a>图片墙</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% gp 4-4 %&#125;</span><br><span class="line">  ![](&#x2F;photos&#x2F;images&#x2F;1.jpeg)</span><br><span class="line">  ![](&#x2F;photos&#x2F;images&#x2F;2.jpeg)</span><br><span class="line">  ![](&#x2F;photos&#x2F;images&#x2F;3.jpeg)</span><br><span class="line">  ![](&#x2F;photos&#x2F;images&#x2F;4.jpeg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/1.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/2.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/3.jpeg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/4.jpeg" alt=""></div></div></div>
+<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<div class="mermaid">
+graph TD
+A--&gt;B;
+A--&gt;C;
+B--&gt;D;
+C--&gt;D;
+</div>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">B --&gt; C&#123;Let me thinksssss&lt;br&#x2F;&gt;ssssssssssssssssssssss&lt;br&#x2F;&gt;sssssssssssssssssssssssssss&#125;</span><br><span class="line">C --&gt;|One| D[Laptop]</span><br><span class="line">C --&gt;|Two| E[iPhone]</span><br><span class="line">C --&gt;|Three| F[Car]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<div class="mermaid">
+graph TD
+A[Christmas] --&gt;|Get money| B(Go shopping)
+B --&gt; C{Let me thinksssss&lt;br&#x2F;&gt;ssssssssssssssssssssss&lt;br&#x2F;&gt;sssssssssssssssssssssssssss}
+C --&gt;|One| D[Laptop]
+C --&gt;|Two| E[iPhone]
+C --&gt;|Three| F[Car]
+</div>
+<h1 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% button #, 开始 %&#125;</span><br></pre></td></tr></table></figure>
+<a class="btn" href="#">开始</a>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% btn #, Text %&#125; &#123;% btn #, 取消,, Title %&#125;</span><br></pre></td></tr></table></figure>
+<a class="btn" href="#">确定</a> <a class="btn" href="#" title="Title">取消</a>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Lorem &#123;% label @ipsum %&#125; &#123;% label primary@dolor sit %&#125; amet, consectetur &#123;% label success@adipiscing elit, %&#125; sed &#123;% label info@do eiusmod %&#125; tempor incididunt ut labore et dolore magna aliqua.</span><br><span class="line"></span><br><span class="line">Ut enim *&#123;% label warning @ad %&#125;* minim veniam, quis **&#123;% label danger@nostrud %&#125;** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span><br><span class="line"></span><br><span class="line">Duis aute irure dolor in reprehenderit in voluptate ~~&#123;% label default @velit %&#125;~~ &lt;mark&gt;esse&lt;&#x2F;mark&gt; cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br></pre></td></tr></table></figure>
+<p>Lorem <mark class="label ">ipsum</mark> <mark class="label primary">dolor sit</mark> amet, consectetur <mark class="label success">adipiscing elit,</mark> sed <mark class="label info">do eiusmod</mark> tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim <em><mark class="label warning">ad</mark></em> minim veniam, quis <strong><mark class="label danger">nostrud</mark></strong> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Duis aute irure dolor in reprehenderit in voluptate <del><mark class="label default">velit</mark></del> <mark>esse</mark> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h1 id="标注"><a href="#标注" class="headerlink" title="标注"></a>标注</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125;</span><br><span class="line">#### Primary Header</span><br><span class="line">**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary"><h4 id="Primary-Header"><a href="#Primary-Header" class="headerlink" title="Primary Header"></a>Primary Header</h4><p><strong>Welcome</strong> to <a href="https://hexo.io">Hexo!</a></p>
+</div>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>Markdown语法</tag>
+        <tag>段首缩进</tag>
+        <tag>文本居中</tag>
+        <tag>音乐播放</tag>
+        <tag>视频播放</tag>
+        <tag>图片墙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>歌曲欣赏邵夷贝李志黄昏</title>
+    <url>/posts/edcc843f.html</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;黄昏&quot; &quot;邵夷贝李志&quot; &quot;http:&#x2F;&#x2F;lc-0ww4yxjs.cn-n1.lcfile.com&#x2F;75a1ae3e5b1f02a39c1a&#x2F;%E9%BB%84%E6%98%8F%28%E9%82%B5%E5%A4%B7%E8%B4%9D%E3%80%81%E6%9D%8E%E5%BF%97%29.m4a&quot; &quot;http:&#x2F;&#x2F;p4.music.126.net&#x2F;Wm6bytXz5Lvn839Houu0VQ&#x3D;&#x3D;&#x2F;5702067301748582.jpg&quot; &quot;lrc:lrc.txt&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<video src="https://vdse.bdstatic.com//bb539bec3d7548a54cc3a8e0c39f9ba2.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2020-08-30T13%3A34%3A46Z%2F-1%2Fhost%2F0ed963fc4521aca3f6463c2ffe987cf92b28f0f9ba3288e3ad073bf68a3455b7" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<blockquote class="blockquote-center">
+<p>邵夷贝 李志</p>
+<p>他用一种慈祥的姿态<br>在高处安抚着你<br>他铺开巨大的过滤网<br>层层信仰奢靡<br>他大义凌然地宣布<br>要把纯净筛留给你<br>过滤得只剩下了残骸<br>还要你歌颂感激<br>你终其一生想找到理由<br>去热爱脚下的土地<br>他为其定义的伟大<br>对你有什么意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你<br>他庞大的身躯压垮了<br>多少初生的纯良<br>他曾有的灵魂矗立在<br>远方冷漠地观望<br>他费力塑造的繁华<br>成为装扮阴暗面的假象<br>他毁掉的美好在不久的<br>将来变成了疯狂<br>你终其一生想找到理由<br>去热爱脚下的土地<br>他为其定义的伟大<br>对你有什么意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你<br>你终其一生找不到理由<br>去热爱脚下的土地<br>传说中这里的强大<br>是你生命的全部意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你</p>
+
+</blockquote>
+<p><a href=""></a></p>
+<p><escape><a id="more"></a></escape></p>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TmLII4V5BdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+]]></content>
+      <categories>
+        <category>音乐欣赏</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>李志 邵夷贝</tag>
+        <tag>黄昏</tag>
+        <tag>歌曲</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给网站添加谷歌Adsense广告</title>
+    <url>/posts/78f0295d.html</url>
+    <content><![CDATA[<h1 id="Google-AdSense简介"><a href="#Google-AdSense简介" class="headerlink" title="Google AdSense简介"></a>Google AdSense简介</h1><p>&emsp;&emsp; AdSense是由Google(谷歌)公司面向广告发布者推出的一个广告服务项目. Google通过其另一个面向广告主的广告项目AdWords收集客户广告, 然后将这些广告以文本, 图片或视频的形式发布到申请了AdSense项目的网站上. Google从AdWords项目中向广告主收取广告服务费用, 而申请加入了AdSense的广告发布者(站长)按广告的点击数或展示数分得其中的部分收入.<br>&emsp;&emsp; AdSense的商业原理和国内的多数广告同盟没有什么别, 说白了就是一个广告中介. 但Google AdSense能在众多广告服务提供商中脱颖而出, 不但是因为其强硬的公司背景, 也和这个项目的新技术使用分不开.<br>基于浏览特定信息的人对此信息相关的产品有兴趣的原理, Google使用其看家的搜索分析技术, 在AdSense发布者的网站页面上显示和网页本身内容相关联(匹配)的广告, 从向使网络广告具有定向性. 例如, 一个介绍笔记电脑的网页上显示的AdSense广告很可能就是最新廉价笔记本电脑广告, 上面的笔记本甚至有可能和页面介绍是同一型号! Google这种服务的推出, 很快因为广告效益高而受到广告主们的欢迎, 而发布了AdSense广告的站长们不但得到了更高的广告点击和出入, 而且因为网站广告和广告网页内容形成了信息补充关系, 不再为广告影响网站看客的心情而担心.<br>&emsp;&emsp; Google AdSense广告是一种获取收入的快速简便的方法，适合于各种规模的网站发布商。它可以在网站的内容网页上展示相关性较高的 Google 广告，并且这些广告不会过分夸张醒目。Goole Adsense 计划是最受站长欢迎的网络营销联盟之一，站长甚至可以通过博客即可实现网络赚钱。<br>&emsp;&emsp; 只要网站博客访问流量多，可以收入美刀哦，本站的访问量放广告只是测试而已，本文就写一个测试教程希望教育对大家有所帮助;如果有时间可以帮我点击一下广告薅一下羊毛（｡ò ∀ ó｡）。</p>
+<p><escape><a id="more"></a></escape></p>
+<ol>
+<li>访问<a href="https://www.google.com/intl/zh-CN_cn/adsense/start/#">https://www.google.com/intl/zh-CN_cn/adsense/start/#</a>。</li>
+<li>点击登录推荐使用谷歌帐号直接登录<a href="https://www.google.com/intl/zh-CN_cn/adsense/start/#">Goole Adsense </a>; 谷歌的服务在中国都无法使用连接谷歌可以去看我之前发的<a href="https://pzb568.github.io/2018/11/08/ss%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E5%8F%8A%E4%BD%BF%E7%94%A8/">SSR分享与使用</a>和<a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">v2ray分享与使用</a></li>
+<li>登录设置个人信息地址 <strong>地址一定要要正确</strong>因为广告收入达到<strong>10美元</strong>要<strong>验证地址</strong>，会从美国发一个pin验证邮件，我地址没有完整，又没有留电话☎️😂这注定收不到pin，需要修改地址在次申请，中间差不多需要4周左右。</li>
+<li><p>在Google AdSense主页广告下自动广告中设置自动广告里的代码复制到博客主题设置里。  </p>
+</li>
+<li><p>添加到<myblog/themes/next/layout/_partials/head/head.swig>最后面即可。我使用的是 next主题，其他主题没有用过，设置应该大同小异。</p>
+</li>
+<li>需要等待Google AdSense审核通过后才可以显示广告，网站必须要10多箱文章，太少了可能审核可能不能通过我应该开启了实验室功能广告显示在标题栏。<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1860534692691231", enable_page_level_ads: true }); </script></li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络应用</category>
+      </categories>
+      <tags>
+        <tag>Google AdSense广告</tag>
+        <tag>收益</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo开启Mathjax语法渲染配置折腾记</title>
+    <url>/posts/97f2042f.html</url>
+    <content><![CDATA[<h1 id="Mathjax介绍"><a href="#Mathjax介绍" class="headerlink" title="Mathjax介绍"></a>Mathjax介绍</h1><p>&emsp;&emsp; hexo默认的渲染器是marked，并不支持mathjax。kramed是在marked基础上修改的，支持了mathjax。在的hexo工程目录下的node_modules中可以找到对应的渲染器文件夹。同时在你的工程目录下用以下命令安装kramed。另外补充一个NexT配置中推荐的渲染器hexo-renderer-pandoc，功能很强大不仅可以渲染markdown，还支持textile、reStructedText等许多其他格式</p>
+<h1 id="安装渲染器"><a href="#安装渲染器" class="headerlink" title="安装渲染器"></a>安装渲染器</h1><h2 id="卸载默认渲染器"><a href="#卸载默认渲染器" class="headerlink" title="卸载默认渲染器"></a>卸载默认渲染器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<h2 id="安装修改kramed渲染器"><a href="#安装修改kramed渲染器" class="headerlink" title="安装修改kramed渲染器"></a>安装修改kramed渲染器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+<p>或者<code>npm install hexo-renderer-pandoc --save</code>如果是在安卓手机termux里面部署网站这个插件不能使用，因为必装<code>pandoc</code>，termux安装pandoc不成功。</p>
+<h1 id="安装hexo-renderer-mathjax插件"><a href="#安装hexo-renderer-mathjax插件" class="headerlink" title="安装hexo-renderer-mathjax插件"></a>安装<strong>hexo-renderer-mathjax</strong>插件</h1><p>如果安装了hexo-math插件，需要卸载再安装。</p>
+<h2 id="卸载hexo-math插件"><a href="#卸载hexo-math插件" class="headerlink" title="卸载hexo-math插件"></a>卸载hexo-math插件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-mathjax --save</span><br></pre></td></tr></table></figure>
+<h2 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a>CDN加速</h2><blockquote>
+<p>更新mathjax的CDN链接，打开node_modules/hexo-renderer-mathjax/mathjax.html</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;2.7.1&#x2F;MathJax.js?config&#x3D;TeX-MML-AM_CHTML&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>math:<br>  enable: true #开启</p>
+<p>  engine: mathjax 取消注释</p>
+<h1 id="文章Front-matter中开启mathjax"><a href="#文章Front-matter中开启mathjax" class="headerlink" title="文章Front-matter中开启mathjax"></a>文章Front-matter中开启mathjax</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: </span><br><span class="line">category:</span><br><span class="line">date: </span><br><span class="line">mathjax: true  #开启后才会渲染数学公式</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>
+
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>下面来测试一下</p>
+<h2 id="麦克斯韦方程组"><a href="#麦克斯韦方程组" class="headerlink" title="麦克斯韦方程组"></a>麦克斯韦方程组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;eqnarray&#125;</span><br><span class="line">\nabla\cdot\vec&#123;E&#125; &amp;&#x3D;&amp; \frac&#123;\rho&#125;&#123;\epsilon_0&#125; \\</span><br><span class="line">\nabla\cdot\vec&#123;B&#125; &amp;&#x3D;&amp; 0 \\</span><br><span class="line">\nabla\times\vec&#123;E&#125; &amp;&#x3D;&amp; -\frac&#123;\partial B&#125;&#123;\partial t&#125; \\</span><br><span class="line">\nabla\times\vec&#123;B&#125; &amp;&#x3D;&amp; \mu_0\left(\vec&#123;J&#125;+\epsilon_0\frac&#123;\partial E&#125;&#123;\partial t&#125; \right)</span><br><span class="line">\end&#123;eqnarray&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\begin{eqnarray}
+\nabla\cdot\vec{E} &=& \frac{\rho}{\epsilon_0} \\
+\nabla\cdot\vec{B} &=& 0 \\
+\nabla\times\vec{E} &=& -\frac{\partial B}{\partial t} \\
+\nabla\times\vec{B} &=& \mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t} \right)
+\end{eqnarray}</script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$\Gamma(z) &#x3D; \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.</script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\frac&#123;\partial u&#125;&#123;\partial t&#125; &#x3D; h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; + \frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; + \frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\frac{\partial u}{\partial t} = h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)</script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> $$ </span><br><span class="line">f(n)&#x3D;\begin&#123;cases&#125;</span><br><span class="line">n&#x2F;2, &amp; \text&#123;如果$ x&lt;&#x3D;2 $&#125;\\</span><br><span class="line">3n+1, &amp; \text&#123;如果$ x&gt;2 $&#125;</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+f(n)=\begin{cases}
+n/2, & \text{如果$ x<=2 $}\\
+3n+1, & \text{如果$ x>2 $}
+\end{cases}</script><h2 id="标题Latex特性测试"><a href="#标题Latex特性测试" class="headerlink" title="标题Latex特性测试"></a>标题Latex特性测试</h2><h2 id="1-Setext-形式"><a href="#1-Setext-形式" class="headerlink" title="1. Setext 形式"></a>1. Setext 形式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">H1</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line"></span><br><span class="line">H2</span><br><span class="line">----</span><br></pre></td></tr></table></figure>
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><p>= 和 - 的数量是没有限制的。通常的做法是使其和标题文本的长度相同，这样看起来比较舒服。或者可以像我一样，用四个 - 或 =。<br>Setext 形式只支持 h1 和 h2 两种标题。</p>
+<ol>
+<li>atx 形式<h5 id="①-可以用对称的-包括文本："><a href="#①-可以用对称的-包括文本：" class="headerlink" title="① 可以用对称的 # 包括文本："></a>① 可以用对称的 # 包括文本：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">####H4####</span><br><span class="line"></span><br><span class="line">#####H5#####</span><br></pre></td></tr></table></figure>
+<h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4></li>
+</ol>
+<h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h5 id="②-也可以只在左边使用-："><a href="#②-也可以只在左边使用-：" class="headerlink" title="② 也可以只在左边使用 #："></a>② 也可以只在左边使用 #：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">####H4</span><br><span class="line"></span><br><span class="line">#####H5</span><br></pre></td></tr></table></figure>
+<h4 id="H4-1"><a href="#H4-1" class="headerlink" title="H4"></a>H4</h4><h5 id="H5-1"><a href="#H5-1" class="headerlink" title="H5"></a>H5</h5><p>③ 成对的 # 左侧和只在左边使用的 # 左侧都不可以有任何空白，但其内侧可以使用空白。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> ###左侧使用了空格###</span><br><span class="line"></span><br><span class="line">#### 内侧使用了空格</span><br></pre></td></tr></table></figure></p>
+<h3 id="左侧使用了空格"><a href="#左侧使用了空格" class="headerlink" title="左侧使用了空格"></a>左侧使用了空格</h3><h4 id="内侧使用了空格"><a href="#内侧使用了空格" class="headerlink" title="内侧使用了空格"></a>内侧使用了空格</h4>]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>hexo配置</tag>
+        <tag>开启mathjax  Latex</tag>
+        <tag>数学公式</tag>
+        <tag>化学工式</tag>
+        <tag>主题样式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>沉默的代价</title>
+    <url>/posts/b9c35f4a.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; In Germany, they first came for the Communists,<br>&emsp;&emsp; and I didn’t speak up because I wasn’t a Communist.<br>&emsp;&emsp; Then they came for the Jews,<br>&emsp;&emsp; and I didn’t speak up because I wasn’t a Jew.<br>&emsp;&emsp; Then they came for the trade unionists,<br>&emsp;&emsp;  and I didn’t speak up because I wasn’t a trade unionist.<br>&emsp;&emsp; Then they came for the Catholics,<br>and I didn’t speak up because I was a Protestant.<br>&emsp;&emsp;  Then they came for me，<br>but by that time， there was no one left to speak up.<br>&emsp;&emsp; by Rev. Martin Niemoller, 1945</p>
+<p><escape><a id="more"></a></escape><br>&emsp;&emsp; 在德国，起初他们追杀共产主义者，我没有说话———因为我不是共产主义者；<br>&emsp;&emsp; 接着他们追杀犹太人，我没有说话———因为我不是犹太人；<br>&emsp;&emsp; 后来他们追杀工会成员，我没有说话———因为我不是工会成员；<br>&emsp;&emsp; 此后他们追杀天主教徒，我没有说话———因为我是新教教徒；<br>&emsp;&emsp; 最后他们奔我而来，却再也没有人站出来为我说话了。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fKYfH3N9KzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><link rel="stylesheet" href="DPlayer.min.css"></p>
+<p><div id="dplayer"></div></p>
+<script src="https://youtu.be/TmLII4V5BdU"></script>]]></content>
+      <categories>
+        <category>诗词收藏</category>
+        <category>国外文学</category>
+      </categories>
+      <tags>
+        <tag>自由</tag>
+        <tag>代价</tag>
+        <tag>沉默</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用termux安装tor搭建暗网</title>
+    <url>/posts/49fd6cd3.html</url>
+    <content><![CDATA[<h1 id="Tor简介"><a href="#Tor简介" class="headerlink" title="Tor简介"></a>Tor简介</h1><p><img data-src="https://i.bmp.ovh/imgs/2019/04/07b5c785087abb9c.jpg" alt=""><br>&emsp;&emsp; Tor用户在本机运行一个洋葱代理服务器（onion proxy），这个代理周期性地与其他Tor交流，从而在Tor网络中构成虚电路（virtual circuit）。Tor是在5层协议栈中的应用层进行加密（也就是按照’onion’的模式）。而它之所以被称为onion，是因为它的结构就跟洋葱相同，你只能看出它的外表，而想要看到核心，就必须把它层层的剥开。即每个路由器间的传输都经过对等密钥（symmetric key）来加密，形成有层次的结构。它中间所经过的各节点，都好像洋葱的一层皮，把客户端包在里面，算是保护信息来源的一种方式，这样在洋葱路由器之间可以保持通讯安全。同时对于客户端，洋葱代理服务器又作为SOCKS接口。一些应用程序就可以将Tor作为代理服务器，网络通讯就可以通过Tor的虚拟环路来进行。用户通过它可以在因特网上进行匿名交流从而保护用户的隐私及资讯安全。<br>  termux可以安装tor在利用lighttpd服务器映射，下面来在termux里面安装。</p>
+<escape><a id="more"></a></escape>
+
+<h1 id="1-安装tor和lighttpd服务器"><a href="#1-安装tor和lighttpd服务器" class="headerlink" title="1. 安装tor和lighttpd服务器"></a>1. 安装tor和lighttpd服务器</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg in tor lighttpd </span><br></pre></td></tr></table></figure>
+<h1 id="2-编辑Torrc"><a href="#2-编辑Torrc" class="headerlink" title="2.编辑Torrc"></a>2.编辑Torrc</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &gt; $PREFIX&#x2F;etc&#x2F;tor&#x2F;torrc &lt;&lt;EOF</span><br><span class="line">#Enable TOR SOCKS proxy</span><br><span class="line">SOCKSPort 127.0.0.1:9050</span><br><span class="line">#Hidden Service: Http</span><br><span class="line">HiddenServiceDir &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;.tor&#x2F;hiddenservice</span><br><span class="line">HiddenServicePort 80 127.0.0.1:8080</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<h1 id="3-编写lighttpd配置文件"><a href="#3-编写lighttpd配置文件" class="headerlink" title="3.编写lighttpd配置文件"></a>3.编写lighttpd配置文件</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">termux-setup-storage&amp;&amp;rm -rf ~&#x2F;storage</span><br><span class="line">cat &gt; ~&#x2F;lighttpd.conf &lt;&lt;EOF</span><br><span class="line">server.port             &#x3D; 8080</span><br><span class="line">server.document-root    &#x3D; &quot;&#x2F;sdcard&#x2F;Orweb&quot;</span><br><span class="line">server.upload-dirs      &#x3D; ( &quot;&#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;usr&#x2F;tmp&quot; )</span><br><span class="line">index-file.names        &#x3D; ( &quot;index.html&quot; )</span><br><span class="line">mimetype.assign         &#x3D; (</span><br><span class="line">                                &quot;.html&quot; &#x3D;&gt; &quot;text&#x2F;html&quot;,</span><br><span class="line">                                &quot;.txt&quot; &#x3D;&gt; &quot;text&#x2F;plain&quot;,</span><br><span class="line">                                &quot;.css&quot; &#x3D;&gt; &quot;text&#x2F;css&quot;,</span><br><span class="line">                                &quot;.js&quot; &#x3D;&gt; &quot;application&#x2F;x-javascript&quot;,</span><br><span class="line">                                &quot;.jpg&quot; &#x3D;&gt; &quot;image&#x2F;jpeg&quot;,</span><br><span class="line">                                &quot;.jpeg&quot; &#x3D;&gt; &quot;image&#x2F;jpeg&quot;,</span><br><span class="line">                                &quot;.gif&quot; &#x3D;&gt; &quot;image&#x2F;gif&quot;,</span><br><span class="line">                                &quot;.png&quot; &#x3D;&gt; &quot;image&#x2F;png&quot;,</span><br><span class="line">                                &quot;&quot; &#x3D;&gt; &quot;application&#x2F;octet-stream&quot;</span><br><span class="line">                       )</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<h1 id="4-启动Orweb-daemon"><a href="#4-启动Orweb-daemon" class="headerlink" title="4.启动Orweb-daemon"></a>4.启动Orweb-daemon</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir -p &#x2F;sdcard&#x2F;Orweb</span><br></pre></td></tr></table></figure>
+<h1 id="5-启动lighttpd服务器"><a href="#5-启动lighttpd服务器" class="headerlink" title="5.启动lighttpd服务器"></a>5.启动lighttpd服务器</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lighttpd -f ~&#x2F;lighttpd.conf&amp; &gt; &#x2F;dev&#x2F;null</span><br></pre></td></tr></table></figure>
+<h1 id="6-启动Tor"><a href="#6-启动Tor" class="headerlink" title="6.启动Tor"></a>6.启动Tor</h1><p>重新打开一个窗口<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tor</span><br></pre></td></tr></table></figure></p>
+<h1 id="7-查看域名"><a href="#7-查看域名" class="headerlink" title="7. 查看域名"></a>7. 查看域名</h1><ul>
+<li>等待tor连接到主服务器并完成初始化(bootstrap)，然后新开一个termux会话，执行如下命令查看域名<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;Onion域名:$(cat ~&#x2F;.tor&#x2F;hiddenservice&#x2F;hostname)&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p>挂载<a href="https://pzb568.github.io/2018/11/08/ss%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E5%8F%8A%E4%BD%BF%E7%94%A8/">Shadowsocks</a>或者<a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">v2ray</a>，访问暗网必须要tor ，国内因为你懂的原因必须要梯子。</p>
+</li>
+<li><p>给网站添加内容，用<a href="https://www.coolapk.com/apk/com.hjq.md">Mnote</a>写一份Markdown文档，转换为html，命名为index.html放到/sdcard/Orweb目录，网站内容自己编写。</p>
+</li>
+</ul>
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>如果没有成功或者报错删除.tor文件夹<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm -rf .tor</span><br></pre></td></tr></table></figure><br>再次启动服务器和tor继续第五第六步</p>
+<h1 id="8-测试网站"><a href="#8-测试网站" class="headerlink" title="8 . 测试网站"></a>8 . 测试网站</h1><ol>
+<li>下载最新版Tor<a href="https://www.torproject.org/download/#android">https://www.torproject.org/download/#android</a> 选择arm版或者谷歌市场下载。</li>
+<li>打开Tor browser连接成功后输入上面第7步查看到域名地址，然后就可以看到你的暗网网站了。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络应用</category>
+      </categories>
+      <tags>
+        <tag>tor</tag>
+        <tag>lighttpd</tag>
+        <tag>暗网</tag>
+        <tag>隐私安全</tag>
+        <tag>网络加密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人都是被逼出来的</title>
+    <url>/posts/60d02721.html</url>
+    <content><![CDATA[<p><img data-src="https://i.bmp.ovh/imgs/2019/04/411d2fe54b037ae5.jpg" alt=""><br>&emsp;&emsp; 不是因为身体的缺陷使其多才多艺，只是他没有选择的余地和不刻苦的理由；正常人因为有更多的选择而不去坚持，不去努力。</p>
+]]></content>
+      <categories>
+        <category>随心所记</category>
+      </categories>
+      <tags>
+        <tag>心得感受</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三体名句收藏</title>
+    <url>/posts/bc41dd0f.html</url>
+    <content><![CDATA[<video src="http://music.163.com/video/1DC30A9465D16714A0A0B5E015E8E29F/?userid=20263877" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<p><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558808485058&amp;di=962b65efbf8874d59f35744100b29247&amp;imgtype=0&amp;src=http%3A%2F%2Fimg1.3lian.com%2F2015%2Fw6%2F53%2Fd%2F1.jpg" alt=""></p>
+<escape><a id="more"></a></escape>
+
+<blockquote class="blockquote-center">
+<p>刘慈欣</p>
+<p>给时光以生命，给岁月以文明。</p>
+<p> 弱小和无知，都不是生存的障碍，傲慢才是。</p>
+<p>我爱你，与你有何相干？毁灭你，又与你有何相干？</p>
+<p>失去人性，失去很多；失去兽性，失去一切。</p>
+<p>我们都是阴沟里的虫子，但总还是得有人仰望星空。</p>
+<p>仅靠生存本身是不能保证生存的，发展是生存的最好保障。</p>
+<p>宇宙就是一座黑暗森林，每个文明都是带枪的猎人，像幽灵般潜行于林间，轻轻拨开挡路的树枝，竭力不让脚步发出一点儿声音，连呼吸都小心翼翼。。。</p>
+
+</blockquote>
+]]></content>
+      <categories>
+        <category>科幻文学</category>
+      </categories>
+      <tags>
+        <tag>三体</tag>
+        <tag>刘慈欣</tag>
+        <tag>黑暗森林</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WIN10和manjanro双系统grub引导修复</title>
+    <url>/posts/102fd15b.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; 安装WIN和Linux双系统时经常出现引导错误而无法加入任何一个系统的情况，这个时间不要重新安装，修复一下grub引导就好，重新安装又需要浪费很多时间及精力，我相信很多人用遇到这种情况，使用写一个教程给大家。</p>
+<h1 id="修复引导"><a href="#修复引导" class="headerlink" title="修复引导"></a>修复引导</h1><ol>
+<li>查看Linux引导硬盘的哪个分区<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure></li>
+<li><p>会出现</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(hd0)  (hd0,gpt9)  (hd0,gpt8)...</span><br></pre></td></tr></table></figure>
+<p>这是硬盘分区信息，分区不一样，显示的有可能会有区别</p>
+</li>
+<li><p>如果不知道Linux分区信息接下来一个一个测试</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls (hd0,gpt9)&#x2F;</span><br></pre></td></tr></table></figure>
+<p>如果出现Linux文件结构就说明这是安装Linux的分区，如果不是安照上面命令继续测试，只需要修改括号后最后面的数字</p>
+</li>
+<li>显示Linux文件结构后继续找grub引导文件的位置<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls (hd0,gpt8)&#x2F;grub</span><br></pre></td></tr></table></figure>
+如果没有x86-64-efi显示引导文件继续下面测试，因为这个是一个没有独立文件夹的引导<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls (hd0,gpt8)&#x2F;boot&#x2F;grub</span><br></pre></td></tr></table></figure>
+出现后下面找回引导</li>
+<li>设置权限<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set root&#x3D;(hd0,gpt8)&#x2F;boot&#x2F;grub</span><br></pre></td></tr></table></figure></li>
+<li>设置引导<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set prefix&#x3D;(hd0,gpt8)&#x2F;boot&#x2F;grub</span><br></pre></td></tr></table></figure></li>
+<li>修复<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">insmod normal</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<img data-src="https://i.bmp.ovh/imgs/2019/02/9dc692733b099550.jpg" alt=""></li>
+<li>进入Linux更新grub找回引导。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>系统工具</category>
+      </categories>
+      <tags>
+        <tag>WIN10</tag>
+        <tag>Linux</tag>
+        <tag>manjanro</tag>
+        <tag>grub</tag>
+        <tag>双系统修复</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>termux0.66版本修改添加常用按键</title>
+    <url>/posts/25aac357.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。</p>
+<ol>
+<li>创建.termux文件夹<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir $HOME&#x2F;.termux</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol>
+<li>在$HOME/.termux/termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim</li>
+</ol>
+<p>安装vim</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install vim</span><br></pre></td></tr></table></figure></h2><ol>
+<li>进入文件夹并vim打开termux.properties<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd .termux &amp;&amp; vim termux.properties</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>
+
+</li>
+</ol>
+<p>效果布局1<br>添加如下内容<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">extra-keys &#x3D; [[&#39;[&#39;,&#39;]&#39;,&#39;&#123;&#39;,&#39;&#125;&#39;,&#39;&amp;&#39;,&#39;&lt;&#39;,&#39;&gt;&#39;],[&#39;ESC&#39;,&#39;&#x2F;&#39;,&#39;-&#39;,&#39;HOME&#39;,&#39;UP&#39;,&#39;END&#39;,&#39;;&#39;],[&#39;TAB&#39;,&#39;CTRL&#39;,&#39;~&#39;,&#39;LEFT&#39;,&#39;DOWN&#39;,&#39;RIGHT&#39;,&#39;\&quot;\&quot;&#39;]]</span><br></pre></td></tr></table></figure><br>显示效果如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg" alt=""></p>
+<p>效果布局2<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">extra-keys &#x3D; [[&#39;ESC&#39;,&#39;&#x2F;&#39;,&#39;-&#39;,&#39;HOME&#39;,&#39;UP&#39;,&#39;END&#39;,&#39;PGUP&#39;,&#39;&lt;&#39;,&#39;&gt;&#39;],[&#39;TAB&#39;,&#39;CTRL&#39;,&#39;ALT&#39;,&#39;LEFT&#39;,&#39;DOWN&#39;,&#39;RIGHT&#39;,&#39;PGDN&#39;,&#39;[&#39;,&#39;]&#39;],[&#39;$&#39;,&#39;&quot;&#39;,&#39;&#x3D;&#39;,&#39;&#123;&#39;,&#39;&#125;&#39;,&#39;(&#39;,&#39;)&#39;,&#39;&amp;&#39;,&#39;%&#39;]]</span><br></pre></td></tr></table></figure><br>显示效果如下<br><img src = 'https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg' /></p>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>常用键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>termux安装hugo搭建hugo博客部署到netlify</title>
+    <url>/posts/8de2b9ae.html</url>
+    <content><![CDATA[<h1 id="termux安装hugo"><a href="#termux安装hugo" class="headerlink" title="termux安装hugo"></a>termux安装hugo</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt install hugo</span><br></pre></td></tr></table></figure>
+<h1 id="新建网站"><a href="#新建网站" class="headerlink" title="新建网站"></a>新建网站</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo new site blog</span><br></pre></td></tr></table></figure>
+<h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><ol>
+<li>进入网站根目录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+2.下载子模主题<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even</span><br></pre></td></tr></table></figure></li>
+<li>配置主题请参考官方主题设置</li>
+</ol>
+<p>重要: 在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp themes&#x2F;even&#x2F;exampleSite&#x2F;config.toml ~</span><br></pre></td></tr></table></figure><br>注意: 对于这个主题，你应该使用 post 而不是 posts，即 hugo new post/some-content.md。</p>
+<ol>
+<li>启动本地服务器<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo server </span><br></pre></td></tr></table></figure>
+<h1 id="netlify配置文件"><a href="#netlify配置文件" class="headerlink" title="netlify配置文件"></a>netlify配置文件</h1></li>
+</ol>
+<p>要部署到netlify，必须建一个netlify配置文件,可以参考<br><a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/">https://gohugo.io/hosting-and-deployment/hosting-on-netlify/</a></p>
+<ol>
+<li>在网站根目录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim netlify.toml</span><br></pre></td></tr></table></figure>
+输入如下内容<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[build]</span><br><span class="line">publish &#x3D; &quot;public&quot;</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify&quot;</span><br><span class="line"></span><br><span class="line">[context.production.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line">HUGO_ENV &#x3D; &quot;production&quot;</span><br><span class="line">HUGO_ENABLEGITINFO &#x3D; &quot;true&quot;</span><br><span class="line"></span><br><span class="line">[context.split1]</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify --enableGitInfo&quot;</span><br><span class="line"></span><br><span class="line">[context.split1.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line">HUGO_ENV &#x3D; &quot;production&quot;</span><br><span class="line"></span><br><span class="line">[context.deploy-preview]</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&quot;</span><br><span class="line"></span><br><span class="line">[context.deploy-preview.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line"></span><br><span class="line">[context.branch-deploy]</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify -b $DEPLOY_PRIME_URL&quot;</span><br><span class="line"></span><br><span class="line">[context.branch-deploy.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line"></span><br><span class="line">[context.next.environment]</span><br><span class="line">HUGO_ENABLEGITINFO &#x3D; &quot;true&quot;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+</li>
+</ol>
+<h1 id="上传源代码"><a href="#上传源代码" class="headerlink" title="上传源代码"></a>上传源代码</h1><ol>
+<li>进入博客目录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure></li>
+<li>创建版本库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li><p>在<a href="https://www.github.com">github</a>或者<a href="https://www.gitee.com">gitee</a>新建一个仓库blog</p>
+</li>
+<li><p>生成ssh密匙</p>
+<blockquote>
+<p>如果已经设置ssh密钥，直接跳到下一步</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你github登录邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>直接回车3次生成成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat .ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>复制内容添加到github ssh密匙中。</p>
+</blockquote>
+</li>
+</ol>
+<ol>
+<li>连接到远程库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;xxx&#x2F;blog.git</span><br></pre></td></tr></table></figure></li>
+<li>添加全部博客文件</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure>
+<ol>
+<li>注释<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;hugo博客&quot;</span><br></pre></td></tr></table></figure></li>
+<li>第一次部署强制上传到服务器<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></li>
+<li><p>以后在更新直接更新</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h1 id="部署网站到netlify"><a href="#部署网站到netlify" class="headerlink" title="部署网站到netlify"></a>部署网站到netlify</h1></li>
+<li><p>进入<a href="">netlify</a>网站点击github如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/07/f6060b926a15ab9e.png" alt=""></p>
+</li>
+<li>选择上面github仓库，配置成功后自动生成网站。</li>
+<li>修改netlify域名及解析自己的域名并开启https  <blockquote>
+<p>netlify自动生成的域名不方便记忆，修改后netlify的域名是<a href="https://www.****.netlify.com">https://www.****.netlify.com</a><br>所有的配置都在setting下面</p>
+</blockquote>
+</li>
+</ol>
+<p><img data-src="https://i.bmp.ovh/imgs/2019/07/a1aad731f1137789.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>hugo</tag>
+        <tag>netlify</tag>
+        <tag>网站搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用termux搭建wordpress网站</title>
+    <url>/posts/371af598.html</url>
+    <content><![CDATA[<h1 id="wordpress介绍"><a href="#wordpress介绍" class="headerlink" title="wordpress介绍"></a>wordpress介绍</h1><p>&emsp;&emsp; WordPress 是一种使用 PHP 语言和 MySQL 数据库开发的开源、免费的 Blog（博客，网志）引擎，用户可以在支持 PHP，MySQL 数据库的服务器上建立自己的 Blog。  </p>
+<h2 id="LNMP方案"><a href="#LNMP方案" class="headerlink" title="LNMP方案 "></a>LNMP方案 </h2><p>Linux nginx mysql php</p>
+<h1 id="安装配置数据库MYSQL"><a href="#安装配置数据库MYSQL" class="headerlink" title="安装配置数据库MYSQL"></a>安装配置数据库MYSQL</h1><p>MariaDB 数据库管理系统是 MySQL 的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。</p>
+<ol>
+<li>安装 mariadb<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install mariadb</span><br></pre></td></tr></table></figure>
+~~2. 安装基本数据<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql_install_db</span><br></pre></td></tr></table></figure></li>
+<li>启动 mariadb 服务修改密码后续使用必须开启后台服务否则报错。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysqld</span><br></pre></td></tr></table></figure>
+如果提示错误没有my.cnf.d文件夹下面创建创建文件夹<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir $PREFIX&#x2F;etc&#x2F;my.cnf.d</span><br></pre></td></tr></table></figure>
+需要在次初始化数据库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql_install_db</span><br></pre></td></tr></table></figure>
+直接mysqld退出后必须重新启动才能使用，可以通过tmux来管理就不需要重启了<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tmux new -s mysql</span><br></pre></td></tr></table></figure>
+启动数据库服务器<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysqld</span><br></pre></td></tr></table></figure>
+4.打开一个新窗口修改密码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
+输入当前输入密码<br>因为是空密码, 这里默认 回车<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Enter current password for root (enter for none):</span><br></pre></td></tr></table></figure>
+设置新密码<br>这里设置新的root密码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Set root password? [Y&#x2F;n] y</span><br><span class="line">New password:</span><br><span class="line">Re-enter new password:</span><br></pre></td></tr></table></figure>
+其他设置下面根据个人偏好来进行设置,没有绝对的要求<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Remove anonymous users? [Y&#x2F;n] Y                #是否移除匿名用户</span><br><span class="line">Disallow root login remotely? [Y&#x2F;n] n          #是否不允许root远程登录</span><br><span class="line">Remove test database and access to it? [Y&#x2F;n] n #是否移除test数据库</span><br><span class="line">Reload privilege tables now? [Y&#x2F;n] y           #是否重新加载表的权限</span><br></pre></td></tr></table></figure>
+~~</li>
+<li>修改数据库密码<blockquote>
+<p>新版本升级修改密码有了一些变化，具体信息访问<a href="">termux wiki</a></p>
+<h1 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install php</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape>
+
+</blockquote>
+</li>
+</ol>
+<h1 id="配置WordPres"><a href="#配置WordPres" class="headerlink" title="配置WordPres"></a>配置WordPres</h1><ol>
+<li>新建数据库 提示下面*就是之前设置的密码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p*** -e&quot;create database wordpress;show databases;&quot;</span><br></pre></td></tr></table></figure></li>
+<li>下载解压 wordpress<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;cn.wordpress.org&#x2F;wordpress-5.0.3-zh_CN.tar.gz</span><br><span class="line">tar -zxvf wordpress-5.0.3-zh_CN.tar.gz</span><br></pre></td></tr></table></figure></li>
+<li>进入wordpress文件夹<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd wordpress</span><br></pre></td></tr></table></figure></li>
+<li>配置wp -config<br>图下是设置需要修改数据库名用户名和密码<br><img data-src="01.jpg" alt=""></li>
+<li>浏览器输入172.0.0.1:9000登录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php -S 127.0.0.1:9000</span><br></pre></td></tr></table></figure>
+设置配置文件用户名密码<br><img data-src="https://i.bmp.ovh/imgs/2019/02/b961fded72875694.jpg" alt=""><br>然后配置网站标题用户名密码登录，详细内容这里就不做演示了。</li>
+</ol>
+<h1 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install nginx</span><br></pre></td></tr></table></figure>
+<h1 id="安装模拟root环境"><a href="#安装模拟root环境" class="headerlink" title="安装模拟root环境"></a>安装模拟root环境</h1><p>由于termux的特殊性，nginx和php-fpm的修改都必须在模拟root环境下，才能成功。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install proot</span><br></pre></td></tr></table></figure></p>
+<h2 id="进入模拟root模式"><a href="#进入模拟root模式" class="headerlink" title="进入模拟root模式"></a>进入模拟root模式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">termux-chroot</span><br></pre></td></tr></table></figure>
+<h1 id="修改nginx"><a href="#修改nginx" class="headerlink" title="修改nginx"></a>修改nginx</h1><blockquote>
+<p>termux必须就模拟root环境下修改配置，找到下面两部分，只需要修改如下两部分就可以了，<strong>非常重要的是一定要取消注释(删除前面的#号希望可以帮到小白用户)</strong>   </p>
+</blockquote>
+<p>第一部分</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       8080;</span><br><span class="line">        server_name  localhost;</span><br><span class="line"></span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs&#x2F;host.access.log  main;</span><br><span class="line"></span><br><span class="line">        location &#x2F; &#123;</span><br><span class="line">            root   &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress;</span><br><span class="line">            index  index.html index.htm index.php;</span><br></pre></td></tr></table></figure>
+<p>第二部分<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">location ~ \.php$ &#123;</span><br><span class="line">            root           html;</span><br><span class="line">            fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">            fastcgi_index  index.php;</span><br><span class="line">            fastcgi_param  SCRIPT_FILENAME  &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress$fastcgi_script_name;</span><br><span class="line">            include        fastcgi_params;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装php-fpm"><a href="#安装php-fpm" class="headerlink" title="安装php-fpm"></a>安装php-fpm</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install php-fpm</span><br></pre></td></tr></table></figure>
+<p>修改必须在模拟root环境中修改<br><a href="### 安装模拟root">返回进入模拟root环境</a></p>
+<h2 id="4-修改php-fpm"><a href="#4-修改php-fpm" class="headerlink" title="4. 修改php-fpm"></a>4. 修改php-fpm</h2><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">listen &#x3D; &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;usr&#x2F;var&#x2F;run&#x2F;php-fpm.sock</span><br></pre></td></tr></table></figure>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">listen &#x3D; 127.0.0.1:9000</span><br></pre></td></tr></table></figure>
+<h2 id="启动测试"><a href="#启动测试" class="headerlink" title="启动测试"></a>启动测试</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">termux-chroot</span><br><span class="line">php-fpm</span><br></pre></td></tr></table></figure>
+<p>如果没有报错就没有问题，跳过下面步骤；有报错继续向下看。</p>
+<h3 id="问题处理"><a href="#问题处理" class="headerlink" title="问题处理"></a>问题处理</h3><blockquote>
+<p>如果如下报错，可以说如果不修改一定有报错，这个问题困扰了我好久，通过搜索反复测试，最终解决。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[07-Jul-2019 00:22:28] NOTICE: [pool www] &#39;user&#39; directive is ignored when FPM is not running as root</span><br><span class="line">[07-Jul-2019 00:22:28] NOTICE: [pool www] &#39;group&#39; directive is ignored when FPM is not running as root</span><br><span class="line">[07-Jul-2019 00:22:28] ERROR: unable to bind listening socket for address &#39;127.0.0.1:9999&#39;: Address already in use (98)</span><br><span class="line">[07-Jul-2019 00:22:28] ERROR: FPM initialization failed</span><br></pre></td></tr></table></figure><br>解决办法是在<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">user &#x3D; nobody</span><br><span class="line">group &#x3D; nobody</span><br></pre></td></tr></table></figure><br>前面加上分号<strong>当然是英文模式下输入</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">;user &#x3D; nobody</span><br><span class="line">;group &#x3D; nobody</span><br></pre></td></tr></table></figure><br>OK😊问题解决</p>
+</blockquote>
+<h2 id="5-启动"><a href="#5-启动" class="headerlink" title="5. 启动"></a>5. 启动</h2><h2 id="启动数据库服务器"><a href="#启动数据库服务器" class="headerlink" title="启动数据库服务器"></a>启动数据库服务器</h2><h2 id="新建一个MYSQL服务"><a href="#新建一个MYSQL服务" class="headerlink" title="新建一个MYSQL服务"></a>新建一个MYSQL服务</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tmux new -s MYSQL</span><br></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysqld</span><br></pre></td></tr></table></figure>
+<h3 id="在新窗口进入模拟人root模式"><a href="#在新窗口进入模拟人root模式" class="headerlink" title="在新窗口进入模拟人root模式"></a>在新窗口进入模拟人root模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">termux-chroot</span><br></pre></td></tr></table></figure>
+<h3 id="3-启动nginx和php-fpm"><a href="#3-启动nginx和php-fpm" class="headerlink" title="3. 启动nginx和php-fpm"></a>3. 启动nginx和php-fpm</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php-fpm</span><br><span class="line">nginx</span><br></pre></td></tr></table></figure>
+<h2 id="进入安装界面"><a href="#进入安装界面" class="headerlink" title="进入安装界面"></a>进入安装界面</h2><p>在浏览器输入如下地址进入安装界面  </p>
+<p><a href="http://127.0.0.1:8080/wp-admin/setup-config.php">http://127.0.0.1:8080/wp-admin/setup-config.php</a></p>
+<h2 id="LCMP方案"><a href="#LCMP方案" class="headerlink" title="LCMP方案 "></a>LCMP方案 </h2><h1 id="安装caddy"><a href="#安装caddy" class="headerlink" title="安装caddy"></a>安装caddy</h1><blockquote>
+<p>caddy是go语言编写的服务器程序，以高效简捷著称；配置简单易用性强。</p>
+</blockquote>
+<p>caddy官方网站:<a href="https://caddyserver.com/">https://caddyserver.com/</a><br>脚本安装caddy<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;getcaddy.com | bash -s personal</span><br></pre></td></tr></table></figure><br>配置caddy配置文件Caddyfile<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim Caddyfile</span><br></pre></td></tr></table></figure><br>按i输入如下配置<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># WordPress</span><br><span class="line">:8080 &#123;</span><br><span class="line">#tls admin@example.com</span><br><span class="line">root &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress</span><br><span class="line"></span><br><span class="line">gzip</span><br><span class="line">fastcgi &#x2F; 127.0.0.1:9000 php</span><br><span class="line">    rewrite &#123;</span><br><span class="line">        if &#123;path&#125; not_match ^\&#x2F;wp-admin</span><br><span class="line">        to &#123;path&#125; &#123;path&#125;&#x2F; &#x2F;index.php?_url&#x3D;&#123;uri&#125;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p><a href="# 安装配置数据库MYSQL">返回数据库安装</a>  </p>
+<h1 id="安装php-fpm-1"><a href="#安装php-fpm-1" class="headerlink" title="安装php-fpm"></a>安装php-fpm</h1><blockquote>
+<p>php-fpm配置和之前相同。  </p>
+</blockquote>
+<p><a href="# 安装php-fpm">返回查看php-fpm配置</a></p>
+<h1 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h1><p><a href="# 安装PHP">返回php安装</a></p>
+<h1 id="WordPres配置"><a href="#WordPres配置" class="headerlink" title="WordPres配置"></a>WordPres配置</h1><p><a href="# 配置WordPres">返回WordPres配置</a></p>
+<h1 id="启动-1"><a href="#启动-1" class="headerlink" title="启动"></a>启动</h1><h2 id="启动数据库"><a href="#启动数据库" class="headerlink" title="启动数据库"></a>启动数据库</h2><p><a href="# 启动数据库服务器">返回启动数据库</a></p>
+<h2 id="启动caddy"><a href="#启动caddy" class="headerlink" title="启动caddy"></a>启动caddy</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">caddy</span><br></pre></td></tr></table></figure>
+<p>进入模拟root模式</p>
+<p><a href="# 安装模拟root环境">返回进入模拟root模式</a><br>在模拟root模式下启动php-fpm<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php-fpm</span><br></pre></td></tr></table></figure></p>
+<h1 id="进入安装界面-1"><a href="#进入安装界面-1" class="headerlink" title="进入安装界面"></a>进入安装界面</h1><p><a href="http://127.0.0.1:8080/wp-admin/setup-config.php">http://127.0.0.1:8080/wp-admin/setup-config.php</a></p>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>wordpress</tag>
+        <tag>网站</tag>
+        <tag>博客</tag>
+        <tag>mysql</tag>
+        <tag>php</tag>
+        <tag>nginx</tag>
+        <tag>caddy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WireGuard的使用与分享</title>
+    <url>/posts/1bd1d3ff.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; WireGuard是国外开发的一个高速翻墙工具，没有中文，但是非常简单好用，现在推荐给大家<br>1.注册AzireVPN账号：<a href="https://www.azirevpn.com/manager/auth/login，只需要填写用户名USERNAME和密码PASSWORD即可，可以不填Email，这才是注重隐私的VPN供应商">https://www.azirevpn.com/manager/auth/login，只需要填写用户名USERNAME和密码PASSWORD即可，可以不填Email，这才是注重隐私的VPN供应商</a><br><del>2.下载配置文件：<a href="https://www.azirevpn.com/cfg/wireguard，在这个网址填写注册的用户名密码，点Download">https://www.azirevpn.com/cfg/wireguard，在这个网址填写注册的用户名密码，点Download</a> Configuration。目前提供了加拿大多伦多(azirevpn-ca1)，西班牙马拉加(azirevpn-es1)，瑞典斯德哥尔摩(azirevpn-se1)，英国伦敦(azirevpn-uk1)，美国迈阿密(azirevpn-us1)这5个节点</del>之前有免费体验，现在只能购买了。</p>
+<p><escape><a id="more"></a></escape><br>3.<br>安装WireGuard Android客户端，Play下载地址：<a href="https://play.google.com/store/apps/details?id=com.wireguard.android">https://play.google.com/store/apps/details?id=com.wireguard.android</a><br>4.导入配置文件：把之前下载的配置文件传到手机里，手机上打开WireGuard客户端，点右下角加号，选择第一个Create from file or archive，点选传到手机里的配置文件。这时直接点选某个配置文件即可连接VPN，建议选择uk1服务器<br>5.WireGuard客户端可以允许部分应用绕过VPN，打开WireGuard，点击一个节点配置，在右上角点击铅笔按钮，在中间有蓝色的0 EXCLUDED APPLICATIONS，点击后进入APP排除设置，勾选某个APP就是让这个APP不走VPN通道。选择完成后点右下角蓝色SET EXCLUSIONGS，然后点配置界面右上角的保存按钮即可。<br>6.WireGuard Android客户端支持快捷设置面板功能。即在下拉通知栏中可以添加WireGuard快捷设置</p>
+]]></content>
+      <categories>
+        <category>软件工具</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+        <tag>谷歌</tag>
+        <tag>翻墙</tag>
+        <tag>安卓</tag>
+        <tag>WireGuard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客的搭建与备份</title>
+    <url>/posts/7a49eb42.html</url>
+    <content><![CDATA[<h1 id="一、搭建"><a href="#一、搭建" class="headerlink" title="一、搭建"></a>一、搭建</h1><p>====<br>&emsp;&emsp; Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。hexo 博客在Linux系统中搭建是非常简单的，在WIN系统中比较复杂，我们接触的手机📱永远要比电脑的时间要多那么我们可以在安卓手机上使用termux来搭建，这样随时随地都可以写做和发表文章。</p>
+<h2 id="1-下载termux"><a href="#1-下载termux" class="headerlink" title="1. 下载termux"></a>1. 下载termux</h2><ol>
+<li>下载termux可以在谷歌商店里面下载，但是想要进入谷歌商店需要翻墙，想了解翻墙教程可以去看一下我之前的文章<a href="https://pzb568.github.io/2018/11/08/ss%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E5%8F%8A%E4%BD%BF%E7%94%A8/">ss系列软件分享及使用</a> <a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">v2ray的使用与分享</a>或者直接下载网盘分享的termux。 点击<a href="https://www.lanzous.com/i4935gh">下载</a></li>
+<li>进入并更新termux，第一次进入需要等几分钟出现命令界面然后输入<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg update</span><br></pre></td></tr></table></figure>
+如果感觉键位太少可以看之前的文章<a href="https://pzb568.github.io/2019/02/26/termux0.66%E6%B7%BB%E5%8A%A0%E5%B8%B8%E7%94%A8%E6%8C%89%E9%94%AE/">修改添加常用键</a><h2 id="2-安装必须组件和hexo"><a href="#2-安装必须组件和hexo" class="headerlink" title="2. 安装必须组件和hexo"></a>2. 安装必须组件和hexo</h2></li>
+<li>安装 nodejs git openssh必须软件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install nodejs git openssh</span><br></pre></td></tr></table></figure></li>
+<li>安装hexo<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li>初始化新建一个叫blog的文件夹<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure></li>
+<li>进入blog文件夹<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure></li>
+<li>安装npm 核心组件支持<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2 id="3-下载主题并配置"><a href="#3-下载主题并配置" class="headerlink" title="3. 下载主题并配置"></a>3. 下载主题并配置</h2></li>
+<li>下载主题，hexo的主题非常丰富可以去<a href="https://hexo.io/themes/">官方主题</a>下载；下面有演示我使用的主题<a href="https://github.com/theme-next/hexo-theme-next">next</a><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
+<li>在站点配置文件_config.yml开启next主题可以下载<a href="https://www.lanzous.com/i3w2y0b">quickedit</a>来编辑打开位于/data/data/com.termux/files/home/blog文件夹下_config.yml文件查找<strong>theme:</strong>修改theme: 空格next。具体的站点和主题信息配置请自行去<a href="https://hexo.io/zh-cn/">hexo</a>和<a href="http://theme-next.iissnan.com/">next主题</a>文档查看</li>
+<li>启动本地服务器查看<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="4-配置ssh密钥及github或者gitee部署"><a href="#4-配置ssh密钥及github或者gitee部署" class="headerlink" title="4 . 配置ssh密钥及github或者gitee部署"></a>4 . 配置ssh密钥及github或者gitee部署</h2></li>
+<li>先成<strong>ssh-keygen</strong>密钥<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></li>
+<li>注册<a href="www.gitee.com">gitee</a>或者<a href="www.github.com">github</a>帐号并新建一分项目。gitee项目名即是网站域名部署成功后需要开启gitee page；github项目名为用户名.github.io部署成功后<a href="https://用户名.github.io会自动生命github">https://用户名.github.io会自动生命github</a> page。</li>
+<li>复制ssh公钥到新建的<a href="www.gitee.com">gitee</a>或者<a href="www.github.com">github</a>帐号的设置里面ssh密钥并保存。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat .ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+<li>验证ssh是否连接成功</li>
+<li>gitee帐号验证<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure></li>
+<li>github账号验证<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h2 id="5-生成及部署"><a href="#5-生成及部署" class="headerlink" title="5. 生成及部署"></a>5. 生成及部署</h2></li>
+<li>清理缓存<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+<li>生成<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></li>
+<li>部署<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+可以简化一步执行<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="二、备份"><a href="#二、备份" class="headerlink" title="二、备份"></a>二、备份</h1><p>   经常在多个平台写博客，或者经常重新安装统、在安卓手机termux里面使用hexo经常刷机，会导致博客及配置文件的的丢失，我的这个博客也丢失了很多次了，最后我想了个办法利用github来备份博客的文件和数据，这样博客的文件和数据永远不会弃失，并且还可以在多个平台同时发布文章。</p>
+<ol>
+<li>在github新建一个叫blog的仓库</li>
+<li><p>在本地博客文件夹创建git版本库，如果有安装git必须先安装git</p>
+</li>
+<li><p>安卓termux 安装git</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install git</span><br></pre></td></tr></table></figure></li>
+<li>Ubuntu安装git<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt install git</span><br></pre></td></tr></table></figure></li>
+<li>archLinux安装git<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -S git</span><br></pre></td></tr></table></figure></li>
+<li>进入需要备份blog目录<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">cd blog</span><br></pre></td></tr></table></figure></li>
+<li>创建版本库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<escape><a id="more"></a></escape><br>这个时候blog的版本库已经创建好了。<br>验证是否成功，如果有一个.git的隐藏文件就说明创建成功。<br>查看隐藏文件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls -a</span><br></pre></td></tr></table></figure></li>
+<li>在github 或者gitee创建项目仓库</li>
+<li>连接上面github创建的仓库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:you name&#x2F;blog.git</span><br></pre></td></tr></table></figure></li>
+<li>添加备份文件source/ themes/ _config.yml scaffolds/ package.json .gitignore 这些文件需要备份<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add source&#x2F; themes&#x2F; _config.yml scaffolds&#x2F; package.json .gitignore</span><br></pre></td></tr></table></figure></li>
+<li>注释备份内容，明确的注释可以回退版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;博客备份&quot;</span><br></pre></td></tr></table></figure></li>
+<li>第一次强制上传文件到github仓库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+这样博客就备份成功了，之后备份直接前面3 `4步，第5部直接使用下面命令就可以了<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h1 id="三、恢复"><a href="#三、恢复" class="headerlink" title="三、恢复"></a>三、恢复</h1></li>
+</ol>
+<h2 id="1-安装博客必要组件"><a href="#1-安装博客必要组件" class="headerlink" title="1. 安装博客必要组件"></a>1. 安装博客必要组件</h2><ol>
+<li>安装coreutils<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install coreutils</span><br></pre></td></tr></table></figure></li>
+<li>安装git<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install git</span><br></pre></td></tr></table></figure></li>
+<li>安装node.js<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install nodejs</span><br></pre></td></tr></table></figure></li>
+<li>安装hexo <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h2 id="2-git-clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示"><a href="#2-git-clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示" class="headerlink" title="2. git clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示"></a>2. git clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone &lt;版本库的网址&gt; &lt;本地目录名&gt; </span><br></pre></td></tr></table></figure></li>
+<li>进入bolg文件夹并安装hexo<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd bolg</span><br><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li>安装npm 组件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3. 安装插件"></a>3. 安装插件</h2></li>
+<li>安装deployer-git <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li>安装搜索功能插件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></li>
+<li>安装Valine评论系统<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install valine --save</span><br></pre></td></tr></table></figure></li>
+<li>文字统计插件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure></li>
+<li>音乐插件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure></li>
+<li>视频插件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
+搞定希望这个教程对你有所帮助。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>git</tag>
+        <tag>hexo搭建</tag>
+        <tag>termux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>termux安装使用you-get下载视频</title>
+    <url>/posts/d8fa7a69.html</url>
+    <content><![CDATA[<h1 id="You-Get简单介绍"><a href="#You-Get简单介绍" class="headerlink" title="You-Get简单介绍"></a>You-Get简单介绍</h1><p>&emsp;&emsp; <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E">you-get</a>是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。</p>
+<h1 id="一、安裝"><a href="#一、安裝" class="headerlink" title="一、安裝"></a>一、安裝</h1><hr>
+<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg update &amp;&amp; pkg upgrade</span><br></pre></td></tr></table></figure>
+<h2 id="2-获取SD卡读写权限"><a href="#2-获取SD卡读写权限" class="headerlink" title="2.获取SD卡读写权限"></a>2.获取SD卡读写权限</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">termux-setup-storage</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装python-ffmpeg"><a href="#3-安装python-ffmpeg" class="headerlink" title="3.安装python ffmpeg"></a>3.安装python ffmpeg</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install python ffmpeg</span><br></pre></td></tr></table></figure>
+<h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install you-get</span><br></pre></td></tr></table></figure>
+<h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install --upgrade you-get</span><br></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a><escape><a id="more"></a></escape></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">you-get -V  </span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">you-get -i http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br> <img data-src="01.jpg" alt=""></p>
+<p><strong>解析</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">you-get -u http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="02.jpg" alt=""><br><strong>下载 </strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">you-get -o &#x2F;sdcard&#x2F;video&#x2F; http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="03.jpg" alt=""><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
+<iframe src="//player.bilibili.com/player.html?aid=24822266&cid=41834559&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>视频</tag>
+        <tag>嗅探</tag>
+        <tag>下载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安卓手机利用termux搭建aria2下载服务</title>
+    <url>/posts/96deb912.html</url>
+    <content><![CDATA[<h1 id="aria2简介"><a href="#aria2简介" class="headerlink" title="aria2简介"></a>aria2简介</h1><p>&emsp;&emsp; Aria2 是一个用于 Linux、Windows 和 Mac OSX 的轻量级、多协议和多源的命令行下载管理器/实用程序。它支持 HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink。aria2 可以通过内置的 JSON-RPC 和 XML-RPC 接口操作。它支持多线程，可以使用多个源或协议下载文件，确实可以加速并尽可能多的完成下载。它非常轻量级，不需要太多的内存和 CPU。我们可以使用它作为 BitTorrent 客户端，因为它有所有你想要的 BitTorrent 客户端的功能。<br>&emsp;&emsp; 我们可以很容易的在所有的 Linux 发行版上安装 aria2 命令行下载器，例如 Debian、 Ubuntu、 Mint、 RHEL、 CentOS、 Fedora、 suse、 openSUSE、 Arch Linux、 Manjaro、 Mageia 等等……只需要输入下面的命令安装即可。对于 CentOS、 RHEL 系统，我们需要开启 uget 或者 RPMForge 库的支持。</p>
+<h1 id="aria2-安装"><a href="#aria2-安装" class="headerlink" title="aria2 安装"></a>aria2 安装</h1><ol>
+<li>Debian、 Ubuntu 和 Mint<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt install aria2</span><br></pre></td></tr></table></figure></li>
+<li>CentOS、 RHEL、 Fedora 21 和更早些的操作系统]<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install aria2</span><br></pre></td></tr></table></figure></li>
+<li>Fedora 22 和 之后的系统<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dnf install aria2</span><br></pre></td></tr></table></figure></li>
+<li>suse 和 openSUSE<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">zypper install wget</span><br></pre></td></tr></table></figure></li>
+<li>Mageia<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">urpmi aria2</span><br></pre></td></tr></table></figure></li>
+<li>Arch Linux<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S aria2</span><br></pre></td></tr></table></figure></li>
+<li>安卓系统termux<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install aria2</span><br></pre></td></tr></table></figure>
+<h1 id="图形化aria2下载"><a href="#图形化aria2下载" class="headerlink" title="图形化aria2下载"></a>图形化aria2下载</h1><h2 id="一、使用Termux在本地搭建Aria2-AriaNg"><a href="#一、使用Termux在本地搭建Aria2-AriaNg" class="headerlink" title="一、使用Termux在本地搭建Aria2+AriaNg"></a>一、使用Termux在本地搭建Aria2+AriaNg</h2></li>
+<li>下载需要的Packages<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg in wget unzip aria2 tmux</span><br></pre></td></tr></table></figure></li>
+<li>下载Caddy<br>这样因为Caddy配置起来比较容易,所以用Caddy当HTTP Server.<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd~</span><br><span class="line">wget -qO- https:&#x2F;&#x2F;getcaddy.com | bash -s personal</span><br></pre></td></tr></table></figure></li>
+<li>下载AriaNg并解压<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;github.com&#x2F;mayswind&#x2F;AriaNg-DailyBuild&#x2F;archive&#x2F;master.zip</span><br><span class="line">unzip master.zip</span><br><span class="line">mv AriaNg-DailyBuild-master AriaNg</span><br><span class="line">rm master.zip</span><br></pre></td></tr></table></figure></li>
+<li>配置Caddy<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd~</span><br><span class="line">vim Caddyfile </span><br></pre></td></tr></table></figure>
+在vim输入（:i编辑,:wq退出并保存）<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:8080 &#123;</span><br><span class="line">root &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;AriaNg</span><br><span class="line">gzip</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>启动<br>输入tmux<br>在新建的窗口中输入 启动Aria2<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2c --enable-rpc --rpc-listen-all&#x3D;true --rpc-allow-origin-all -c</span><br></pre></td></tr></table></figure>
+按Ctrl+b之后再按d返回之前的窗口，将此窗口放在后台执行（输入tmux attach能够重新进入,按Ctrl+b之后再按&amp;关闭当前tmux窗口）<br>返回后启动AriaNg,输入<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd~</span><br><span class="line">caddy</span><br></pre></td></tr></table></figure>
+6.访问<br>打开浏览器地址栏输入<br>127.0.0.1:8080<br><escape><a id="more"></a></escape><br><img data-src="01.jpg" alt=""></li>
+<li>下载BT种文文件需要设置BT服务器<br><a href="https://github.com/ngosang/trackerslist/blob/master/README.md">https://github.com/ngosang/trackerslist/blob/master/README.md</a><br>在ariaNg设置中找到BT设置BT服务器填入以链接中的内容并附上BT服务器<br><a href="https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt">https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt</a><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">udp:&#x2F;&#x2F;62.138.0.158:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;188.241.58.209:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;62.210.79.110:1337&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;185.225.17.100:1337&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;151.80.120.112:2710&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;208.83.20.20:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;184.105.151.164:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;176.113.68.67:8080&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;51.15.40.114:80&#x2F;announce</span><br><span class="line"></span><br><span class="line">http:&#x2F;&#x2F;176.113.71.19:6961&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;176.113.68.66:6961&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;91.216.110.52:451&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;5.206.28.90:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;188.246.227.212:80&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;5.2.79.219:1337&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;5.2.79.22:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;95.211.168.204:2710&#x2F;announce</span><br><span class="line"></span><br><span class="line">http:&#x2F;&#x2F;51.68.122.172:80&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;210.244.71.25:6969&#x2F;announce</span><br><span class="line"></span><br><span class="line">udp:&#x2F;&#x2F;51.38.184.185:6969&#x2F;announce</span><br></pre></td></tr></table></figure>
+<h2 id="二、也可以使用安装网页版webui-aria2"><a href="#二、也可以使用安装网页版webui-aria2" class="headerlink" title="二、也可以使用安装网页版webui-aria2"></a>二、也可以使用安装网页版webui-aria2</h2></li>
+<li>下载网页版webui-aria2<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ziahamza&#x2F;webui-aria2.git</span><br></pre></td></tr></table></figure></li>
+<li>打开运行<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd webui-aria2</span><br></pre></td></tr></table></figure></li>
+<li>启动<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node node-server.js</span><br></pre></td></tr></table></figure></li>
+<li>输入提示的网址打开</li>
+</ol>
+<p>当然以上图形化对于普通人是非常有好的，如果不想麻烦就直接使用命令下载更加方便。</p>
+<h2 id="也可以安装图形界面直接命令下载"><a href="#也可以安装图形界面直接命令下载" class="headerlink" title="也可以安装图形界面直接命令下载"></a>也可以安装图形界面直接命令下载</h2><ul>
+<li>命令下载<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2c 链接</span><br></pre></td></tr></table></figure></li>
+<li>断点续传下载<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2c -c 之前下载文件的链接</span><br></pre></td></tr></table></figure></li>
+<li>下载并修改文件名<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2c -o 链接 文件名</span><br></pre></td></tr></table></figure></li>
+<li>下载多个文件<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2c -Z 链接1 链接2</span><br></pre></td></tr></table></figure></li>
+<li>设置线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2 -x 5 链接</span><br></pre></td></tr></table></figure>
+分断下载<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2 -s 16 url</span><br></pre></td></tr></table></figure>
+多线程分断下载<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aria2 -x16 -s 16 url</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>应用软件</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>termux</tag>
+        <tag>下载</tag>
+        <tag>aria2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在termux安装archLinux</title>
+    <url>/posts/65ad595e.html</url>
+    <content><![CDATA[<h1 id="termux安装archLinux"><a href="#termux安装archLinux" class="headerlink" title="termux安装archLinux"></a>termux安装archLinux</h1><h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><ol>
+<li>git下载</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install git</span><br><span class="line">cd &amp;&amp; git clone https:&#x2F;&#x2F;github.com&#x2F;sdrausty&#x2F;TermuxArch</span><br><span class="line">bash TermuxArch&#x2F;setupTermuxArch.sh</span><br></pre></td></tr></table></figure>
+<ol>
+<li>如果太慢可以使用wget下载<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> pkg install wget</span><br><span class="line"> </span><br><span class="line">wget https:&#x2F;&#x2F;sdrausty.github.io&#x2F;TermuxArch&#x2F;setupTermuxArch.sh</span><br></pre></td></tr></table></figure>
+<h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash setupTermuxArch.sh</span><br></pre></td></tr></table></figure>
+<h2 id="三、启动"><a href="#三、启动" class="headerlink" title="三、启动"></a>三、启动</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">startarch</span><br></pre></td></tr></table></figure>
+<h2 id="四-修改源及更新"><a href="#四-修改源及更新" class="headerlink" title="四.修改源及更新"></a>四.修改源及更新</h2>进入arch文件夹<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd arch</span><br></pre></td></tr></table></figure>
+下面安装vim编辑工具<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -S vim</span><br></pre></td></tr></table></figure>
+修改源为清华大学<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim etc&#x2F;pacman.d&#x2F;mirrorlist</span><br></pre></td></tr></table></figure>
+在这上面添加<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Server &#x3D; https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;archlinuxarm&#x2F;aarch64&#x2F;$repo</span><br></pre></td></tr></table></figure>
+如下图<br><img data-src="https://i.bmp.ovh/imgs/2018/12/fee7293b9d02f4bb.jpg" alt=""><br>按esc 键 :wq 保存并退出<h2 id="四、更新系统"><a href="#四、更新系统" class="headerlink" title="四、更新系统"></a>四、更新系统</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -Syyu</span><br></pre></td></tr></table></figure>
+<h2 id="五、安装常用软件"><a href="#五、安装常用软件" class="headerlink" title="五、安装常用软件"></a>五、安装常用软件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pacman -S python</span><br><span class="line">pacman -S openssh</span><br><span class="line">pacman -S git</span><br><span class="line">pacman -S vim</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>应用软件</category>
+        <category>安卓系统</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>archLinux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习程序开发的神器Jupyter notebook</title>
+    <url>/posts/604fe14.html</url>
+    <content><![CDATA[<h1 id="Jupyter-notebook简介"><a href="#Jupyter-notebook简介" class="headerlink" title="Jupyter notebook简介"></a>Jupyter notebook简介</h1><p>&emsp;&emsp; Jupyter notebook（又称 IPython notebook），支持运行超过 40 种编程语言。Python 的一个强大的模块, 成功安装的话可以实现比caddy的效果, 支持web下的终端操作, 支持代码高亮运行。</p>
+<p><escape><a id="more"></a></escape></p>
+<h1 id="Jupyter-notebook安装"><a href="#Jupyter-notebook安装" class="headerlink" title="Jupyter notebook安装"></a>Jupyter notebook安装</h1><ol>
+<li>安装python 编译库<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pkg install python</span><br><span class="line">pkg install python-dev</span><br></pre></td></tr></table></figure></li>
+<li>用python封装包安装<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install jupyter</span><br></pre></td></tr></table></figure></li>
+<li>启动<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
+如下图<br>复制最下面的网址到浏览器<br><img data-src="1.jpg" alt=""><br>然后就可以开始尽情的玩耍了<br><img data-src="2.jpg" alt=""><h1 id="Jupyter-notebook卸载"><a href="#Jupyter-notebook卸载" class="headerlink" title="Jupyter notebook卸载"></a>Jupyter notebook卸载</h1>使用<strong>pip uninstall jupyter</strong>是无法卸载的必须使用下面方法。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pip-autoremove</span><br><span class="line">pip-autoremove jupyter -y</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程开发</category>
+        <category>安卓系统</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>Jupyter notebook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ss系列软件分享及使用</title>
+    <url>/posts/2d957091.html</url>
+    <content><![CDATA[<p>&emsp;&emsp; ss是非常流行的翻墙软件，涵盖所有平台，安全性不如之后会介绍的v2ray，都是速度非常快。</p>
+<h1 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h1><h2 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h2><p>1.安卓<br>推荐使用ssrr，我们给出下载地址<br><a href="https://github.com/shadowsocksrr/shadowsocksr-android/releases">https://github.com/shadowsocksrr/shadowsocksr-android/releases</a></p>
+<h2 id="苹果"><a href="#苹果" class="headerlink" title="苹果"></a>苹果</h2><p>1.现在软件，苹果的封闭特质，所有的VPN的软件都被下架，现在我找到一款可以使用的软件，不过这个软件只能使用ss类型的节点地址。<br>下面这个链接里面有各个平台可以使用的软件及使用方法，有需要的可以下载下来研究一下，包括WIN系统 MAC系统 安卓系统 iOS系统版本的ss安装方法就不演示了。<br><a href="http://diannaobos.iok.la:81/cdn/">http://diannaobos.iok.la:81/cdn/</a></p>
+<p><escape><a id="more"></a></escape><br> <a href="https://itunes.apple.com/cn/app/ssrconnectpro/id1272045249?mt=8">https://itunes.apple.com/cn/app/ssrconnectpro/id1272045249?mt=8</a></p>
+<h1 id="路由规则"><a href="#路由规则" class="headerlink" title="路由规则"></a>路由规则</h1><blockquote>
+<p>连接成功后使用规则，不要代理的网站直接连接还可以去广告，github上有分享规则<a href="https://github.com/ACL4SSR/ACL4SSR">https://github.com/ACL4SSR/ACL4SSR</a></p>
+<ul>
+<li>选择服务器<strong>功能设置</strong>下路由中选择<strong>自定义ACL文件</strong>输入如下地址<br><a href="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl">https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl</a><h1 id="节点导入"><a href="#节点导入" class="headerlink" title="节点导入"></a>节点导入</h1>复制下面分享的节点 + 然后选择剪切板导入<br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/fd887c449c50c370.jpg" alt=""><br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/02f27578fd363637.jpg" alt=""></li>
+</ul>
+</blockquote>
+<h1 id="节点分享"><a href="#节点分享" class="headerlink" title="节点分享"></a>节点分享</h1><ol>
+<li>github上分享的教程及点及免代理直接访问谷歌网站<a href="https://github.com/selierlin/Share-SSR-V2ray">https://github.com/selierlin/Share-SSR-V2ray</a></li>
+<li>本站节点分享，以下节点不定期更新；更新时间可以参考本文的更新时间；有任何问题请评论留言，你的留言是我继续更新的动力。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzAzLTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WXlGNXB5SUxlV01oZVd0b3kzbGpZcmx1YlF0NVl5RjVibTA2WU85NzctOSZncm91cD02TGVENVlxbzVhMlg2SXFD</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTExLTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1URW82TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzA4LTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1UQW82TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTEyLTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1USW82TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzA0LTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU5pam90NFBsaXFqbHJaZm9pb0lwJmdyb3VwPTZMZUQ1WXFvNWEyWDZJcUM</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTEzLTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1UTW82TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzAxLTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01NEs1NVlXczVMeVg3Ny05Jmdyb3VwPTZMZUQ1WXFvNWEyWDZJcUM</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTE2LTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1UWW82TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzAyLTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz1kbmc2TVRjMk56TTJNakk0TWprJmdyb3VwPTZMZUQ1WXFvNWEyWDZJcUM</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzA2LTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU9Dam90NFBsaXFqbHJaZm9pb0lwJmdyb3VwPTZMZUQ1WXFvNWEyWDZJcUM</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTE4LTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1UZ282TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotcDFoMzA3LTU4NC56aHpmZ2cubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU9Tam90NFBsaXFqbHJaZm9pb0lwJmdyb3VwPTZMZUQ1WXFvNWEyWDZJcUM</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTE0LTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1UUW82TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br><span class="line">ssr:&#x2F;&#x2F;c3NyLmlwdjQuamotajFoMTE3LTU4NC5oZHRmeGUubmdjc3NkZG5zLmNvbTo1ODQ6YXV0aF9hZXMxMjhfbWQ1OmNoYWNoYTIwLWlldGY6dGxzMS4yX3RpY2tldF9hdXRoOlkyTXVZWGcvP29iZnNwYXJhbT1kWEJrWVhSbExtMXBZM0p2YzI5bWRDNWpiMjAmcHJvdG9wYXJhbT1NVGt6TVRNek9rWlpUbkZ0YkEmcmVtYXJrcz01WVdONkxTNU1UY282TGVENVlxbzVhMlg2SXFDS1EmZ3JvdXA9NkxlRDVZcW81YTJYNklxQw</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络应用</category>
+      </categories>
+      <tags>
+        <tag>谷歌</tag>
+        <tag>翻墙</tag>
+        <tag>v2ray</tag>
+        <tag>SSR免费节点</tag>
+        <tag>节点分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>谷歌系列浏览器插件翻墙设置及分享</title>
+    <url>/posts/2dde8310.html</url>
+    <content><![CDATA[<h1 id="下载及使用"><a href="#下载及使用" class="headerlink" title="下载及使用"></a>下载及使用</h1><h2 id="1-下载安装浏览器插件"><a href="#1-下载安装浏览器插件" class="headerlink" title="1 . 下载安装浏览器插件"></a>1 . 下载安装浏览器插件</h2><p>所有Google系列的浏览器和火狐浏览器都可以下载安用SwitchyOmega插件，点击<a href="https://www.switchyomega.com">SwitchyOmega</a>官方网站下载或者去github <a href="https://github.com/FelisCatus/SwitchyOmega">SwitchyOmega</a>项目里面下载。</p>
+<h2 id="2-输入服务器地址及服务器类型和端口"><a href="#2-输入服务器地址及服务器类型和端口" class="headerlink" title="2. 输入服务器地址及服务器类型和端口"></a>2. 输入服务器地址及服务器类型和端口</h2><p>新建情景模式名称<strong>代理服务器</strong>输入下面分享的服务器类型地址端口；有更多的配置方法及详细信息可以参考官方网站。</p>
+<p><escape><a id="more"></a></escape></p>
+<h1 id="代理服务器分享"><a href="#代理服务器分享" class="headerlink" title="代理服务器分享"></a>代理服务器分享</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">代理模式</th>
+<th style="text-align:center">服务器</th>
+<th style="text-align:right">端口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">shop.cdn-aliyun.com</td>
+<td style="text-align:right">443</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">uup.co.54honxd.club</td>
+<td style="text-align:right">443</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">oo.54honxd.club</td>
+<td style="text-align:right">443</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">hkbn3.ghelper.net</td>
+<td style="text-align:right">443</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">uup.co.54honxd.club</td>
+<td style="text-align:right">443</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">bv1.innlym.me</td>
+<td style="text-align:right">443</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTPS</td>
+<td style="text-align:center">bv2.innlym.me</td>
+<td style="text-align:right">443</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><del>| HTTPS | www.51netflix.com | 80 |<br>| HTTPS | www.tcpbbr.net | 443 |<br>| HTTPS | www.pickdown.net | 443 |<br>| HTTPS | stunnel.co | 443 |<br>HTTPS www.onhop.net:443<br>HTTPS hkt.21t.xyz:443<br>HTTPS uk.tcpbbr.net:443<br>HTTPS us.tcpbbr.net:443<br>HTTPS us.onhop.net:443<br>HTTPS jp2.tcpbbr.net:443<br>HTTPS jp1.tcpbbr.net:443<br>HTTPS ru.onhop.net:443<br>HTTPS ru.tcpbbr.net:443<br>HTTPS us1.tcpbbr.net:443<br>HTTPS us.21t.xyz:443<br>HTTPS wtt.21t.xyz:443<br>HTTPS gia.onhop.net:443<br>HTTPS us2.tcpbbr.net:443<br>HTTPS www.copyplay.net:443<br>HTTPS hgc.21t.xyz:443<br>HTTPS 101.89.134.159:1080<br>HTTPS 103.43.71.192: 8080<br>HTTPS 119.29.174.35:1080<br>PTTPS 120.26.136.200: 1080<br>HTTPS 121.41.102.126:1080<br>HTTPS 45.77.242.117: 1080<br>HTTPS 47.52.18.115: 1080<br>HTTPS 47.52.32.253:2016</del></p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><div class="note success"><p>由于长时间没有更新，几乎所有的代理服务器都已经失效，后续有时间我会继续更新；大家可以使用<a href="https://pzb568.github.io/2018/11/08/ss%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E5%8F%8A%E4%BD%BF%E7%94%A8/">ss</a>或者<a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/" title="v2ray">v2ray</a>这两个我经常在更新。</p>
+</div>]]></content>
+      <categories>
+        <category>科学上网</category>
+      </categories>
+      <tags>
+        <tag>翻墙</tag>
+        <tag>谷歌浏览器</tag>
+        <tag>网络长城</tag>
+      </tags>
+  </entry>
+</search>
