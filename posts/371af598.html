@@ -404,7 +404,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>3.7k</span>
+      <span>3.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -426,62 +426,102 @@ show_date_time();
 <h2 id="LNMP方案"><a href="#LNMP方案" class="headerlink" title="LNMP方案 "></a>LNMP方案 </h2><p>Linux nginx mysql php</p>
 <h1 id="安装配置数据库MYSQL"><a href="#安装配置数据库MYSQL" class="headerlink" title="安装配置数据库MYSQL"></a>安装配置数据库MYSQL</h1><p>MariaDB 数据库管理系统是 MySQL 的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。</p>
 <ol>
-<li>安装 mariadb<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install mariadb</span><br></pre></td></tr></table></figure>
-~~2. 安装基本数据<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_install_db</span><br></pre></td></tr></table></figure></li>
-<li>启动 mariadb 服务修改密码后续使用必须开启后台服务否则报错。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld</span><br></pre></td></tr></table></figure>
-如果提示错误没有my.cnf.d文件夹下面创建创建文件夹<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir $PREFIX&#x2F;etc&#x2F;my.cnf.d</span><br></pre></td></tr></table></figure>
-需要在次初始化数据库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_install_db</span><br></pre></td></tr></table></figure>
-直接mysqld退出后必须重新启动才能使用，可以通过tmux来管理就不需要重启了<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux new -s mysql</span><br></pre></td></tr></table></figure>
-启动数据库服务器<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld</span><br></pre></td></tr></table></figure>
-4.打开一个新窗口修改密码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
-输入当前输入密码<br>因为是空密码, 这里默认 回车<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter current password for root (enter for none):</span><br></pre></td></tr></table></figure>
-设置新密码<br>这里设置新的root密码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Set root password? [Y&#x2F;n] y</span><br><span class="line">New password:</span><br><span class="line">Re-enter new password:</span><br></pre></td></tr></table></figure>
-其他设置下面根据个人偏好来进行设置,没有绝对的要求<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Remove anonymous users? [Y&#x2F;n] Y                #是否移除匿名用户</span><br><span class="line">Disallow root login remotely? [Y&#x2F;n] n          #是否不允许root远程登录</span><br><span class="line">Remove test database and access to it? [Y&#x2F;n] n #是否移除test数据库</span><br><span class="line">Reload privilege tables now? [Y&#x2F;n] y           #是否重新加载表的权限</span><br></pre></td></tr></table></figure>
+<li>安装 mariadb<pre class="line-numbers language-none"><code class="language-none">pkg install mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+~~2. 安装基本数据<pre class="line-numbers language-none"><code class="language-none">mysql_install_db<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>启动 mariadb 服务修改密码后续使用必须开启后台服务否则报错。<pre class="line-numbers language-none"><code class="language-none">mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+如果提示错误没有my.cnf.d文件夹下面创建创建文件夹<pre class="line-numbers language-none"><code class="language-none">mkdir $PREFIX&#x2F;etc&#x2F;my.cnf.d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+需要在次初始化数据库<pre class="line-numbers language-none"><code class="language-none">mysql_install_db<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+直接mysqld退出后必须重新启动才能使用，可以通过tmux来管理就不需要重启了<pre class="line-numbers language-none"><code class="language-none">tmux new -s mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+启动数据库服务器<pre class="line-numbers language-none"><code class="language-none">mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+4.打开一个新窗口修改密码<pre class="line-numbers language-none"><code class="language-none">mysql_secure_installation<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+输入当前输入密码<br>因为是空密码, 这里默认 回车<pre class="line-numbers language-none"><code class="language-none">Enter current password for root (enter for none):<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+设置新密码<br>这里设置新的root密码<pre class="line-numbers language-none"><code class="language-none">Set root password? [Y&#x2F;n] y
+New password:
+Re-enter new password:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+其他设置下面根据个人偏好来进行设置,没有绝对的要求<pre class="line-numbers language-none"><code class="language-none">Remove anonymous users? [Y&#x2F;n] Y                #是否移除匿名用户
+Disallow root login remotely? [Y&#x2F;n] n          #是否不允许root远程登录
+Remove test database and access to it? [Y&#x2F;n] n #是否移除test数据库
+Reload privilege tables now? [Y&#x2F;n] y           #是否重新加载表的权限<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 ~~</li>
 <li>修改数据库密码<blockquote>
 <p>新版本升级修改密码有了一些变化，具体信息访问<a href="">termux wiki</a></p>
-<h1 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install php</span><br></pre></td></tr></table></figure>
+<h1 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h1><pre class="line-numbers language-none"><code class="language-none">pkg install php<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <escape><a id="more"></a></escape>
 
 </blockquote>
 </li>
 </ol>
 <h1 id="配置WordPres"><a href="#配置WordPres" class="headerlink" title="配置WordPres"></a>配置WordPres</h1><ol>
-<li>新建数据库 提示下面*就是之前设置的密码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p*** -e&quot;create database wordpress;show databases;&quot;</span><br></pre></td></tr></table></figure></li>
-<li>下载解压 wordpress<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;cn.wordpress.org&#x2F;wordpress-5.0.3-zh_CN.tar.gz</span><br><span class="line">tar -zxvf wordpress-5.0.3-zh_CN.tar.gz</span><br></pre></td></tr></table></figure></li>
-<li>进入wordpress文件夹<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd wordpress</span><br></pre></td></tr></table></figure></li>
+<li>新建数据库 提示下面*就是之前设置的密码<pre class="line-numbers language-none"><code class="language-none">mysql -uroot -p*** -e&quot;create database wordpress;show databases;&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>下载解压 wordpress<pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;cn.wordpress.org&#x2F;wordpress-5.0.3-zh_CN.tar.gz
+tar -zxvf wordpress-5.0.3-zh_CN.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li>进入wordpress文件夹<pre class="line-numbers language-none"><code class="language-none">cd wordpress<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li>配置wp -config<br>图下是设置需要修改数据库名用户名和密码<br><img data-src="01.jpg" alt=""></li>
-<li>浏览器输入172.0.0.1:9000登录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php -S 127.0.0.1:9000</span><br></pre></td></tr></table></figure>
+<li>浏览器输入172.0.0.1:9000登录<pre class="line-numbers language-none"><code class="language-none">php -S 127.0.0.1:9000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 设置配置文件用户名密码<br><img data-src="https://i.bmp.ovh/imgs/2019/02/b961fded72875694.jpg" alt=""><br>然后配置网站标题用户名密码登录，详细内容这里就不做演示了。</li>
 </ol>
-<h1 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install nginx</span><br></pre></td></tr></table></figure>
-<h1 id="安装模拟root环境"><a href="#安装模拟root环境" class="headerlink" title="安装模拟root环境"></a>安装模拟root环境</h1><p>由于termux的特殊性，nginx和php-fpm的修改都必须在模拟root环境下，才能成功。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install proot</span><br></pre></td></tr></table></figure></p>
-<h2 id="进入模拟root模式"><a href="#进入模拟root模式" class="headerlink" title="进入模拟root模式"></a>进入模拟root模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-chroot</span><br></pre></td></tr></table></figure>
+<h1 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h1><pre class="line-numbers language-none"><code class="language-none">pkg install nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="安装模拟root环境"><a href="#安装模拟root环境" class="headerlink" title="安装模拟root环境"></a>安装模拟root环境</h1><p>由于termux的特殊性，nginx和php-fpm的修改都必须在模拟root环境下，才能成功。<br><pre class="line-numbers language-none"><code class="language-none">pkg install proot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<h2 id="进入模拟root模式"><a href="#进入模拟root模式" class="headerlink" title="进入模拟root模式"></a>进入模拟root模式</h2><pre class="line-numbers language-none"><code class="language-none">termux-chroot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="修改nginx"><a href="#修改nginx" class="headerlink" title="修改nginx"></a>修改nginx</h1><blockquote>
 <p>termux必须就模拟root环境下修改配置，找到下面两部分，只需要修改如下两部分就可以了，<strong>非常重要的是一定要取消注释(删除前面的#号希望可以帮到小白用户)</strong>   </p>
 </blockquote>
 <p>第一部分</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       8080;</span><br><span class="line">        server_name  localhost;</span><br><span class="line"></span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs&#x2F;host.access.log  main;</span><br><span class="line"></span><br><span class="line">        location &#x2F; &#123;</span><br><span class="line">            root   &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress;</span><br><span class="line">            index  index.html index.htm index.php;</span><br></pre></td></tr></table></figure>
-<p>第二部分<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.php$ &#123;</span><br><span class="line">            root           html;</span><br><span class="line">            fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">            fastcgi_index  index.php;</span><br><span class="line">            fastcgi_param  SCRIPT_FILENAME  &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress$fastcgi_script_name;</span><br><span class="line">            include        fastcgi_params;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="安装php-fpm"><a href="#安装php-fpm" class="headerlink" title="安装php-fpm"></a>安装php-fpm</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install php-fpm</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">server &#123;
+        listen       8080;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs&#x2F;host.access.log  main;
+
+        location &#x2F; &#123;
+            root   &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress;
+            index  index.html index.htm index.php;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>第二部分<br><pre class="line-numbers language-none"><code class="language-none">location ~ \.php$ &#123;
+            root           html;
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress$fastcgi_script_name;
+            include        fastcgi_params;
+        &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h1 id="安装php-fpm"><a href="#安装php-fpm" class="headerlink" title="安装php-fpm"></a>安装php-fpm</h1><pre class="line-numbers language-none"><code class="language-none">pkg install php-fpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改必须在模拟root环境中修改<br><a href="### 安装模拟root">返回进入模拟root环境</a></p>
-<h2 id="4-修改php-fpm"><a href="#4-修改php-fpm" class="headerlink" title="4. 修改php-fpm"></a>4. 修改php-fpm</h2><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listen &#x3D; &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;usr&#x2F;var&#x2F;run&#x2F;php-fpm.sock</span><br></pre></td></tr></table></figure>
-<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listen &#x3D; 127.0.0.1:9000</span><br></pre></td></tr></table></figure>
-<h2 id="启动测试"><a href="#启动测试" class="headerlink" title="启动测试"></a>启动测试</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">termux-chroot</span><br><span class="line">php-fpm</span><br></pre></td></tr></table></figure>
+<h2 id="4-修改php-fpm"><a href="#4-修改php-fpm" class="headerlink" title="4. 修改php-fpm"></a>4. 修改php-fpm</h2><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><pre class="line-numbers language-none"><code class="language-none">listen &#x3D; &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;usr&#x2F;var&#x2F;run&#x2F;php-fpm.sock<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><pre class="line-numbers language-none"><code class="language-none">listen &#x3D; 127.0.0.1:9000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="启动测试"><a href="#启动测试" class="headerlink" title="启动测试"></a>启动测试</h2><pre class="line-numbers language-none"><code class="language-none">termux-chroot
+php-fpm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果没有报错就没有问题，跳过下面步骤；有报错继续向下看。</p>
 <h3 id="问题处理"><a href="#问题处理" class="headerlink" title="问题处理"></a>问题处理</h3><blockquote>
-<p>如果如下报错，可以说如果不修改一定有报错，这个问题困扰了我好久，通过搜索反复测试，最终解决。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[07-Jul-2019 00:22:28] NOTICE: [pool www] &#39;user&#39; directive is ignored when FPM is not running as root</span><br><span class="line">[07-Jul-2019 00:22:28] NOTICE: [pool www] &#39;group&#39; directive is ignored when FPM is not running as root</span><br><span class="line">[07-Jul-2019 00:22:28] ERROR: unable to bind listening socket for address &#39;127.0.0.1:9999&#39;: Address already in use (98)</span><br><span class="line">[07-Jul-2019 00:22:28] ERROR: FPM initialization failed</span><br></pre></td></tr></table></figure><br>解决办法是在<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">user &#x3D; nobody</span><br><span class="line">group &#x3D; nobody</span><br></pre></td></tr></table></figure><br>前面加上分号<strong>当然是英文模式下输入</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">;user &#x3D; nobody</span><br><span class="line">;group &#x3D; nobody</span><br></pre></td></tr></table></figure><br>OK😊问题解决</p>
+<p>如果如下报错，可以说如果不修改一定有报错，这个问题困扰了我好久，通过搜索反复测试，最终解决。<br><pre class="line-numbers language-none"><code class="language-none">[07-Jul-2019 00:22:28] NOTICE: [pool www] &#39;user&#39; directive is ignored when FPM is not running as root
+[07-Jul-2019 00:22:28] NOTICE: [pool www] &#39;group&#39; directive is ignored when FPM is not running as root
+[07-Jul-2019 00:22:28] ERROR: unable to bind listening socket for address &#39;127.0.0.1:9999&#39;: Address already in use (98)
+[07-Jul-2019 00:22:28] ERROR: FPM initialization failed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><br>解决办法是在<br><pre class="line-numbers language-none"><code class="language-none">user &#x3D; nobody
+group &#x3D; nobody<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>前面加上分号<strong>当然是英文模式下输入</strong><br><pre class="line-numbers language-none"><code class="language-none">;user &#x3D; nobody
+;group &#x3D; nobody<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>OK😊问题解决</p>
 </blockquote>
-<h2 id="5-启动"><a href="#5-启动" class="headerlink" title="5. 启动"></a>5. 启动</h2><h2 id="启动数据库服务器"><a href="#启动数据库服务器" class="headerlink" title="启动数据库服务器"></a>启动数据库服务器</h2><h2 id="新建一个MYSQL服务"><a href="#新建一个MYSQL服务" class="headerlink" title="新建一个MYSQL服务"></a>新建一个MYSQL服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux new -s MYSQL</span><br></pre></td></tr></table></figure>
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld</span><br></pre></td></tr></table></figure>
-<h3 id="在新窗口进入模拟人root模式"><a href="#在新窗口进入模拟人root模式" class="headerlink" title="在新窗口进入模拟人root模式"></a>在新窗口进入模拟人root模式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-chroot</span><br></pre></td></tr></table></figure>
-<h3 id="3-启动nginx和php-fpm"><a href="#3-启动nginx和php-fpm" class="headerlink" title="3. 启动nginx和php-fpm"></a>3. 启动nginx和php-fpm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">php-fpm</span><br><span class="line">nginx</span><br></pre></td></tr></table></figure>
+<h2 id="5-启动"><a href="#5-启动" class="headerlink" title="5. 启动"></a>5. 启动</h2><h2 id="启动数据库服务器"><a href="#启动数据库服务器" class="headerlink" title="启动数据库服务器"></a>启动数据库服务器</h2><h2 id="新建一个MYSQL服务"><a href="#新建一个MYSQL服务" class="headerlink" title="新建一个MYSQL服务"></a>新建一个MYSQL服务</h2><pre class="line-numbers language-none"><code class="language-none">tmux new -s MYSQL<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><pre class="line-numbers language-none"><code class="language-none">mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="在新窗口进入模拟人root模式"><a href="#在新窗口进入模拟人root模式" class="headerlink" title="在新窗口进入模拟人root模式"></a>在新窗口进入模拟人root模式</h3><pre class="line-numbers language-none"><code class="language-none">termux-chroot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="3-启动nginx和php-fpm"><a href="#3-启动nginx和php-fpm" class="headerlink" title="3. 启动nginx和php-fpm"></a>3. 启动nginx和php-fpm</h3><pre class="line-numbers language-none"><code class="language-none">php-fpm
+nginx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h2 id="进入安装界面"><a href="#进入安装界面" class="headerlink" title="进入安装界面"></a>进入安装界面</h2><p>在浏览器输入如下地址进入安装界面  </p>
 <p><a target="_blank" rel="noopener" href="http://127.0.0.1:8080/wp-admin/setup-config.php">http://127.0.0.1:8080/wp-admin/setup-config.php</a></p>
 <h2 id="LCMP方案"><a href="#LCMP方案" class="headerlink" title="LCMP方案 "></a>LCMP方案 </h2><h1 id="安装caddy"><a href="#安装caddy" class="headerlink" title="安装caddy"></a>安装caddy</h1><blockquote>
 <p>caddy是go语言编写的服务器程序，以高效简捷著称；配置简单易用性强。</p>
 </blockquote>
-<p>caddy官方网站:<a target="_blank" rel="noopener" href="https://caddyserver.com/">https://caddyserver.com/</a><br>脚本安装caddy<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;getcaddy.com | bash -s personal</span><br></pre></td></tr></table></figure><br>配置caddy配置文件Caddyfile<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim Caddyfile</span><br></pre></td></tr></table></figure><br>按i输入如下配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># WordPress</span><br><span class="line">:8080 &#123;</span><br><span class="line">#tls admin@example.com</span><br><span class="line">root &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress</span><br><span class="line"></span><br><span class="line">gzip</span><br><span class="line">fastcgi &#x2F; 127.0.0.1:9000 php</span><br><span class="line">    rewrite &#123;</span><br><span class="line">        if &#123;path&#125; not_match ^\&#x2F;wp-admin</span><br><span class="line">        to &#123;path&#125; &#123;path&#125;&#x2F; &#x2F;index.php?_url&#x3D;&#123;uri&#125;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>caddy官方网站:<a target="_blank" rel="noopener" href="https://caddyserver.com/">https://caddyserver.com/</a><br>脚本安装caddy<br><pre class="line-numbers language-none"><code class="language-none">curl https:&#x2F;&#x2F;getcaddy.com | bash -s personal<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>配置caddy配置文件Caddyfile<br><pre class="line-numbers language-none"><code class="language-none">vim Caddyfile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>按i输入如下配置<br><pre class="line-numbers language-none"><code class="language-none"># WordPress
+:8080 &#123;
+#tls admin@example.com
+root &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;wordpress
+
+gzip
+fastcgi &#x2F; 127.0.0.1:9000 php
+    rewrite &#123;
+        if &#123;path&#125; not_match ^\&#x2F;wp-admin
+        to &#123;path&#125; &#123;path&#125;&#x2F; &#x2F;index.php?_url&#x3D;&#123;uri&#125;
+      &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 <h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p><a href="# 安装配置数据库MYSQL">返回数据库安装</a>  </p>
 <h1 id="安装php-fpm-1"><a href="#安装php-fpm-1" class="headerlink" title="安装php-fpm"></a>安装php-fpm</h1><blockquote>
 <p>php-fpm配置和之前相同。  </p>
@@ -490,9 +530,9 @@ show_date_time();
 <h1 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h1><p><a href="# 安装PHP">返回php安装</a></p>
 <h1 id="WordPres配置"><a href="#WordPres配置" class="headerlink" title="WordPres配置"></a>WordPres配置</h1><p><a href="# 配置WordPres">返回WordPres配置</a></p>
 <h1 id="启动-1"><a href="#启动-1" class="headerlink" title="启动"></a>启动</h1><h2 id="启动数据库"><a href="#启动数据库" class="headerlink" title="启动数据库"></a>启动数据库</h2><p><a href="# 启动数据库服务器">返回启动数据库</a></p>
-<h2 id="启动caddy"><a href="#启动caddy" class="headerlink" title="启动caddy"></a>启动caddy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caddy</span><br></pre></td></tr></table></figure>
+<h2 id="启动caddy"><a href="#启动caddy" class="headerlink" title="启动caddy"></a>启动caddy</h2><pre class="line-numbers language-none"><code class="language-none">caddy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>进入模拟root模式</p>
-<p><a href="# 安装模拟root环境">返回进入模拟root模式</a><br>在模拟root模式下启动php-fpm<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php-fpm</span><br></pre></td></tr></table></figure></p>
+<p><a href="# 安装模拟root环境">返回进入模拟root模式</a><br>在模拟root模式下启动php-fpm<br><pre class="line-numbers language-none"><code class="language-none">php-fpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
 <h1 id="进入安装界面-1"><a href="#进入安装界面-1" class="headerlink" title="进入安装界面"></a>进入安装界面</h1><p><a target="_blank" rel="noopener" href="http://127.0.0.1:8080/wp-admin/setup-config.php">http://127.0.0.1:8080/wp-admin/setup-config.php</a></p>
 
     </div>
@@ -648,14 +688,14 @@ show_date_time();
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">56k</span>
+    <span title="站点总字数">55k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">51 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

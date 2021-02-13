@@ -29,12 +29,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="查看数据库版本1SELECT @@VERSION; 查看数据库1show databases; 查看用户1select user(); 查看用户权限1show grants; 创建数据库1create database wordpress; 删除数据库1drop database wordpress;">
+<meta name="description" content="查看数据库版本SELECT @@VERSION; 查看数据库show databases; 查看用户select user(); 查看用户权限show grants; 创建数据库create database wordpress; 删除数据库drop database wordpress;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MYSQL数据库使用记录">
 <meta property="og:url" content="https://pzb568.github.io/posts/1f77a6f0.html">
 <meta property="og:site_name" content="风轻云淡">
-<meta property="og:description" content="查看数据库版本1SELECT @@VERSION; 查看数据库1show databases; 查看用户1select user(); 查看用户权限1show grants; 创建数据库1create database wordpress; 删除数据库1drop database wordpress;">
+<meta property="og:description" content="查看数据库版本SELECT @@VERSION; 查看数据库show databases; 查看用户select user(); 查看用户权限show grants; 创建数据库create database wordpress; 删除数据库drop database wordpress;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-07-07T01:12:35.000Z">
 <meta property="article:modified_time" content="2021-02-07T04:56:43.896Z">
@@ -395,7 +395,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>138</span>
+      <span>132</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -413,12 +413,12 @@ show_date_time();
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="查看数据库版本"><a href="#查看数据库版本" class="headerlink" title="查看数据库版本"></a>查看数据库版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT @@VERSION;</span><br></pre></td></tr></table></figure>
-<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
-<h2 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select user();</span><br></pre></td></tr></table></figure>
-<h2 id="查看用户权限"><a href="#查看用户权限" class="headerlink" title="查看用户权限"></a>查看用户权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show grants;</span><br></pre></td></tr></table></figure>
-<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database wordpress;</span><br></pre></td></tr></table></figure>
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database wordpress;</span><br></pre></td></tr></table></figure>
+        <h2 id="查看数据库版本"><a href="#查看数据库版本" class="headerlink" title="查看数据库版本"></a>查看数据库版本</h2><pre class="line-numbers language-none"><code class="language-none">SELECT @@VERSION;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h2><pre class="line-numbers language-none"><code class="language-none">show databases;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h2><pre class="line-numbers language-none"><code class="language-none">select user();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="查看用户权限"><a href="#查看用户权限" class="headerlink" title="查看用户权限"></a>查看用户权限</h2><pre class="line-numbers language-none"><code class="language-none">show grants;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><pre class="line-numbers language-none"><code class="language-none">create database wordpress;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><pre class="line-numbers language-none"><code class="language-none">drop database wordpress;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <a id="more"></a>
 
     </div>
@@ -568,14 +568,14 @@ show_date_time();
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">56k</span>
+    <span title="站点总字数">55k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">51 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

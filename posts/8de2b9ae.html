@@ -29,12 +29,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="termux安装hugo1apt install hugo 新建网站1hugo new site blog 主题配置 进入网站根目录1cd blog 2.下载子模主题1git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even 配置主题请参考官方主题设置  重要">
+<meta name="description" content="termux安装hugoapt install hugo 新建网站hugo new site blog 主题配置 进入网站根目录cd blog 2.下载子模主题git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even 配置主题请参考官方主题设置  重要: 在主">
 <meta property="og:type" content="article">
 <meta property="og:title" content="termux安装hugo搭建hugo博客部署到netlify">
 <meta property="og:url" content="https://pzb568.github.io/posts/8de2b9ae.html">
 <meta property="og:site_name" content="风轻云淡">
-<meta property="og:description" content="termux安装hugo1apt install hugo 新建网站1hugo new site blog 主题配置 进入网站根目录1cd blog 2.下载子模主题1git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even 配置主题请参考官方主题设置  重要">
+<meta property="og:description" content="termux安装hugoapt install hugo 新建网站hugo new site blog 主题配置 进入网站根目录cd blog 2.下载子模主题git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even 配置主题请参考官方主题设置  重要: 在主">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2019/07/f6060b926a15ab9e.png">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2019/07/a1aad731f1137789.png">
@@ -400,7 +400,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.9k</span>
+      <span>1.8k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -418,50 +418,80 @@ show_date_time();
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="termux安装hugo"><a href="#termux安装hugo" class="headerlink" title="termux安装hugo"></a>termux安装hugo</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install hugo</span><br></pre></td></tr></table></figure>
-<h1 id="新建网站"><a href="#新建网站" class="headerlink" title="新建网站"></a>新建网站</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new site blog</span><br></pre></td></tr></table></figure>
+        <h1 id="termux安装hugo"><a href="#termux安装hugo" class="headerlink" title="termux安装hugo"></a>termux安装hugo</h1><pre class="line-numbers language-none"><code class="language-none">apt install hugo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="新建网站"><a href="#新建网站" class="headerlink" title="新建网站"></a>新建网站</h1><pre class="line-numbers language-none"><code class="language-none">hugo new site blog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><ol>
-<li>进入网站根目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
-2.下载子模主题<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even</span><br></pre></td></tr></table></figure></li>
+<li>进入网站根目录<pre class="line-numbers language-none"><code class="language-none">cd blog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+2.下载子模主题<pre class="line-numbers language-none"><code class="language-none">git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li>配置主题请参考官方主题设置</li>
 </ol>
-<p>重要: 在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp themes&#x2F;even&#x2F;exampleSite&#x2F;config.toml ~</span><br></pre></td></tr></table></figure><br>注意: 对于这个主题，你应该使用 post 而不是 posts，即 hugo new post/some-content.md。</p>
+<p>重要: 在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。<br><pre class="line-numbers language-none"><code class="language-none">cp themes&#x2F;even&#x2F;exampleSite&#x2F;config.toml ~<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意: 对于这个主题，你应该使用 post 而不是 posts，即 hugo new post/some-content.md。</p>
 <ol>
-<li>启动本地服务器<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo server </span><br></pre></td></tr></table></figure>
+<li>启动本地服务器<pre class="line-numbers language-none"><code class="language-none">hugo server <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="netlify配置文件"><a href="#netlify配置文件" class="headerlink" title="netlify配置文件"></a>netlify配置文件</h1></li>
 </ol>
 <p>要部署到netlify，必须建一个netlify配置文件,可以参考<br><a target="_blank" rel="noopener" href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/">https://gohugo.io/hosting-and-deployment/hosting-on-netlify/</a></p>
 <ol>
-<li>在网站根目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim netlify.toml</span><br></pre></td></tr></table></figure>
-输入如下内容<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">[build]</span><br><span class="line">publish &#x3D; &quot;public&quot;</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify&quot;</span><br><span class="line"></span><br><span class="line">[context.production.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line">HUGO_ENV &#x3D; &quot;production&quot;</span><br><span class="line">HUGO_ENABLEGITINFO &#x3D; &quot;true&quot;</span><br><span class="line"></span><br><span class="line">[context.split1]</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify --enableGitInfo&quot;</span><br><span class="line"></span><br><span class="line">[context.split1.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line">HUGO_ENV &#x3D; &quot;production&quot;</span><br><span class="line"></span><br><span class="line">[context.deploy-preview]</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&quot;</span><br><span class="line"></span><br><span class="line">[context.deploy-preview.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line"></span><br><span class="line">[context.branch-deploy]</span><br><span class="line">command &#x3D; &quot;hugo --gc --minify -b $DEPLOY_PRIME_URL&quot;</span><br><span class="line"></span><br><span class="line">[context.branch-deploy.environment]</span><br><span class="line">HUGO_VERSION &#x3D; &quot;0.55.6&quot;</span><br><span class="line"></span><br><span class="line">[context.next.environment]</span><br><span class="line">HUGO_ENABLEGITINFO &#x3D; &quot;true&quot;</span><br></pre></td></tr></table></figure>
+<li>在网站根目录<pre class="line-numbers language-none"><code class="language-none">vim netlify.toml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+输入如下内容<pre class="line-numbers language-none"><code class="language-none">[build]
+publish &#x3D; &quot;public&quot;
+command &#x3D; &quot;hugo --gc --minify&quot;
+
+[context.production.environment]
+HUGO_VERSION &#x3D; &quot;0.55.6&quot;
+HUGO_ENV &#x3D; &quot;production&quot;
+HUGO_ENABLEGITINFO &#x3D; &quot;true&quot;
+
+[context.split1]
+command &#x3D; &quot;hugo --gc --minify --enableGitInfo&quot;
+
+[context.split1.environment]
+HUGO_VERSION &#x3D; &quot;0.55.6&quot;
+HUGO_ENV &#x3D; &quot;production&quot;
+
+[context.deploy-preview]
+command &#x3D; &quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&quot;
+
+[context.deploy-preview.environment]
+HUGO_VERSION &#x3D; &quot;0.55.6&quot;
+
+[context.branch-deploy]
+command &#x3D; &quot;hugo --gc --minify -b $DEPLOY_PRIME_URL&quot;
+
+[context.branch-deploy.environment]
+HUGO_VERSION &#x3D; &quot;0.55.6&quot;
+
+[context.next.environment]
+HUGO_ENABLEGITINFO &#x3D; &quot;true&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <a id="more"></a>
 </li>
 </ol>
 <h1 id="上传源代码"><a href="#上传源代码" class="headerlink" title="上传源代码"></a>上传源代码</h1><ol>
-<li>进入博客目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure></li>
-<li>创建版本库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>进入博客目录<pre class="line-numbers language-none"><code class="language-none">cd blog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>创建版本库<pre class="line-numbers language-none"><code class="language-none">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li><p>在<a target="_blank" rel="noopener" href="https://www.github.com">github</a>或者<a target="_blank" rel="noopener" href="https://www.gitee.com">gitee</a>新建一个仓库blog</p>
 </li>
 <li><p>生成ssh密匙</p>
 <blockquote>
 <p>如果已经设置ssh密钥，直接跳到下一步</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你github登录邮箱&quot;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C &quot;你github登录邮箱&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>直接回车3次生成成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat .ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">cat .ssh&#x2F;id_rsa.pub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>复制内容添加到github ssh密匙中。</p>
 </blockquote>
 </li>
 </ol>
 <ol>
-<li>连接到远程库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;xxx&#x2F;blog.git</span><br></pre></td></tr></table></figure></li>
+<li>连接到远程库<pre class="line-numbers language-none"><code class="language-none">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;xxx&#x2F;blog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li>添加全部博客文件</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">git add -A<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ol>
-<li>注释<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;hugo博客&quot;</span><br></pre></td></tr></table></figure></li>
-<li>第一次部署强制上传到服务器<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></li>
+<li>注释<pre class="line-numbers language-none"><code class="language-none">git commit -m &quot;hugo博客&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>第一次部署强制上传到服务器<pre class="line-numbers language-none"><code class="language-none">git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li><p>以后在更新直接更新</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">
+git push origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h1 id="部署网站到netlify"><a href="#部署网站到netlify" class="headerlink" title="部署网站到netlify"></a>部署网站到netlify</h1></li>
 <li><p>进入<a href="">netlify</a>网站点击github如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/07/f6060b926a15ab9e.png" alt=""></p>
 </li>
@@ -622,14 +652,14 @@ show_date_time();
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">56k</span>
+    <span title="站点总字数">55k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">51 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

@@ -29,12 +29,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新1pkg update &amp;&amp; pkg upgrade 2.获取SD卡读写权限1termux-setup-storage 3.安装python ffmpeg1pkg install python">
+<meta name="description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新pkg update &amp;&amp; pkg upgrade 2.获取SD卡读写权限termux-setup-storage 3.安装python ffmpegpkg install python ffm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="termux安装使用you-get下载视频">
 <meta property="og:url" content="https://pzb568.github.io/posts/d8fa7a69.html">
 <meta property="og:site_name" content="风轻云淡">
-<meta property="og:description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新1pkg update &amp;&amp; pkg upgrade 2.获取SD卡读写权限1termux-setup-storage 3.安装python ffmpeg1pkg install python">
+<meta property="og:description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新pkg update &amp;&amp; pkg upgrade 2.获取SD卡读写权限termux-setup-storage 3.安装python ffmpegpkg install python ffm">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pzb568.github.io/posts/01.jpg">
 <meta property="og:image" content="https://pzb568.github.io/posts/02.jpg">
@@ -401,7 +401,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>669</span>
+      <span>659</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -421,14 +421,14 @@ show_date_time();
     <div class="post-body" itemprop="articleBody">
         <h1 id="You-Get简单介绍"><a href="#You-Get简单介绍" class="headerlink" title="You-Get简单介绍"></a>You-Get简单介绍</h1><p>&emsp;&emsp; <a target="_blank" rel="noopener" href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E">you-get</a>是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。</p>
 <h1 id="一、安裝"><a href="#一、安裝" class="headerlink" title="一、安裝"></a>一、安裝</h1><hr>
-<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg update &amp;&amp; pkg upgrade</span><br></pre></td></tr></table></figure>
-<h2 id="2-获取SD卡读写权限"><a href="#2-获取SD卡读写权限" class="headerlink" title="2.获取SD卡读写权限"></a>2.获取SD卡读写权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storage</span><br></pre></td></tr></table></figure>
-<h2 id="3-安装python-ffmpeg"><a href="#3-安装python-ffmpeg" class="headerlink" title="3.安装python ffmpeg"></a>3.安装python ffmpeg</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install python ffmpeg</span><br></pre></td></tr></table></figure>
-<h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-<h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install you-get</span><br></pre></td></tr></table></figure>
-<h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install --upgrade you-get</span><br></pre></td></tr></table></figure>
-<h2 id=""><a href="#" class="headerlink" title=""></a><escape><a id="more"></a></escape></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -V  </span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -i http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br> <img data-src="01.jpg" alt=""></p>
-<p><strong>解析</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -u http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="02.jpg" alt=""><br><strong>下载 </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -o &#x2F;sdcard&#x2F;video&#x2F; http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="03.jpg" alt=""><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a target="_blank" rel="noopener" href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
+<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><pre class="line-numbers language-none"><code class="language-none">pkg update &amp;&amp; pkg upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="2-获取SD卡读写权限"><a href="#2-获取SD卡读写权限" class="headerlink" title="2.获取SD卡读写权限"></a>2.获取SD卡读写权限</h2><pre class="line-numbers language-none"><code class="language-none">termux-setup-storage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="3-安装python-ffmpeg"><a href="#3-安装python-ffmpeg" class="headerlink" title="3.安装python ffmpeg"></a>3.安装python ffmpeg</h2><pre class="line-numbers language-none"><code class="language-none">pkg install python ffmpeg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><pre class="line-numbers language-none"><code class="language-none">python -m pip install --upgrade pip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><pre class="line-numbers language-none"><code class="language-none">pip install you-get<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><pre class="line-numbers language-none"><code class="language-none">pip install --upgrade you-get<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id=""><a href="#" class="headerlink" title=""></a><escape><a id="more"></a></escape></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <pre class="line-numbers language-none"><code class="language-none">you-get -V  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <pre class="line-numbers language-none"><code class="language-none">you-get -i http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br> <img data-src="01.jpg" alt=""></p>
+<p><strong>解析</strong><br><pre class="line-numbers language-none"><code class="language-none">you-get -u http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><img data-src="02.jpg" alt=""><br><strong>下载 </strong><br><pre class="line-numbers language-none"><code class="language-none">you-get -o &#x2F;sdcard&#x2F;video&#x2F; http:&#x2F;&#x2F;m.iqiyi.com&#x2F;v_19rrf2nw1g.html<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><img data-src="03.jpg" alt=""><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a target="_blank" rel="noopener" href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
 <iframe src="//player.bilibili.com/player.html?aid=24822266&cid=41834559&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
@@ -581,14 +581,14 @@ show_date_time();
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">56k</span>
+    <span title="站点总字数">55k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">51 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

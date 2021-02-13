@@ -417,45 +417,74 @@ show_date_time();
     
     <div class="post-body" itemprop="articleBody">
         <h1 id="Mathjax介绍"><a href="#Mathjax介绍" class="headerlink" title="Mathjax介绍"></a>Mathjax介绍</h1><p>&emsp;&emsp; hexo默认的渲染器是marked，并不支持mathjax。kramed是在marked基础上修改的，支持了mathjax。在的hexo工程目录下的node_modules中可以找到对应的渲染器文件夹。同时在你的工程目录下用以下命令安装kramed。另外补充一个NexT配置中推荐的渲染器hexo-renderer-pandoc，功能很强大不仅可以渲染markdown，还支持textile、reStructedText等许多其他格式</p>
-<h1 id="安装渲染器"><a href="#安装渲染器" class="headerlink" title="安装渲染器"></a>安装渲染器</h1><h2 id="卸载默认渲染器"><a href="#卸载默认渲染器" class="headerlink" title="卸载默认渲染器"></a>卸载默认渲染器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
-<h2 id="安装修改kramed渲染器"><a href="#安装修改kramed渲染器" class="headerlink" title="安装修改kramed渲染器"></a>安装修改kramed渲染器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+<h1 id="安装渲染器"><a href="#安装渲染器" class="headerlink" title="安装渲染器"></a>安装渲染器</h1><h2 id="卸载默认渲染器"><a href="#卸载默认渲染器" class="headerlink" title="卸载默认渲染器"></a>卸载默认渲染器</h2><pre class="line-numbers language-none"><code class="language-none">npm uninstall hexo-renderer-marked --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="安装修改kramed渲染器"><a href="#安装修改kramed渲染器" class="headerlink" title="安装修改kramed渲染器"></a>安装修改kramed渲染器</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-renderer-kramed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>或者<code>npm install hexo-renderer-pandoc --save</code>如果是在安卓手机termux里面部署网站这个插件不能使用，因为必装<code>pandoc</code>，termux安装pandoc不成功。</p>
 <h1 id="安装hexo-renderer-mathjax插件"><a href="#安装hexo-renderer-mathjax插件" class="headerlink" title="安装hexo-renderer-mathjax插件"></a>安装<strong>hexo-renderer-mathjax</strong>插件</h1><p>如果安装了hexo-math插件，需要卸载再安装。</p>
-<h2 id="卸载hexo-math插件"><a href="#卸载hexo-math插件" class="headerlink" title="卸载hexo-math插件"></a>卸载hexo-math插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-mathjax --save</span><br></pre></td></tr></table></figure>
+<h2 id="卸载hexo-math插件"><a href="#卸载hexo-math插件" class="headerlink" title="卸载hexo-math插件"></a>卸载hexo-math插件</h2><pre class="line-numbers language-none"><code class="language-none">npm uninstall hexo-math --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-renderer-mathjax --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a>CDN加速</h2><blockquote>
 <p>更新mathjax的CDN链接，打开node_modules/hexo-renderer-mathjax/mathjax.html</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;2.7.1&#x2F;MathJax.js?config&#x3D;TeX-MML-AM_CHTML&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;2.7.1&#x2F;MathJax.js?config&#x3D;TeX-MML-AM_CHTML&quot;&gt;&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>math:<br>  enable: true #开启</p>
 <p>  engine: mathjax 取消注释</p>
-<h1 id="文章Front-matter中开启mathjax"><a href="#文章Front-matter中开启mathjax" class="headerlink" title="文章Front-matter中开启mathjax"></a>文章Front-matter中开启mathjax</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: </span><br><span class="line">category:</span><br><span class="line">date: </span><br><span class="line">mathjax: true  #开启后才会渲染数学公式</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h1 id="文章Front-matter中开启mathjax"><a href="#文章Front-matter中开启mathjax" class="headerlink" title="文章Front-matter中开启mathjax"></a>文章Front-matter中开启mathjax</h1><pre class="line-numbers language-none"><code class="language-none">---
+title: 
+category:
+date: 
+mathjax: true  #开启后才会渲染数学公式
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <escape><a id="more"></a></escape>
 
 <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>下面来测试一下</p>
-<h2 id="麦克斯韦方程组"><a href="#麦克斯韦方程组" class="headerlink" title="麦克斯韦方程组"></a>麦克斯韦方程组</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;eqnarray&#125;</span><br><span class="line">\nabla\cdot\vec&#123;E&#125; &amp;&#x3D;&amp; \frac&#123;\rho&#125;&#123;\epsilon_0&#125; \\</span><br><span class="line">\nabla\cdot\vec&#123;B&#125; &amp;&#x3D;&amp; 0 \\</span><br><span class="line">\nabla\times\vec&#123;E&#125; &amp;&#x3D;&amp; -\frac&#123;\partial B&#125;&#123;\partial t&#125; \\</span><br><span class="line">\nabla\times\vec&#123;B&#125; &amp;&#x3D;&amp; \mu_0\left(\vec&#123;J&#125;+\epsilon_0\frac&#123;\partial E&#125;&#123;\partial t&#125; \right)</span><br><span class="line">\end&#123;eqnarray&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<h2 id="麦克斯韦方程组"><a href="#麦克斯韦方程组" class="headerlink" title="麦克斯韦方程组"></a>麦克斯韦方程组</h2><pre class="line-numbers language-none"><code class="language-none">$$
+\begin&#123;eqnarray&#125;
+\nabla\cdot\vec&#123;E&#125; &amp;&#x3D;&amp; \frac&#123;\rho&#125;&#123;\epsilon_0&#125; \\
+\nabla\cdot\vec&#123;B&#125; &amp;&#x3D;&amp; 0 \\
+\nabla\times\vec&#123;E&#125; &amp;&#x3D;&amp; -\frac&#123;\partial B&#125;&#123;\partial t&#125; \\
+\nabla\times\vec&#123;B&#125; &amp;&#x3D;&amp; \mu_0\left(\vec&#123;J&#125;+\epsilon_0\frac&#123;\partial E&#125;&#123;\partial t&#125; \right)
+\end&#123;eqnarray&#125;
+$$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script type="math/tex; mode=display">
 \begin{eqnarray}
 \nabla\cdot\vec{E} &=& \frac{\rho}{\epsilon_0} \\
 \nabla\cdot\vec{B} &=& 0 \\
 \nabla\times\vec{E} &=& -\frac{\partial B}{\partial t} \\
 \nabla\times\vec{B} &=& \mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t} \right)
-\end{eqnarray}</script><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\Gamma(z) &#x3D; \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.$$</span><br></pre></td></tr></table></figure>
-<script type="math/tex; mode=display">\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.</script><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\frac&#123;\partial u&#125;&#123;\partial t&#125; &#x3D; h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; + \frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; + \frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+\end{eqnarray}</script><pre class="line-numbers language-none"><code class="language-none">$$\Gamma(z) &#x3D; \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.$$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<script type="math/tex; mode=display">\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.</script><pre class="line-numbers language-none"><code class="language-none">$$
+\frac&#123;\partial u&#125;&#123;\partial t&#125; &#x3D; h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; + \frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; + \frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)
+$$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <script type="math/tex; mode=display">
-\frac{\partial u}{\partial t} = h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)</script><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> $$ </span><br><span class="line">f(n)&#x3D;\begin&#123;cases&#125;</span><br><span class="line">n&#x2F;2, &amp; \text&#123;如果$ x&lt;&#x3D;2 $&#125;\\</span><br><span class="line">3n+1, &amp; \text&#123;如果$ x&gt;2 $&#125;</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+\frac{\partial u}{\partial t} = h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)</script><pre class="line-numbers language-none"><code class="language-none"> $$ 
+f(n)&#x3D;\begin&#123;cases&#125;
+n&#x2F;2, &amp; \text&#123;如果$ x&lt;&#x3D;2 $&#125;\\
+3n+1, &amp; \text&#123;如果$ x&gt;2 $&#125;
+\end&#123;cases&#125;
+$$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script type="math/tex; mode=display">
 f(n)=\begin{cases}
 n/2, & \text{如果$ x<=2 $}\\
 3n+1, & \text{如果$ x>2 $}
-\end{cases}</script><h2 id="标题Latex特性测试"><a href="#标题Latex特性测试" class="headerlink" title="标题Latex特性测试"></a>标题Latex特性测试</h2><h2 id="1-Setext-形式"><a href="#1-Setext-形式" class="headerlink" title="1. Setext 形式"></a>1. Setext 形式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">H1</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line"></span><br><span class="line">H2</span><br><span class="line">----</span><br></pre></td></tr></table></figure>
+\end{cases}</script><h2 id="标题Latex特性测试"><a href="#标题Latex特性测试" class="headerlink" title="标题Latex特性测试"></a>标题Latex特性测试</h2><h2 id="1-Setext-形式"><a href="#1-Setext-形式" class="headerlink" title="1. Setext 形式"></a>1. Setext 形式</h2><pre class="line-numbers language-none"><code class="language-none">H1
+&#x3D;&#x3D;&#x3D;&#x3D;
+
+H2
+----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><p>= 和 - 的数量是没有限制的。通常的做法是使其和标题文本的长度相同，这样看起来比较舒服。或者可以像我一样，用四个 - 或 =。<br>Setext 形式只支持 h1 和 h2 两种标题。</p>
 <ol>
-<li>atx 形式<h5 id="①-可以用对称的-包括文本："><a href="#①-可以用对称的-包括文本：" class="headerlink" title="① 可以用对称的 # 包括文本："></a>① 可以用对称的 # 包括文本：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">####H4####</span><br><span class="line"></span><br><span class="line">#####H5#####</span><br></pre></td></tr></table></figure>
+<li>atx 形式<h5 id="①-可以用对称的-包括文本："><a href="#①-可以用对称的-包括文本：" class="headerlink" title="① 可以用对称的 # 包括文本："></a>① 可以用对称的 # 包括文本：</h5><pre class="line-numbers language-none"><code class="language-none">####H4####
+
+#####H5#####<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4></li>
 </ol>
-<h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h5 id="②-也可以只在左边使用-："><a href="#②-也可以只在左边使用-：" class="headerlink" title="② 也可以只在左边使用 #："></a>② 也可以只在左边使用 #：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">####H4</span><br><span class="line"></span><br><span class="line">#####H5</span><br></pre></td></tr></table></figure>
-<h4 id="H4-1"><a href="#H4-1" class="headerlink" title="H4"></a>H4</h4><h5 id="H5-1"><a href="#H5-1" class="headerlink" title="H5"></a>H5</h5><p>③ 成对的 # 左侧和只在左边使用的 # 左侧都不可以有任何空白，但其内侧可以使用空白。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> ###左侧使用了空格###</span><br><span class="line"></span><br><span class="line">#### 内侧使用了空格</span><br></pre></td></tr></table></figure></p>
+<h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h5 id="②-也可以只在左边使用-："><a href="#②-也可以只在左边使用-：" class="headerlink" title="② 也可以只在左边使用 #："></a>② 也可以只在左边使用 #：</h5><pre class="line-numbers language-none"><code class="language-none">####H4
+
+#####H5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="H4-1"><a href="#H4-1" class="headerlink" title="H4"></a>H4</h4><h5 id="H5-1"><a href="#H5-1" class="headerlink" title="H5"></a>H5</h5><p>③ 成对的 # 左侧和只在左边使用的 # 左侧都不可以有任何空白，但其内侧可以使用空白。<br><pre class="line-numbers language-none"><code class="language-none"> ###左侧使用了空格###
+
+#### 内侧使用了空格<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></p>
 <h3 id="左侧使用了空格"><a href="#左侧使用了空格" class="headerlink" title="左侧使用了空格"></a>左侧使用了空格</h3><h4 id="内侧使用了空格"><a href="#内侧使用了空格" class="headerlink" title="内侧使用了空格"></a>内侧使用了空格</h4>
     </div>
 
@@ -607,14 +636,14 @@ n/2, & \text{如果$ x<=2 $}\\
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">56k</span>
+    <span title="站点总字数">55k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">51 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
