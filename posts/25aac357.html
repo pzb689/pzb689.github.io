@@ -29,12 +29,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="&amp;emsp;&amp;emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。  创建.termux文件夹mkdir $HOME&#x2F;.termux     在$HOME&#x2F;.termux&#x2F;termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim  安装vim pkg install vim 进">
+<meta name="description" content="&amp;emsp;&amp;emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。  创建.termux文件夹1mkdir $HOME&#x2F;.termux     在$HOME&#x2F;.termux&#x2F;termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim  安装vim 1pkg install vim 进入文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="termux0.66版本修改添加常用按键">
 <meta property="og:url" content="https://pzb568.github.io/posts/25aac357.html">
 <meta property="og:site_name" content="风轻云淡">
-<meta property="og:description" content="&amp;emsp;&amp;emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。  创建.termux文件夹mkdir $HOME&#x2F;.termux     在$HOME&#x2F;.termux&#x2F;termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim  安装vim pkg install vim 进">
+<meta property="og:description" content="&amp;emsp;&amp;emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。  创建.termux文件夹1mkdir $HOME&#x2F;.termux     在$HOME&#x2F;.termux&#x2F;termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim  安装vim 1pkg install vim 进入文件">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg">
 <meta property="article:published_time" content="2019-02-26T12:26:22.000Z">
@@ -218,7 +218,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">pkg install vim</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">1
+pkg install vim
+</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -397,7 +399,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1k</span>
+      <span>1.1k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -417,7 +419,7 @@ show_date_time();
     <div class="post-body" itemprop="articleBody">
         <p>&emsp;&emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。</p>
 <ol>
-<li>创建.termux文件夹<pre class="line-numbers language-none"><code class="language-none">mkdir $HOME&#x2F;.termux<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li>创建.termux文件夹<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">mkdir</span> $HOME/.termux</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <hr>
@@ -425,14 +427,14 @@ show_date_time();
 <li>在$HOME/.termux/termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim</li>
 </ol>
 <p>安装vim</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><pre class="line-numbers language-none"><code class="language-none">pkg install vim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></h2><ol>
-<li>进入文件夹并vim打开termux.properties<pre class="line-numbers language-none"><code class="language-none">cd .termux &amp;&amp; vim termux.properties<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> vim</span><br></pre></td></tr></table></figure></h2><ol>
+<li>进入文件夹并vim打开termux.properties<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">cd</span> <span class="selector-class">.termux</span> &amp;&amp; <span class="selector-tag">vim</span> <span class="selector-tag">termux</span><span class="selector-class">.properties</span></span><br></pre></td></tr></table></figure>
 <escape><a id="more"></a></escape>
 
 </li>
 </ol>
-<p>效果布局1<br>添加如下内容<br><pre class="line-numbers language-none"><code class="language-none">extra-keys &#x3D; [[&#39;[&#39;,&#39;]&#39;,&#39;&#123;&#39;,&#39;&#125;&#39;,&#39;&amp;&#39;,&#39;&lt;&#39;,&#39;&gt;&#39;],[&#39;ESC&#39;,&#39;&#x2F;&#39;,&#39;-&#39;,&#39;HOME&#39;,&#39;UP&#39;,&#39;END&#39;,&#39;;&#39;],[&#39;TAB&#39;,&#39;CTRL&#39;,&#39;~&#39;,&#39;LEFT&#39;,&#39;DOWN&#39;,&#39;RIGHT&#39;,&#39;\&quot;\&quot;&#39;]]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>显示效果如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg" alt=""></p>
-<p>效果布局2<br><pre class="line-numbers language-none"><code class="language-none">extra-keys &#x3D; [[&#39;ESC&#39;,&#39;&#x2F;&#39;,&#39;-&#39;,&#39;HOME&#39;,&#39;UP&#39;,&#39;END&#39;,&#39;PGUP&#39;,&#39;&lt;&#39;,&#39;&gt;&#39;],[&#39;TAB&#39;,&#39;CTRL&#39;,&#39;ALT&#39;,&#39;LEFT&#39;,&#39;DOWN&#39;,&#39;RIGHT&#39;,&#39;PGDN&#39;,&#39;[&#39;,&#39;]&#39;],[&#39;$&#39;,&#39;&quot;&#39;,&#39;&#x3D;&#39;,&#39;&#123;&#39;,&#39;&#125;&#39;,&#39;(&#39;,&#39;)&#39;,&#39;&amp;&#39;,&#39;%&#39;]]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>显示效果如下<br><img src = 'https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg' /></p>
+<p>效果布局1<br>添加如下内容<br><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extra-keys = [[<span class="string">&#x27;[&#x27;</span>,<span class="string">&#x27;]&#x27;</span>,<span class="string">&#x27;&#123;&#x27;</span>,<span class="string">&#x27;&#125;&#x27;</span>,<span class="string">&#x27;&amp;&#x27;</span>,<span class="string">&#x27;&lt;&#x27;</span>,<span class="string">&#x27;&gt;&#x27;</span>],[<span class="string">&#x27;ESC&#x27;</span>,<span class="string">&#x27;/&#x27;</span>,<span class="string">&#x27;-&#x27;</span>,<span class="string">&#x27;HOME&#x27;</span>,<span class="string">&#x27;UP&#x27;</span>,<span class="string">&#x27;END&#x27;</span>,<span class="string">&#x27;;&#x27;</span>],[<span class="string">&#x27;TAB&#x27;</span>,<span class="string">&#x27;CTRL&#x27;</span>,<span class="string">&#x27;~&#x27;</span>,<span class="string">&#x27;LEFT&#x27;</span>,<span class="string">&#x27;DOWN&#x27;</span>,<span class="string">&#x27;RIGHT&#x27;</span>,<span class="string">&#x27;\&quot;\&quot;&#x27;</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg" alt=""></p>
+<p>效果布局2<br><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extra-keys = [[<span class="string">&#x27;ESC&#x27;</span>,<span class="string">&#x27;/&#x27;</span>,<span class="string">&#x27;-&#x27;</span>,<span class="string">&#x27;HOME&#x27;</span>,<span class="string">&#x27;UP&#x27;</span>,<span class="string">&#x27;END&#x27;</span>,<span class="string">&#x27;PGUP&#x27;</span>,<span class="string">&#x27;&lt;&#x27;</span>,<span class="string">&#x27;&gt;&#x27;</span>],[<span class="string">&#x27;TAB&#x27;</span>,<span class="string">&#x27;CTRL&#x27;</span>,<span class="string">&#x27;ALT&#x27;</span>,<span class="string">&#x27;LEFT&#x27;</span>,<span class="string">&#x27;DOWN&#x27;</span>,<span class="string">&#x27;RIGHT&#x27;</span>,<span class="string">&#x27;PGDN&#x27;</span>,<span class="string">&#x27;[&#x27;</span>,<span class="string">&#x27;]&#x27;</span>],[<span class="string">&#x27;$&#x27;</span>,<span class="string">&#x27;&quot;&#x27;</span>,<span class="string">&#x27;=&#x27;</span>,<span class="string">&#x27;&#123;&#x27;</span>,<span class="string">&#x27;&#125;&#x27;</span>,<span class="string">&#x27;(&#x27;</span>,<span class="string">&#x27;)&#x27;</span>,<span class="string">&#x27;&amp;&#x27;</span>,<span class="string">&#x27;%&#x27;</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下<br><img src = 'https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg' /></p>
 
     </div>
 
@@ -581,14 +583,14 @@ show_date_time();
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">55k</span>
+    <span title="站点总字数">53k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">50 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

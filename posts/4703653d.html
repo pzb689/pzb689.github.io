@@ -406,14 +406,14 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4k</span>
+      <span>3.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
+      <span>3 分钟</span>
     </span>
 </div>
 
@@ -426,19 +426,14 @@ show_date_time();
     <div class="post-body" itemprop="articleBody">
         <p>&emsp;&emsp; Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br>&emsp;&emsp; hexo默认支持Markdown编辑文章，学习好Markdown 编辑器语法有利于更方便友好的写作;下面我会用一些事例分享Markdown 编辑器使用中的各种技巧。</p>
 <h2 id="段首缩进"><a href="#段首缩进" class="headerlink" title="段首缩进"></a>段首缩进</h2><blockquote>
-<p>在文章编辑排版中首先经常使用到的就是段首缩进；那可以看到我的大标题是有缩进使用技巧非常简单就是在段道输入如下代码<br><pre class="line-numbers language-none"><code class="language-none">&amp;emsp;&amp;emsp;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>下面用菜根谭中一段做例<br>&emsp;&emsp; 好丑心太明，则物不契；贤愚心太明，则人不亲。士君子须是内精明而外浑厚，使好丑两得其平，贤愚共受其益，才是生成的德量。</p>
+<p>在文章编辑排版中首先经常使用到的就是段首缩进；那可以看到我的大标题是有缩进使用技巧非常简单就是在段道输入如下代码<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&amp;emsp;</span><span class="symbol">&amp;emsp;</span></span><br></pre></td></tr></table></figure><br>下面用菜根谭中一段做例<br>&emsp;&emsp; 好丑心太明，则物不契；贤愚心太明，则人不亲。士君子须是内精明而外浑厚，使好丑两得其平，贤愚共受其益，才是生成的德量。</p>
 <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>标题我在之前的文章中己有教程，具体可以跳转<a href="https://pzb568.github.io/2019/04/30/Mathjax%E8%AF%AD%E6%B3%95%E6%B8%B2%E6%9F%93/">hexo开启Mathjax语法渲染配置折腾记</a>这里查看。</p>
 </blockquote>
 <h1 id="文本局中"><a href="#文本局中" class="headerlink" title="文本局中"></a>文本局中</h1><blockquote>
 <p>在诗词歌曲中使用局中显示，可以更好的显示诗词的排版，看起来更加工整。  </p>
 </blockquote>
 <ul>
-<li>使用也非常简单代码如下<pre class="line-numbers language-none"><code class="language-none">&#123;% cq %&#125;
-夜宿山寺 
-唐 · 李白
-危楼高百尺，手可摘星辰。
-不敢高声语，恐惊天上人。
-&#123;% endcq %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<li>使用也非常简单代码如下<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">cq</span> %&#125;</span></span><br><span class="line"><span class="xml">夜宿山寺 </span></span><br><span class="line"><span class="xml">唐 · 李白</span></span><br><span class="line"><span class="xml">危楼高百尺，手可摘星辰。</span></span><br><span class="line"><span class="xml">不敢高声语，恐惊天上人。</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">endcq</span> %&#125;</span></span><br></pre></td></tr></table></figure>
 下面用唐诗一首演示</li>
 </ul>
 <blockquote class="blockquote-center">
@@ -446,54 +441,42 @@ show_date_time();
 
 </blockquote>
 <h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><blockquote>
-<p>可以插入网络中和本的的图片<br><pre class="line-numbers language-none"><code class="language-none">![](images&#x2F;1.jpg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>美女图片镇楼<br><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559150762962&amp;di=89f86d08e03074713a0d4f9114f9b9ec&amp;imgtype=0&amp;src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3210444378%2C1295390531%26fm%3D193" alt=""></p>
-<h1 id="分页显示"><a href="#分页显示" class="headerlink" title="分页显示"></a>分页显示</h1><p>哦😊到这里应该要分页了<br>代码如下<br><pre class="line-numbers language-none"><code class="language-none">&lt;escape&gt;&lt;!-- more --&gt;&lt;&#x2F;escape&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<p>可以插入网络中和本的的图片<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="selector-attr">[]</span>(images/<span class="number">1</span>.jpg)</span><br></pre></td></tr></table></figure><br>美女图片镇楼<br><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559150762962&amp;di=89f86d08e03074713a0d4f9114f9b9ec&amp;imgtype=0&amp;src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3210444378%2C1295390531%26fm%3D193" alt=""></p>
+<h1 id="分页显示"><a href="#分页显示" class="headerlink" title="分页显示"></a>分页显示</h1><p>哦😊到这里应该要分页了<br>代码如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">escape</span>&gt;</span><span class="comment">&lt;!-- more --&gt;</span><span class="tag">&lt;/<span class="name">escape</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <escape><a id="more"></a></escape>
 
 </blockquote>
 <h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><ol>
 <li><p>文字链接</p>
-<pre class="line-numbers language-none"><code class="language-none">[github](www.github.com)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">github</span>](<span class="link">www.github.com</span>)</span><br></pre></td></tr></table></figure>
 <p><a href="www.github..com">github</a></p>
 </li>
 <li><p>网址链接</p>
 </li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">&lt;www.Google.hk&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">www</span><span class="selector-class">.Google</span><span class="selector-class">.hk</span>&gt;</span><br></pre></td></tr></table></figure>
 <www.Google.hk>
 
 <h1 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h1><ol>
 <li>安装<br>在blog文件夹下安装<strong>hexo-tag-aplayer</strong>插件</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-tag-aplayer<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-tag-aplayer</span></span><br></pre></td></tr></table></figure>
 <ol>
 <li>使用<br>代码如下</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% aplayer &quot;飘向北方&quot; &quot;黄明志,王力宏&quot; &quot;http:&#x2F;&#x2F;music.163.com&#x2F;song&#x2F;media&#x2F;outer&#x2F;url?id&#x3D;461864856.mp3&quot; &quot;https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1559501443630&amp;di&#x3D;5d355fdbb782fb5bc06c476af70ba19a&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fsource.upupoo.com%2Ftheme%2F1800037383%2FpreviewFix.jpg&quot; &quot;lrc:lrc.txt&quot; %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer <span class="string">&quot;飘向北方&quot;</span> <span class="string">&quot;黄明志,王力宏&quot;</span> <span class="string">&quot;http://music.163.com/song/media/outer/url?id=461864856.mp3&quot;</span> <span class="string">&quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559501443630&amp;di=5d355fdbb782fb5bc06c476af70ba19a&amp;imgtype=0&amp;src=http%3A%2F%2Fsource.upupoo.com%2Ftheme%2F1800037383%2FpreviewFix.jpg&quot;</span> <span class="string">&quot;lrc:lrc.txt&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>由于新版本aplayer插件异常放弃</p>
 </blockquote>
 <h1 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h1><ol>
-<li>安装  <pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-tag-dplayer<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>使用<br>输入 如下代码<pre class="line-numbers language-none"><code class="language-none">&#123;% dplayer &quot;url&#x3D;https:&#x2F;&#x2F;vodkgeyttp8.vod.126.net&#x2F;cloudmusic&#x2F;YCEhICAiIWI1ISAxMSEiMA&#x3D;&#x3D;&#x2F;mv&#x2F;5617127&#x2F;36fb72932c6a0682fe09f201e2fdda0b.mp4?wsSecret&#x3D;bd2a79912d92c40a0557933e82a43f57&amp;wsTime&#x3D;1562298067&quot;  &quot;pic&#x3D;http:&#x2F;&#x2F;p1.music.126.net&#x2F;xrLKWowydpr7W_g8YgKBRQ&#x3D;&#x3D;&#x2F;18730180580875994.jpg&quot; &quot;loop&#x3D;yes&quot; &quot;theme&#x3D;#FADFA3&quot; &quot;autoplay&#x3D;false&quot; &quot;token&#x3D;tokendemo&quot; %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-**&gt;新版本异常放弃使用dplayer<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><pre class="line-numbers language-none"><code class="language-none">| 姓名 | 性别 | 电话 |
-| :--- | :----: | ----: |
-| 张三 | 男 | 123456789123 |<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<li>安装  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-tag-dplayer</span></span><br></pre></td></tr></table></figure></li>
+<li>使用<br>输入 如下代码<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="meta">%</span> dplayer <span class="string">&quot;url=https://vodkgeyttp8.vod.126.net/cloudmusic/YCEhICAiIWI1ISAxMSEiMA==/mv/5617127/36fb72932c6a0682fe09f201e2fdda0b.mp4?wsSecret=bd2a79912d92c40a0557933e82a43f57&amp;wsTime=1562298067&quot;</span>  <span class="string">&quot;pic=http://p1.music.126.net/xrLKWowydpr7W_g8YgKBRQ==/18730180580875994.jpg&quot;</span> <span class="string">&quot;loop=yes&quot;</span> <span class="string">&quot;theme=#FADFA3&quot;</span> <span class="string">&quot;autoplay=false&quot;</span> <span class="string">&quot;token=tokendemo&quot;</span> <span class="meta">%</span>&#125;</span><br></pre></td></tr></table></figure>
+**&gt;新版本异常放弃使用dplayer<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string"> 姓名 </span>|<span class="string"> 性别 </span>|<span class="string"> 电话 </span>|</span><br><span class="line">|<span class="string"> :--- </span>|<span class="string"> :----: </span>|<span class="string"> ----: </span>|</span><br><span class="line">|<span class="string"> 张三 </span>|<span class="string"> 男 </span>|<span class="string"> 123456789123 </span>|</span><br></pre></td></tr></table></figure>
 | 姓名 | 性别 | 电话 |<br>| :—- | :——: | ——: |<br>| 张三 | 男 | 123456789123 |</li>
 </ol>
-<h1 id="图片墙"><a href="#图片墙" class="headerlink" title="图片墙"></a>图片墙</h1><pre class="line-numbers language-none"><code class="language-none">&#123;% gp 4-4 %&#125;
-  ![](&#x2F;photos&#x2F;images&#x2F;1.jpeg)
-  ![](&#x2F;photos&#x2F;images&#x2F;2.jpeg)
-  ![](&#x2F;photos&#x2F;images&#x2F;3.jpeg)
-  ![](&#x2F;photos&#x2F;images&#x2F;4.jpeg)
-&#123;% endgp %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="图片墙"><a href="#图片墙" class="headerlink" title="图片墙"></a>图片墙</h1><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp <span class="number">4</span><span class="number">-4</span> %&#125;</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">1.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">2.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">3.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">4.</span>jpeg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
 <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/1.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/2.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/3.jpeg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/4.jpeg" alt=""></div></div></div>
-<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><pre class="line-numbers language-none"><code class="language-none">&#123;% mermaid graph TD %&#125;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-&#123;% endmermaid %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="comment">% mermaid graph TD %&#125;</span></span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br><span class="line">&#123;<span class="comment">% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
 <div class="mermaid">
 graph TD
 A--&gt;B;
@@ -501,13 +484,7 @@ A--&gt;C;
 B--&gt;D;
 C--&gt;D;
 </div>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% mermaid graph TD %&#125;
-A[Christmas] --&gt;|Get money| B(Go shopping)
-B --&gt; C&#123;Let me thinksssss&lt;br&#x2F;&gt;ssssssssssssssssssssss&lt;br&#x2F;&gt;sssssssssssssssssssssssssss&#125;
-C --&gt;|One| D[Laptop]
-C --&gt;|Two| E[iPhone]
-C --&gt;|Three| F[Car]
-&#123;% endmermaid %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">A[Christmas] --&gt;|<span class="type">Get</span> money| <span class="type">B</span>(Go shopping)</span><br><span class="line">B --&gt; C&#123;<span class="keyword">Let</span> me thinksssss&lt;br/&gt;ssssssssssssssssssssss&lt;br/&gt;sssssssssssssssssssssssssss&#125;</span><br><span class="line">C --&gt;|<span class="type">One</span>| <span class="type">D</span>[Laptop]</span><br><span class="line">C --&gt;|<span class="type">Two</span>| <span class="type">E</span>[iPhone]</span><br><span class="line">C --&gt;|<span class="type">Three</span>| <span class="type">F</span>[Car]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
 <div class="mermaid">
 graph TD
 A[Christmas] --&gt;|Get money| B(Go shopping)
@@ -516,22 +493,15 @@ C --&gt;|One| D[Laptop]
 C --&gt;|Two| E[iPhone]
 C --&gt;|Three| F[Car]
 </div>
-<h1 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h1><pre class="line-numbers language-none"><code class="language-none">&#123;% button #, 开始 %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h1><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">button</span> #, 开始 %&#125;</span></span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">开始</a>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% btn #, Text %&#125; &#123;% btn #, 取消,, Title %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">btn</span> #, Text %&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name">btn</span> #, 取消,, Title %&#125;</span></span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">确定</a> <a class="btn" href="#" title="Title">取消</a>
-<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><pre class="line-numbers language-none"><code class="language-none">Lorem &#123;% label @ipsum %&#125; &#123;% label primary@dolor sit %&#125; amet, consectetur &#123;% label success@adipiscing elit, %&#125; sed &#123;% label info@do eiusmod %&#125; tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim *&#123;% label warning @ad %&#125;* minim veniam, quis **&#123;% label danger@nostrud %&#125;** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate ~~&#123;% label default @velit %&#125;~~ &lt;mark&gt;esse&lt;&#x2F;mark&gt; cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">Lorem </span><span class="template-tag">&#123;% <span class="name">label</span> @ipsum %&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name">label</span> primary@dolor sit %&#125;</span><span class="xml"> amet, consectetur </span><span class="template-tag">&#123;% <span class="name">label</span> success@adipiscing elit, %&#125;</span><span class="xml"> sed </span><span class="template-tag">&#123;% <span class="name">label</span> info@do eiusmod %&#125;</span><span class="xml"> tempor incididunt ut labore et dolore magna aliqua.</span></span><br><span class="line"></span><br><span class="line"><span class="xml">Ut enim *</span><span class="template-tag">&#123;% <span class="name">label</span> warning @ad %&#125;</span><span class="xml">* minim veniam, quis **</span><span class="template-tag">&#123;% <span class="name">label</span> danger@nostrud %&#125;</span><span class="xml">** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></span><br><span class="line"></span><br><span class="line"><span class="xml">Duis aute irure dolor in reprehenderit in voluptate ~~</span><span class="template-tag">&#123;% <span class="name">label</span> default @velit %&#125;</span><span class="xml">~~ <span class="tag">&lt;<span class="name">mark</span>&gt;</span>esse<span class="tag">&lt;/<span class="name">mark</span>&gt;</span> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></span><br></pre></td></tr></table></figure>
 <p>Lorem <mark class="label ">ipsum</mark> <mark class="label primary">dolor sit</mark> amet, consectetur <mark class="label success">adipiscing elit,</mark> sed <mark class="label info">do eiusmod</mark> tempor incididunt ut labore et dolore magna aliqua.</p>
 <p>Ut enim <em><mark class="label warning">ad</mark></em> minim veniam, quis <strong><mark class="label danger">nostrud</mark></strong> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <p>Duis aute irure dolor in reprehenderit in voluptate <del><mark class="label default">velit</mark></del> <mark>esse</mark> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h1 id="标注"><a href="#标注" class="headerlink" title="标注"></a>标注</h1><pre class="line-numbers language-none"><code class="language-none">&#123;% note primary %&#125;
-#### Primary Header
-**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)
-&#123;% endnote %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="标注"><a href="#标注" class="headerlink" title="标注"></a>标注</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary %&#125;</span><br><span class="line"><span class="section">#### Primary Header</span></span><br><span class="line"><span class="strong">**Welcome**</span> to [<span class="string">Hexo!</span>](<span class="link">https://hexo.io</span>)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 <div class="note primary"><h4 id="Primary-Header"><a href="#Primary-Header" class="headerlink" title="Primary Header"></a>Primary Header</h4><p><strong>Welcome</strong> to <a target="_blank" rel="noopener" href="https://hexo.io">Hexo!</a></p>
 </div>
 
@@ -687,14 +657,14 @@ Duis aute irure dolor in reprehenderit in voluptate ~~&#123;% label default @vel
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">55k</span>
+    <span title="站点总字数">53k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">50 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

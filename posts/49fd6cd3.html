@@ -400,7 +400,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.2k</span>
+      <span>2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -421,43 +421,20 @@ show_date_time();
         <h1 id="Tor简介"><a href="#Tor简介" class="headerlink" title="Tor简介"></a>Tor简介</h1><p><img data-src="https://i.bmp.ovh/imgs/2019/04/07b5c785087abb9c.jpg" alt=""><br>&emsp;&emsp; Tor用户在本机运行一个洋葱代理服务器（onion proxy），这个代理周期性地与其他Tor交流，从而在Tor网络中构成虚电路（virtual circuit）。Tor是在5层协议栈中的应用层进行加密（也就是按照’onion’的模式）。而它之所以被称为onion，是因为它的结构就跟洋葱相同，你只能看出它的外表，而想要看到核心，就必须把它层层的剥开。即每个路由器间的传输都经过对等密钥（symmetric key）来加密，形成有层次的结构。它中间所经过的各节点，都好像洋葱的一层皮，把客户端包在里面，算是保护信息来源的一种方式，这样在洋葱路由器之间可以保持通讯安全。同时对于客户端，洋葱代理服务器又作为SOCKS接口。一些应用程序就可以将Tor作为代理服务器，网络通讯就可以通过Tor的虚拟环路来进行。用户通过它可以在因特网上进行匿名交流从而保护用户的隐私及资讯安全。<br>  termux可以安装tor在利用lighttpd服务器映射，下面来在termux里面安装。</p>
 <escape><a id="more"></a></escape>
 
-<h1 id="1-安装tor和lighttpd服务器"><a href="#1-安装tor和lighttpd服务器" class="headerlink" title="1. 安装tor和lighttpd服务器"></a>1. 安装tor和lighttpd服务器</h1><pre class="line-numbers language-none"><code class="language-none">pkg in tor lighttpd <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="2-编辑Torrc"><a href="#2-编辑Torrc" class="headerlink" title="2.编辑Torrc"></a>2.编辑Torrc</h1><pre class="line-numbers language-none"><code class="language-none">cat &gt; $PREFIX&#x2F;etc&#x2F;tor&#x2F;torrc &lt;&lt;EOF
-#Enable TOR SOCKS proxy
-SOCKSPort 127.0.0.1:9050
-#Hidden Service: Http
-HiddenServiceDir &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;.tor&#x2F;hiddenservice
-HiddenServicePort 80 127.0.0.1:8080
-EOF<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="3-编写lighttpd配置文件"><a href="#3-编写lighttpd配置文件" class="headerlink" title="3.编写lighttpd配置文件"></a>3.编写lighttpd配置文件</h1><pre class="line-numbers language-none"><code class="language-none">termux-setup-storage&amp;&amp;rm -rf ~&#x2F;storage
-cat &gt; ~&#x2F;lighttpd.conf &lt;&lt;EOF
-server.port             &#x3D; 8080
-server.document-root    &#x3D; &quot;&#x2F;sdcard&#x2F;Orweb&quot;
-server.upload-dirs      &#x3D; ( &quot;&#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;usr&#x2F;tmp&quot; )
-index-file.names        &#x3D; ( &quot;index.html&quot; )
-mimetype.assign         &#x3D; (
-                                &quot;.html&quot; &#x3D;&gt; &quot;text&#x2F;html&quot;,
-                                &quot;.txt&quot; &#x3D;&gt; &quot;text&#x2F;plain&quot;,
-                                &quot;.css&quot; &#x3D;&gt; &quot;text&#x2F;css&quot;,
-                                &quot;.js&quot; &#x3D;&gt; &quot;application&#x2F;x-javascript&quot;,
-                                &quot;.jpg&quot; &#x3D;&gt; &quot;image&#x2F;jpeg&quot;,
-                                &quot;.jpeg&quot; &#x3D;&gt; &quot;image&#x2F;jpeg&quot;,
-                                &quot;.gif&quot; &#x3D;&gt; &quot;image&#x2F;gif&quot;,
-                                &quot;.png&quot; &#x3D;&gt; &quot;image&#x2F;png&quot;,
-                                &quot;&quot; &#x3D;&gt; &quot;application&#x2F;octet-stream&quot;
-                       )
-EOF<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="4-启动Orweb-daemon"><a href="#4-启动Orweb-daemon" class="headerlink" title="4.启动Orweb-daemon"></a>4.启动Orweb-daemon</h1><pre class="line-numbers language-none"><code class="language-none">mkdir -p &#x2F;sdcard&#x2F;Orweb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="5-启动lighttpd服务器"><a href="#5-启动lighttpd服务器" class="headerlink" title="5.启动lighttpd服务器"></a>5.启动lighttpd服务器</h1><pre class="line-numbers language-none"><code class="language-none">lighttpd -f ~&#x2F;lighttpd.conf&amp; &gt; &#x2F;dev&#x2F;null<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="6-启动Tor"><a href="#6-启动Tor" class="headerlink" title="6.启动Tor"></a>6.启动Tor</h1><p>重新打开一个窗口<br><pre class="line-numbers language-none"><code class="language-none">tor<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<h1 id="1-安装tor和lighttpd服务器"><a href="#1-安装tor和lighttpd服务器" class="headerlink" title="1. 安装tor和lighttpd服务器"></a>1. 安装tor和lighttpd服务器</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pkg in tor lighttpd</span> </span><br></pre></td></tr></table></figure>
+<h1 id="2-编辑Torrc"><a href="#2-编辑Torrc" class="headerlink" title="2.编辑Torrc"></a>2.编辑Torrc</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; <span class="variable">$PREFIX</span><span class="regexp">/etc/</span>tor/torrc &lt;&lt;EOF</span><br><span class="line"><span class="comment">#Enable TOR SOCKS proxy</span></span><br><span class="line">SOCKSPort <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">9050</span></span><br><span class="line"><span class="comment">#Hidden Service: Http</span></span><br><span class="line">HiddenServiceDir <span class="regexp">/data/</span>data<span class="regexp">/com.termux/</span>files<span class="regexp">/home/</span>.tor/hiddenservice</span><br><span class="line">HiddenServicePort <span class="number">80</span> <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">8080</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<h1 id="3-编写lighttpd配置文件"><a href="#3-编写lighttpd配置文件" class="headerlink" title="3.编写lighttpd配置文件"></a>3.编写lighttpd配置文件</h1><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storage&amp;&amp;rm -rf ~/storage</span><br><span class="line">cat &gt; ~/lighttpd.conf &lt;&lt;EOF</span><br><span class="line">server.port             = <span class="number">8080</span></span><br><span class="line">server.<span class="built_in">document</span>-root    = <span class="string">&quot;/sdcard/Orweb&quot;</span></span><br><span class="line">server.upload-dirs      = ( <span class="string">&quot;/data/data/com.termux/files/usr/tmp&quot;</span> )</span><br><span class="line">index-file.names        = ( <span class="string">&quot;index.html&quot;</span> )</span><br><span class="line">mimetype.assign         = (</span><br><span class="line">                                <span class="string">&quot;.html&quot;</span> =&gt; <span class="string">&quot;text/html&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.txt&quot;</span> =&gt; <span class="string">&quot;text/plain&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.css&quot;</span> =&gt; <span class="string">&quot;text/css&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.js&quot;</span> =&gt; <span class="string">&quot;application/x-javascript&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.jpg&quot;</span> =&gt; <span class="string">&quot;image/jpeg&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.jpeg&quot;</span> =&gt; <span class="string">&quot;image/jpeg&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.gif&quot;</span> =&gt; <span class="string">&quot;image/gif&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;.png&quot;</span> =&gt; <span class="string">&quot;image/png&quot;</span>,</span><br><span class="line">                                <span class="string">&quot;&quot;</span> =&gt; <span class="string">&quot;application/octet-stream&quot;</span></span><br><span class="line">                       )</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<h1 id="4-启动Orweb-daemon"><a href="#4-启动Orweb-daemon" class="headerlink" title="4.启动Orweb-daemon"></a>4.启动Orweb-daemon</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p <span class="regexp">/sdcard/</span>Orweb</span><br></pre></td></tr></table></figure>
+<h1 id="5-启动lighttpd服务器"><a href="#5-启动lighttpd服务器" class="headerlink" title="5.启动lighttpd服务器"></a>5.启动lighttpd服务器</h1><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lighttpd -f ~<span class="regexp">/lighttpd.conf&amp; &gt; /</span>dev/<span class="literal">null</span></span><br></pre></td></tr></table></figure>
+<h1 id="6-启动Tor"><a href="#6-启动Tor" class="headerlink" title="6.启动Tor"></a>6.启动Tor</h1><p>重新打开一个窗口<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tor</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="7-查看域名"><a href="#7-查看域名" class="headerlink" title="7. 查看域名"></a>7. 查看域名</h1><ul>
-<li>等待tor连接到主服务器并完成初始化(bootstrap)，然后新开一个termux会话，执行如下命令查看域名<pre class="line-numbers language-none"><code class="language-none">echo &quot;Onion域名:$(cat ~&#x2F;.tor&#x2F;hiddenservice&#x2F;hostname)&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>等待tor连接到主服务器并完成初始化(bootstrap)，然后新开一个termux会话，执行如下命令查看域名<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Onion域名:<span class="subst">$(cat ~/.tor/hiddenservice/hostname)</span>&quot;</span></span><br></pre></td></tr></table></figure></li>
 <li><p>挂载<a href="https://pzb568.github.io/2018/11/08/ss%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E5%8F%8A%E4%BD%BF%E7%94%A8/">Shadowsocks</a>或者<a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">v2ray</a>，访问暗网必须要tor ，国内因为你懂的原因必须要梯子。</p>
 </li>
 <li><p>给网站添加内容，用<a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.hjq.md">Mnote</a>写一份Markdown文档，转换为html，命名为index.html放到/sdcard/Orweb目录，网站内容自己编写。</p>
 </li>
 </ul>
-<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>如果没有成功或者报错删除.tor文件夹<br><pre class="line-numbers language-none"><code class="language-none">rm -rf .tor<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>再次启动服务器和tor继续第五第六步</p>
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>如果没有成功或者报错删除.tor文件夹<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">rm</span> <span class="selector-tag">-rf</span> <span class="selector-class">.tor</span></span><br></pre></td></tr></table></figure><br>再次启动服务器和tor继续第五第六步</p>
 <h1 id="8-测试网站"><a href="#8-测试网站" class="headerlink" title="8 . 测试网站"></a>8 . 测试网站</h1><ol>
 <li>下载最新版Tor<a target="_blank" rel="noopener" href="https://www.torproject.org/download/#android">https://www.torproject.org/download/#android</a> 选择arm版或者谷歌市场下载。</li>
 <li>打开Tor browser连接成功后输入上面第7步查看到域名地址，然后就可以看到你的暗网网站了。</li>
@@ -613,14 +590,14 @@ EOF<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">55k</span>
+    <span title="站点总字数">53k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">50 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

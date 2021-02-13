@@ -29,12 +29,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="transmission1. termux里安装transmissionpkg install transmission 2. 启动transmissiontransmission-daemon -T 下载管理器网页管理器transmission GUI http:&#x2F;&#x2F;localhost:9091&#x2F;transmission&#x2F;web&#x2F; Tremotesf软件直接谷歌市场下载需要修改&#x2F;data&#x2F;dat">
+<meta name="description" content="transmission1. termux里安装transmission1pkg install transmission 2. 启动transmission1transmission-daemon -T 下载管理器网页管理器transmission GUI http:&#x2F;&#x2F;localhost:9091&#x2F;transmission&#x2F;web&#x2F; Tremotesf软件直接谷歌市场下载需要修改&#x2F;data&#x2F;d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安卓系统利用termux下载种子文件">
 <meta property="og:url" content="https://pzb568.github.io/posts/486160a8.html">
 <meta property="og:site_name" content="风轻云淡">
-<meta property="og:description" content="transmission1. termux里安装transmissionpkg install transmission 2. 启动transmissiontransmission-daemon -T 下载管理器网页管理器transmission GUI http:&#x2F;&#x2F;localhost:9091&#x2F;transmission&#x2F;web&#x2F; Tremotesf软件直接谷歌市场下载需要修改&#x2F;data&#x2F;dat">
+<meta property="og:description" content="transmission1. termux里安装transmission1pkg install transmission 2. 启动transmission1transmission-daemon -T 下载管理器网页管理器transmission GUI http:&#x2F;&#x2F;localhost:9091&#x2F;transmission&#x2F;web&#x2F; Tremotesf软件直接谷歌市场下载需要修改&#x2F;data&#x2F;d">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ftp.bmp.ovh/imgs/2020/04/f75db9e7ce757e66.jpg">
 <meta property="article:published_time" content="2020-04-16T14:54:53.000Z">
@@ -401,7 +401,7 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.9k</span>
+      <span>4.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -419,120 +419,23 @@ show_date_time();
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="transmission"><a href="#transmission" class="headerlink" title="transmission"></a>transmission</h1><h2 id="1-termux里安装transmission"><a href="#1-termux里安装transmission" class="headerlink" title="1. termux里安装transmission"></a>1. termux里安装transmission</h2><pre class="line-numbers language-none"><code class="language-none">pkg install transmission<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="2-启动transmission"><a href="#2-启动transmission" class="headerlink" title="2. 启动transmission"></a>2. 启动transmission</h2><pre class="line-numbers language-none"><code class="language-none">transmission-daemon -T<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+        <h1 id="transmission"><a href="#transmission" class="headerlink" title="transmission"></a>transmission</h1><h2 id="1-termux里安装transmission"><a href="#1-termux里安装transmission" class="headerlink" title="1. termux里安装transmission"></a>1. termux里安装transmission</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> transmission</span><br></pre></td></tr></table></figure>
+<h2 id="2-启动transmission"><a href="#2-启动transmission" class="headerlink" title="2. 启动transmission"></a>2. 启动transmission</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transmission-daemon -T</span></span><br></pre></td></tr></table></figure>
 <h2 id="下载管理器"><a href="#下载管理器" class="headerlink" title="下载管理器"></a>下载管理器</h2><h3 id="网页管理器"><a href="#网页管理器" class="headerlink" title="网页管理器"></a>网页管理器</h3><p>transmission GUI</p>
 <p><a target="_blank" rel="noopener" href="http://localhost:9091/transmission/web/">http://localhost:9091/transmission/web/</a></p>
 <h2 id="Tremotesf"><a href="#Tremotesf" class="headerlink" title="Tremotesf"></a>Tremotesf</h2><p>软件直接谷歌市场下载<br>需要修改/data/data/com.termux/files/home/.config/transmission-daemon中settings.json文件</p>
 <blockquote>
 <p>按照下图修改用户名和密码按照自己的设置，其他设置如下一样。</p>
 </blockquote>
-<p><escape><a id="more"></a></escape><br><pre class="line-numbers language-none"><code class="language-none">&#123;
-    &quot;alt-speed-down&quot;: 50,
-    &quot;alt-speed-enabled&quot;: false,
-    &quot;alt-speed-time-begin&quot;: 540,
-    &quot;alt-speed-time-day&quot;: 127,
-    &quot;alt-speed-time-enabled&quot;: false,
-    &quot;alt-speed-time-end&quot;: 1020,
-    &quot;alt-speed-up&quot;: 50,
-    &quot;bind-address-ipv4&quot;: &quot;0.0.0.0&quot;,
-    &quot;bind-address-ipv6&quot;: &quot;::&quot;,
-    &quot;blocklist-enabled&quot;: false,
-    &quot;blocklist-url&quot;: &quot;http:&#x2F;&#x2F;www.example.com&#x2F;blocklist&quot;,
-    &quot;cache-size-mb&quot;: 2,
-    &quot;dht-enabled&quot;: true,
-    &quot;download-dir&quot;: &quot;&#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;Downloads&quot;,
-    &quot;download-queue-enabled&quot;: true,
-    &quot;download-queue-size&quot;: 5,
-    &quot;encryption&quot;: 0,
-    &quot;idle-seeding-limit&quot;: 30,
-    &quot;idle-seeding-limit-enabled&quot;: false,
-    &quot;incomplete-dir&quot;: &quot;&#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;Downloads&quot;,
-    &quot;incomplete-dir-enabled&quot;: false,
-    &quot;lpd-enabled&quot;: false,
-    &quot;message-level&quot;: 2,
-    &quot;peer-congestion-algorithm&quot;: &quot;&quot;,
-    &quot;peer-id-ttl-hours&quot;: 6,
-    &quot;peer-limit-global&quot;: 200,
-    &quot;peer-limit-per-torrent&quot;: 50,
-    &quot;peer-port&quot;: 51413,
-    &quot;peer-port-random-high&quot;: 65535,
-    &quot;peer-port-random-low&quot;: 49152,
-    &quot;peer-port-random-on-start&quot;: false,
-    &quot;peer-socket-tos&quot;: &quot;default&quot;,
-    &quot;pex-enabled&quot;: true,
-    &quot;port-forwarding-enabled&quot;: true,
-    &quot;preallocation&quot;: 1,
-    &quot;prefetch-enabled&quot;: false,
-    &quot;queue-stalled-enabled&quot;: true,
-    &quot;queue-stalled-minutes&quot;: 30,
-    &quot;ratio-limit&quot;: 2,
-    &quot;ratio-limit-enabled&quot;: false,
-    &quot;rename-partial-files&quot;: true,
-    &quot;rpc-authentication-required&quot;: false,
-    &quot;rpc-bind-address&quot;: &quot;0.0.0.0&quot;,
-    &quot;rpc-enabled&quot;: true,
-    &quot;rpc-host-whitelist&quot;: &quot;&quot;,
-    &quot;rpc-host-whitelist-enabled&quot;: true,
-    &quot;rpc-password&quot;: &quot;&#123;15ad59fc485380ee27c627519aac2ada787ea05734lHrHNa&quot;, ## 这里修改密码
-    &quot;rpc-port&quot;: 9091,
-    &quot;rpc-url&quot;: &quot;&#x2F;transmission&#x2F;&quot;,
-    &quot;rpc-username&quot;: &quot;termux&quot;, ## 这里修改用户名
-    &quot;rpc-whitelist&quot;: &quot;*&quot;,
-    &quot;rpc-whitelist-enabled&quot;: false,
-    &quot;scrape-paused-torrents-enabled&quot;: true,
-    &quot;script-torrent-done-enabled&quot;: false,
-    &quot;script-torrent-done-filename&quot;: &quot;&quot;,
-    &quot;seed-queue-enabled&quot;: false,
-    &quot;seed-queue-size&quot;: 10,
-    &quot;speed-limit-down&quot;: 100,
-    &quot;speed-limit-down-enabled&quot;: false,
-    &quot;speed-limit-up&quot;: 100,
-    &quot;speed-limit-up-enabled&quot;: false,
-    &quot;start-added-torrents&quot;: true,
-    &quot;trash-original-torrent-files&quot;: false,
-    &quot;umask&quot;: 18,
-    &quot;upload-slots-per-torrent&quot;: 14,
-    &quot;utp-enabled&quot;: true
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>Tremotesf配置如下图<br><img data-src="https://ftp.bmp.ovh/imgs/2020/04/f75db9e7ce757e66.jpg" alt=""></p>
-<h1 id="peerflix-server"><a href="#peerflix-server" class="headerlink" title="peerflix-server"></a>peerflix-server</h1><h2 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h2><pre class="line-numbers language-none"><code class="language-none">pkg install nodejs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h2><pre class="line-numbers language-none"><code class="language-none">
-yum insatll nodejs<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="debian-ubuntu"><a href="#debian-ubuntu" class="headerlink" title="debian/ubuntu"></a>debian/ubuntu</h2><pre class="line-numbers language-none"><code class="language-none">apt install nodejs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="安装服务"><a href="#安装服务" class="headerlink" title="安装服务"></a>安装服务</h2><pre class="line-numbers language-none"><code class="language-none">npm install -g peerflix-server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><pre class="line-numbers language-none"><code class="language-none">peerflix-server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><escape><a id="more"></a></escape><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;alt-speed-down&quot;:</span> <span class="number">50</span>,</span><br><span class="line">    <span class="attr">&quot;alt-speed-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;alt-speed-time-begin&quot;:</span> <span class="number">540</span>,</span><br><span class="line">    <span class="attr">&quot;alt-speed-time-day&quot;:</span> <span class="number">127</span>,</span><br><span class="line">    <span class="attr">&quot;alt-speed-time-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;alt-speed-time-end&quot;:</span> <span class="number">1020</span>,</span><br><span class="line">    <span class="attr">&quot;alt-speed-up&quot;:</span> <span class="number">50</span>,</span><br><span class="line">    <span class="attr">&quot;bind-address-ipv4&quot;:</span> <span class="string">&quot;0.0.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;bind-address-ipv6&quot;:</span> <span class="string">&quot;::&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;blocklist-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;blocklist-url&quot;:</span> <span class="string">&quot;http://www.example.com/blocklist&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;cache-size-mb&quot;:</span> <span class="number">2</span>,</span><br><span class="line">    <span class="attr">&quot;dht-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;download-dir&quot;:</span> <span class="string">&quot;/data/data/com.termux/files/home/Downloads&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;download-queue-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;download-queue-size&quot;:</span> <span class="number">5</span>,</span><br><span class="line">    <span class="attr">&quot;encryption&quot;:</span> <span class="number">0</span>,</span><br><span class="line">    <span class="attr">&quot;idle-seeding-limit&quot;:</span> <span class="number">30</span>,</span><br><span class="line">    <span class="attr">&quot;idle-seeding-limit-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;incomplete-dir&quot;:</span> <span class="string">&quot;/data/data/com.termux/files/home/Downloads&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;incomplete-dir-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;lpd-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;message-level&quot;:</span> <span class="number">2</span>,</span><br><span class="line">    <span class="attr">&quot;peer-congestion-algorithm&quot;:</span> <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;peer-id-ttl-hours&quot;:</span> <span class="number">6</span>,</span><br><span class="line">    <span class="attr">&quot;peer-limit-global&quot;:</span> <span class="number">200</span>,</span><br><span class="line">    <span class="attr">&quot;peer-limit-per-torrent&quot;:</span> <span class="number">50</span>,</span><br><span class="line">    <span class="attr">&quot;peer-port&quot;:</span> <span class="number">51413</span>,</span><br><span class="line">    <span class="attr">&quot;peer-port-random-high&quot;:</span> <span class="number">65535</span>,</span><br><span class="line">    <span class="attr">&quot;peer-port-random-low&quot;:</span> <span class="number">49152</span>,</span><br><span class="line">    <span class="attr">&quot;peer-port-random-on-start&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;peer-socket-tos&quot;:</span> <span class="string">&quot;default&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;pex-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;port-forwarding-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;preallocation&quot;:</span> <span class="number">1</span>,</span><br><span class="line">    <span class="attr">&quot;prefetch-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;queue-stalled-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;queue-stalled-minutes&quot;:</span> <span class="number">30</span>,</span><br><span class="line">    <span class="attr">&quot;ratio-limit&quot;:</span> <span class="number">2</span>,</span><br><span class="line">    <span class="attr">&quot;ratio-limit-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;rename-partial-files&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-authentication-required&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-bind-address&quot;:</span> <span class="string">&quot;0.0.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-host-whitelist&quot;:</span> <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-host-whitelist-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-password&quot;:</span> <span class="string">&quot;&#123;15ad59fc485380ee27c627519aac2ada787ea05734lHrHNa&quot;</span>, <span class="comment">## 这里修改密码</span></span><br><span class="line">    <span class="attr">&quot;rpc-port&quot;:</span> <span class="number">9091</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-url&quot;:</span> <span class="string">&quot;/transmission/&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-username&quot;:</span> <span class="string">&quot;termux&quot;</span>, <span class="comment">## 这里修改用户名</span></span><br><span class="line">    <span class="attr">&quot;rpc-whitelist&quot;:</span> <span class="string">&quot;*&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;rpc-whitelist-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;scrape-paused-torrents-enabled&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;script-torrent-done-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;script-torrent-done-filename&quot;:</span> <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;seed-queue-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;seed-queue-size&quot;:</span> <span class="number">10</span>,</span><br><span class="line">    <span class="attr">&quot;speed-limit-down&quot;:</span> <span class="number">100</span>,</span><br><span class="line">    <span class="attr">&quot;speed-limit-down-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;speed-limit-up&quot;:</span> <span class="number">100</span>,</span><br><span class="line">    <span class="attr">&quot;speed-limit-up-enabled&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;start-added-torrents&quot;:</span> <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;trash-original-torrent-files&quot;:</span> <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;umask&quot;:</span> <span class="number">18</span>,</span><br><span class="line">    <span class="attr">&quot;upload-slots-per-torrent&quot;:</span> <span class="number">14</span>,</span><br><span class="line">    <span class="attr">&quot;utp-enabled&quot;:</span> <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>Tremotesf配置如下图<br><img data-src="https://ftp.bmp.ovh/imgs/2020/04/f75db9e7ce757e66.jpg" alt=""></p>
+<h1 id="peerflix-server"><a href="#peerflix-server" class="headerlink" title="peerflix-server"></a>peerflix-server</h1><h2 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attribute">yum insatll nodejs</span></span><br></pre></td></tr></table></figure>
+<h2 id="debian-ubuntu"><a href="#debian-ubuntu" class="headerlink" title="debian/ubuntu"></a>debian/ubuntu</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt <span class="keyword">install</span> nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="安装服务"><a href="#安装服务" class="headerlink" title="安装服务"></a>安装服务</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> -g peerflix-<span class="keyword">server</span></span><br></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">peerflix-<span class="keyword">server</span></span><br></pre></td></tr></table></figure>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>配置文件目录：~/.config/peerflix-server/config.json</p>
 <p>配置示例：<a target="_blank" rel="noopener" href="https://github.com/mafintosh/torrent-stream#full-api">https://github.com/mafintosh/torrent-stream#full-api</a></p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;
-  &quot;connections&quot;: 100,
-  &quot;tracker&quot;: true,
-  &quot;verify&quot;: true,
-  &quot;uploads&quot;: 10,
-  &quot;trackers&quot;: [
-      &quot;udp:&#x2F;&#x2F;tracker.coppersurfer.tk:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;9.rarbg.to:2710&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;9.rarbg.me:2710&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.leechers-paradise.org:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.opentrackr.org:1337&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.internetwarriors.net:1337&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.openbittorrent.com:80&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;exodus.desync.com:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;retracker.lanta-net.ru:2710&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.tiny-vps.com:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;open.demonii.si:1337&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;bt.xxx-tracker.com:2710&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;open.stealth.si:80&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.torrent.eu.org:451&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;torrentclub.tech:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.cyberia.is:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;denis.stalker.upeer.me:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;tracker.moeking.me:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;explodie.org:6969&#x2F;announce&quot;,
-    &quot;udp:&#x2F;&#x2F;opentor.org:2710&#x2F;announce&quot;
-  ],
-   &quot;dht&quot;: true, 
-   &quot;path&quot;: &quot;&#x2F;root&#x2F;Downloads&quot;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;connections&quot;</span>: <span class="number">100</span>,</span><br><span class="line">  <span class="attr">&quot;tracker&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;verify&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;uploads&quot;</span>: <span class="number">10</span>,</span><br><span class="line">  <span class="attr">&quot;trackers&quot;</span>: [</span><br><span class="line">      <span class="string">&quot;udp://tracker.coppersurfer.tk:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://9.rarbg.to:2710/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://9.rarbg.me:2710/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.leechers-paradise.org:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.opentrackr.org:1337/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.internetwarriors.net:1337/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.openbittorrent.com:80/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://exodus.desync.com:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://retracker.lanta-net.ru:2710/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.tiny-vps.com:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://open.demonii.si:1337/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://bt.xxx-tracker.com:2710/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://open.stealth.si:80/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.torrent.eu.org:451/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://torrentclub.tech:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.cyberia.is:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://denis.stalker.upeer.me:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://tracker.moeking.me:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://explodie.org:6969/announce&quot;</span>,</span><br><span class="line">    <span class="string">&quot;udp://opentor.org:2710/announce&quot;</span></span><br><span class="line">  ],</span><br><span class="line">   <span class="attr">&quot;dht&quot;</span>: <span class="literal">true</span>, </span><br><span class="line">   <span class="attr">&quot;path&quot;</span>: <span class="string">&quot;/root/Downloads&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="管理器"><a href="#管理器" class="headerlink" title="管理器"></a>管理器</h2><p><a target="_blank" rel="noopener" href="http://localhost:9000">http://localhost:9000</a></p>
 
     </div>
@@ -686,14 +589,14 @@ yum insatll nodejs<span aria-hidden="true" class="line-numbers-rows"><span></spa
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">55k</span>
+    <span title="站点总字数">53k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">50 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

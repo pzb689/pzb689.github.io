@@ -399,14 +399,14 @@ show_date_time();
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.8k</span>
+      <span>2.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -419,85 +419,38 @@ show_date_time();
     <div class="post-body" itemprop="articleBody">
         <h1 id="aria2简介"><a href="#aria2简介" class="headerlink" title="aria2简介"></a>aria2简介</h1><p>&emsp;&emsp; Aria2 是一个用于 Linux、Windows 和 Mac OSX 的轻量级、多协议和多源的命令行下载管理器/实用程序。它支持 HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink。aria2 可以通过内置的 JSON-RPC 和 XML-RPC 接口操作。它支持多线程，可以使用多个源或协议下载文件，确实可以加速并尽可能多的完成下载。它非常轻量级，不需要太多的内存和 CPU。我们可以使用它作为 BitTorrent 客户端，因为它有所有你想要的 BitTorrent 客户端的功能。<br>&emsp;&emsp; 我们可以很容易的在所有的 Linux 发行版上安装 aria2 命令行下载器，例如 Debian、 Ubuntu、 Mint、 RHEL、 CentOS、 Fedora、 suse、 openSUSE、 Arch Linux、 Manjaro、 Mageia 等等……只需要输入下面的命令安装即可。对于 CentOS、 RHEL 系统，我们需要开启 uget 或者 RPMForge 库的支持。</p>
 <h1 id="aria2-安装"><a href="#aria2-安装" class="headerlink" title="aria2 安装"></a>aria2 安装</h1><ol>
-<li>Debian、 Ubuntu 和 Mint<pre class="line-numbers language-none"><code class="language-none">sudo apt install aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>CentOS、 RHEL、 Fedora 21 和更早些的操作系统]<pre class="line-numbers language-none"><code class="language-none">yum install aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>Fedora 22 和 之后的系统<pre class="line-numbers language-none"><code class="language-none">dnf install aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>suse 和 openSUSE<pre class="line-numbers language-none"><code class="language-none">zypper install wget<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>Mageia<pre class="line-numbers language-none"><code class="language-none">urpmi aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>Arch Linux<pre class="line-numbers language-none"><code class="language-none">sudo pacman -S aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>安卓系统termux<pre class="line-numbers language-none"><code class="language-none">pkg install aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li>Debian、 Ubuntu 和 Mint<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo</span> apt install aria<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>CentOS、 RHEL、 Fedora 21 和更早些的操作系统]<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum</span> install aria<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>Fedora 22 和 之后的系统<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">dnf</span> install aria<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>suse 和 openSUSE<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zypper <span class="keyword">install</span> wget</span><br></pre></td></tr></table></figure></li>
+<li>Mageia<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">urpmi</span> aria<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>Arch Linux<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo</span> pacman -S aria<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>安卓系统termux<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pkg</span> install aria<span class="number">2</span></span><br></pre></td></tr></table></figure>
 <h1 id="图形化aria2下载"><a href="#图形化aria2下载" class="headerlink" title="图形化aria2下载"></a>图形化aria2下载</h1><h2 id="一、使用Termux在本地搭建Aria2-AriaNg"><a href="#一、使用Termux在本地搭建Aria2-AriaNg" class="headerlink" title="一、使用Termux在本地搭建Aria2+AriaNg"></a>一、使用Termux在本地搭建Aria2+AriaNg</h2></li>
-<li>下载需要的Packages<pre class="line-numbers language-none"><code class="language-none">pkg in wget unzip aria2 tmux<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>下载Caddy<br>这样因为Caddy配置起来比较容易,所以用Caddy当HTTP Server.<pre class="line-numbers language-none"><code class="language-none">cd~
-wget -qO- https:&#x2F;&#x2F;getcaddy.com | bash -s personal<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li>下载AriaNg并解压<pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;github.com&#x2F;mayswind&#x2F;AriaNg-DailyBuild&#x2F;archive&#x2F;master.zip
-unzip master.zip
-mv AriaNg-DailyBuild-master AriaNg
-rm master.zip<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>配置Caddy<pre class="line-numbers language-none"><code class="language-none">cd~
-vim Caddyfile <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-在vim输入（:i编辑,:wq退出并保存）<pre class="line-numbers language-none"><code class="language-none">:8080 &#123;
-root &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;AriaNg
-gzip
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>启动<br>输入tmux<br>在新建的窗口中输入 启动Aria2<pre class="line-numbers language-none"><code class="language-none">aria2c --enable-rpc --rpc-listen-all&#x3D;true --rpc-allow-origin-all -c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-按Ctrl+b之后再按d返回之前的窗口，将此窗口放在后台执行（输入tmux attach能够重新进入,按Ctrl+b之后再按&amp;关闭当前tmux窗口）<br>返回后启动AriaNg,输入<pre class="line-numbers language-none"><code class="language-none">cd~
-caddy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<li>下载需要的Packages<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pkg</span> in wget unzip aria<span class="number">2</span> tmux</span><br></pre></td></tr></table></figure></li>
+<li>下载Caddy<br>这样因为Caddy配置起来比较容易,所以用Caddy当HTTP Server.<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span>~</span><br><span class="line">wget -qO- http<span class="variable">s:</span>//getcaddy.<span class="keyword">com</span> | bash -s personal</span><br></pre></td></tr></table></figure></li>
+<li>下载AriaNg并解压<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//gi</span>thub.com<span class="regexp">/mayswind/</span>AriaNg-DailyBuild<span class="regexp">/archive/m</span>aster.zip</span><br><span class="line">unzip master.zip</span><br><span class="line">mv AriaNg-DailyBuild-master AriaNg</span><br><span class="line">rm master.zip</span><br></pre></td></tr></table></figure></li>
+<li>配置Caddy<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span>~</span><br><span class="line"><span class="keyword">vim</span> Caddyfile </span><br></pre></td></tr></table></figure>
+在vim输入（:i编辑,:wq退出并保存）<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:<span class="number">8080</span> &#123;</span><br><span class="line">root <span class="regexp">/data/</span>data<span class="regexp">/com.termux/</span>files<span class="regexp">/home/</span>AriaNg</span><br><span class="line">gzip</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>启动<br>输入tmux<br>在新建的窗口中输入 启动Aria2<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">aria2c</span> --enable-rpc --rpc-listen-<span class="literal">all</span>=true --rpc-<span class="literal">allow</span>-origin-<span class="literal">all</span> -c</span><br></pre></td></tr></table></figure>
+按Ctrl+b之后再按d返回之前的窗口，将此窗口放在后台执行（输入tmux attach能够重新进入,按Ctrl+b之后再按&amp;关闭当前tmux窗口）<br>返回后启动AriaNg,输入<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span>~</span><br><span class="line">caddy</span><br></pre></td></tr></table></figure>
 6.访问<br>打开浏览器地址栏输入<br>127.0.0.1:8080<br><escape><a id="more"></a></escape><br><img data-src="01.jpg" alt=""></li>
-<li>下载BT种文文件需要设置BT服务器<br><a target="_blank" rel="noopener" href="https://github.com/ngosang/trackerslist/blob/master/README.md">https://github.com/ngosang/trackerslist/blob/master/README.md</a><br>在ariaNg设置中找到BT设置BT服务器填入以链接中的内容并附上BT服务器<br><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt">https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt</a><pre class="line-numbers language-none"><code class="language-none">udp:&#x2F;&#x2F;62.138.0.158:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;188.241.58.209:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;62.210.79.110:1337&#x2F;announce
-
-udp:&#x2F;&#x2F;185.225.17.100:1337&#x2F;announce
-
-udp:&#x2F;&#x2F;151.80.120.112:2710&#x2F;announce
-
-udp:&#x2F;&#x2F;208.83.20.20:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;184.105.151.164:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;176.113.68.67:8080&#x2F;announce
-
-udp:&#x2F;&#x2F;51.15.40.114:80&#x2F;announce
-
-http:&#x2F;&#x2F;176.113.71.19:6961&#x2F;announce
-
-udp:&#x2F;&#x2F;176.113.68.66:6961&#x2F;announce
-
-udp:&#x2F;&#x2F;91.216.110.52:451&#x2F;announce
-
-udp:&#x2F;&#x2F;5.206.28.90:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;188.246.227.212:80&#x2F;announce
-
-udp:&#x2F;&#x2F;5.2.79.219:1337&#x2F;announce
-
-udp:&#x2F;&#x2F;5.2.79.22:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;95.211.168.204:2710&#x2F;announce
-
-http:&#x2F;&#x2F;51.68.122.172:80&#x2F;announce
-
-udp:&#x2F;&#x2F;210.244.71.25:6969&#x2F;announce
-
-udp:&#x2F;&#x2F;51.38.184.185:6969&#x2F;announce<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<li>下载BT种文文件需要设置BT服务器<br><a target="_blank" rel="noopener" href="https://github.com/ngosang/trackerslist/blob/master/README.md">https://github.com/ngosang/trackerslist/blob/master/README.md</a><br>在ariaNg设置中找到BT设置BT服务器填入以链接中的内容并附上BT服务器<br><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt">https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt</a><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">udp:<span class="regexp">//</span><span class="number">62.138</span>.<span class="number">0.158</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">188.241</span>.<span class="number">58.209</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">62.210</span>.<span class="number">79.110</span>:<span class="number">1337</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">185.225</span>.<span class="number">17.100</span>:<span class="number">1337</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">151.80</span>.<span class="number">120.112</span>:<span class="number">2710</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">208.83</span>.<span class="number">20.20</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">184.105</span>.<span class="number">151.164</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">176.113</span>.<span class="number">68.67</span>:<span class="number">8080</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">51.15</span>.<span class="number">40.114</span>:<span class="number">80</span>/announce</span><br><span class="line"></span><br><span class="line">http:<span class="regexp">//</span><span class="number">176.113</span>.<span class="number">71.19</span>:<span class="number">6961</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">176.113</span>.<span class="number">68.66</span>:<span class="number">6961</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">91.216</span>.<span class="number">110.52</span>:<span class="number">451</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">5.206</span>.<span class="number">28.90</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">188.246</span>.<span class="number">227.212</span>:<span class="number">80</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">5.2</span>.<span class="number">79.219</span>:<span class="number">1337</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">5.2</span>.<span class="number">79.22</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">95.211</span>.<span class="number">168.204</span>:<span class="number">2710</span>/announce</span><br><span class="line"></span><br><span class="line">http:<span class="regexp">//</span><span class="number">51.68</span>.<span class="number">122.172</span>:<span class="number">80</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">210.244</span>.<span class="number">71.25</span>:<span class="number">6969</span>/announce</span><br><span class="line"></span><br><span class="line">udp:<span class="regexp">//</span><span class="number">51.38</span>.<span class="number">184.185</span>:<span class="number">6969</span>/announce</span><br></pre></td></tr></table></figure>
 <h2 id="二、也可以使用安装网页版webui-aria2"><a href="#二、也可以使用安装网页版webui-aria2" class="headerlink" title="二、也可以使用安装网页版webui-aria2"></a>二、也可以使用安装网页版webui-aria2</h2></li>
-<li>下载网页版webui-aria2<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ziahamza&#x2F;webui-aria2.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>打开运行<pre class="line-numbers language-none"><code class="language-none">cd webui-aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>启动<pre class="line-numbers language-none"><code class="language-none">node node-server.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>下载网页版webui-aria2<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/ziahamza/</span>webui-aria2.git</span><br></pre></td></tr></table></figure></li>
+<li>打开运行<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cd</span> webui-aria<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>启动<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">node-server</span>.js</span><br></pre></td></tr></table></figure></li>
 <li>输入提示的网址打开</li>
 </ol>
 <p>当然以上图形化对于普通人是非常有好的，如果不想麻烦就直接使用命令下载更加方便。</p>
 <h2 id="也可以安装图形界面直接命令下载"><a href="#也可以安装图形界面直接命令下载" class="headerlink" title="也可以安装图形界面直接命令下载"></a>也可以安装图形界面直接命令下载</h2><ul>
-<li>命令下载<pre class="line-numbers language-none"><code class="language-none">aria2c 链接<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>断点续传下载<pre class="line-numbers language-none"><code class="language-none">aria2c -c 之前下载文件的链接<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>下载并修改文件名<pre class="line-numbers language-none"><code class="language-none">aria2c -o 链接 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>下载多个文件<pre class="line-numbers language-none"><code class="language-none">aria2c -Z 链接1 链接2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>设置线程<pre class="line-numbers language-none"><code class="language-none">aria2 -x 5 链接<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-分断下载<pre class="line-numbers language-none"><code class="language-none">aria2 -s 16 url<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-多线程分断下载<pre class="line-numbers language-none"><code class="language-none">aria2 -x16 -s 16 url<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>命令下载<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria<span class="number">2</span><span class="keyword">c</span> 链接</span><br></pre></td></tr></table></figure></li>
+<li>断点续传下载<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria<span class="number">2</span><span class="keyword">c</span> -<span class="keyword">c</span> 之前下载文件的链接</span><br></pre></td></tr></table></figure></li>
+<li>下载并修改文件名<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria<span class="number">2</span><span class="keyword">c</span> -o 链接 文件名</span><br></pre></td></tr></table></figure></li>
+<li>下载多个文件<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2c -Z 链接<span class="number">1</span> 链接<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li>设置线程<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2 -x <span class="number">5</span> 链接</span><br></pre></td></tr></table></figure>
+分断下载<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2 -s <span class="number">16</span> url</span><br></pre></td></tr></table></figure>
+多线程分断下载<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">aria2</span> -x<span class="number">16</span> -s <span class="number">16</span> url</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -649,14 +602,14 @@ udp:&#x2F;&#x2F;51.38.184.185:6969&#x2F;announce<span aria-hidden="true" class="
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">55k</span>
+    <span title="站点总字数">53k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">50 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
