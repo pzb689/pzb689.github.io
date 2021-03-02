@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="&amp;emsp;&amp;emsp; Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。&amp;emsp;&amp;emsp; hexo默认支持Markdown编辑文章，学习好Markdown 编辑器语法有利于更方便友好的写作;下面我会用一些事例分享Markdown 编辑器使用中的各种技巧。 段首缩进 在文章编辑排版中首先经常使用到的就是段首缩进；那可以看到">
 <meta property="og:type" content="article">
@@ -443,16 +443,16 @@ show_date_time();
 <h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><blockquote>
 <p>可以插入网络中和本的的图片<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="selector-attr">[]</span>(images/<span class="number">1</span>.jpg)</span><br></pre></td></tr></table></figure><br>美女图片镇楼<br><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559150762962&amp;di=89f86d08e03074713a0d4f9114f9b9ec&amp;imgtype=0&amp;src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3210444378%2C1295390531%26fm%3D193" alt=""></p>
 <h1 id="分页显示"><a href="#分页显示" class="headerlink" title="分页显示"></a>分页显示</h1><p>哦😊到这里应该要分页了<br>代码如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">escape</span>&gt;</span><span class="comment">&lt;!-- more --&gt;</span><span class="tag">&lt;/<span class="name">escape</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<escape><a id="more"></a></escape>
+<escape><span id="more"></span></escape>
 
 </blockquote>
 <h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><ol>
-<li><p>文字链接</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">github</span>](<span class="link">www.github.com</span>)</span><br></pre></td></tr></table></figure>
+<li>文字链接<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">github</span>](<span class="link">www.github.com</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <p><a href="www.github..com">github</a></p>
-</li>
-<li><p>网址链接</p>
-</li>
+<ol>
+<li>网址链接</li>
 </ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">www</span><span class="selector-class">.Google</span><span class="selector-class">.hk</span>&gt;</span><br></pre></td></tr></table></figure>
 <www.Google.hk>
@@ -471,9 +471,28 @@ show_date_time();
 <h1 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h1><ol>
 <li>安装  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-tag-dplayer</span></span><br></pre></td></tr></table></figure></li>
 <li>使用<br>输入 如下代码<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="meta">%</span> dplayer <span class="string">&quot;url=https://vodkgeyttp8.vod.126.net/cloudmusic/YCEhICAiIWI1ISAxMSEiMA==/mv/5617127/36fb72932c6a0682fe09f201e2fdda0b.mp4?wsSecret=bd2a79912d92c40a0557933e82a43f57&amp;wsTime=1562298067&quot;</span>  <span class="string">&quot;pic=http://p1.music.126.net/xrLKWowydpr7W_g8YgKBRQ==/18730180580875994.jpg&quot;</span> <span class="string">&quot;loop=yes&quot;</span> <span class="string">&quot;theme=#FADFA3&quot;</span> <span class="string">&quot;autoplay=false&quot;</span> <span class="string">&quot;token=tokendemo&quot;</span> <span class="meta">%</span>&#125;</span><br></pre></td></tr></table></figure>
-**&gt;新版本异常放弃使用dplayer<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string"> 姓名 </span>|<span class="string"> 性别 </span>|<span class="string"> 电话 </span>|</span><br><span class="line">|<span class="string"> :--- </span>|<span class="string"> :----: </span>|<span class="string"> ----: </span>|</span><br><span class="line">|<span class="string"> 张三 </span>|<span class="string"> 男 </span>|<span class="string"> 123456789123 </span>|</span><br></pre></td></tr></table></figure>
-| 姓名 | 性别 | 电话 |<br>| :—- | :——: | ——: |<br>| 张三 | 男 | 123456789123 |</li>
+</li>
 </ol>
+<p>**&gt;新版本异常放弃使用dplayer</p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string"> 姓名 </span>|<span class="string"> 性别 </span>|<span class="string"> 电话 </span>|</span><br><span class="line">|<span class="string"> :--- </span>|<span class="string"> :----: </span>|<span class="string"> ----: </span>|</span><br><span class="line">|<span class="string"> 张三 </span>|<span class="string"> 男 </span>|<span class="string"> 123456789123 </span>|</span><br></pre></td></tr></table></figure>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">姓名</th>
+<th style="text-align:center">性别</th>
+<th style="text-align:right">电话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">张三</td>
+<td style="text-align:center">男</td>
+<td style="text-align:right">123456789123</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h1 id="图片墙"><a href="#图片墙" class="headerlink" title="图片墙"></a>图片墙</h1><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp <span class="number">4</span><span class="number">-4</span> %&#125;</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">1.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">2.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">3.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">4.</span>jpeg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
 <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/1.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/2.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/3.jpeg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/4.jpeg" alt=""></div></div></div>
 <h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="comment">% mermaid graph TD %&#125;</span></span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br><span class="line">&#123;<span class="comment">% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
@@ -773,7 +792,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -815,7 +834,7 @@ if (document.querySelectorAll('.mermaid').length) {
 
   
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

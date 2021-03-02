@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="wordpress介绍&amp;emsp;&amp;emsp; WordPress 是一种使用 PHP 语言和 MySQL 数据库开发的开源、免费的 Blog（博客，网志）引擎，用户可以在支持 PHP，MySQL 数据库的服务器上建立自己的 Blog。   LNMP方案 Linux nginx mysql php 安装配置数据库MYSQLMariaDB 数据库管理系统是 MySQL 的一个分支，主要由开源社区在维">
 <meta property="og:type" content="article">
@@ -430,18 +430,14 @@ show_date_time();
 ~~2. 安装基本数据<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysql_install_db</span></span><br></pre></td></tr></table></figure></li>
 <li>启动 mariadb 服务修改密码后续使用必须开启后台服务否则报错。<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysqld</span></span><br></pre></td></tr></table></figure>
 如果提示错误没有my.cnf.d文件夹下面创建创建文件夹<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="variable">$PREFIX</span><span class="regexp">/etc/my</span>.cnf.d</span><br></pre></td></tr></table></figure>
-需要在次初始化数据库<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysql_install_db</span></span><br></pre></td></tr></table></figure>
-直接mysqld退出后必须重新启动才能使用，可以通过tmux来管理就不需要重启了<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux <span class="keyword">new</span> <span class="type"></span>-s mysql</span><br></pre></td></tr></table></figure>
-启动数据库服务器<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysqld</span></span><br></pre></td></tr></table></figure>
-4.打开一个新窗口修改密码<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysql_secure_installation</span></span><br></pre></td></tr></table></figure>
-输入当前输入密码<br>因为是空密码, 这里默认 回车<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter <span class="keyword">current</span> <span class="keyword">password</span> <span class="keyword">for</span> root (enter <span class="keyword">for</span> <span class="keyword">none</span>):</span><br></pre></td></tr></table></figure>
-设置新密码<br>这里设置新的root密码<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span> root <span class="keyword">password</span>? [Y/n] y</span><br><span class="line"><span class="keyword">New</span> <span class="keyword">password</span>:</span><br><span class="line">Re-enter <span class="keyword">new</span> <span class="keyword">password</span>:</span><br></pre></td></tr></table></figure>
-其他设置下面根据个人偏好来进行设置,没有绝对的要求<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Remove</span> anonymous users? [Y/n] Y                <span class="comment">#是否移除匿名用户</span></span><br><span class="line">Disallow root login remotely? [Y/n] n          <span class="comment">#是否不允许root远程登录</span></span><br><span class="line"><span class="keyword">Remove</span> <span class="keyword">test</span> database <span class="keyword">and</span> access to it? [Y/n] n <span class="comment">#是否移除test数据库</span></span><br><span class="line">Reload privilege tables now? [Y/n] y           <span class="comment">#是否重新加载表的权限</span></span><br></pre></td></tr></table></figure>
-~~</li>
+</li>
+</ol>
+<p>需要在次初始化数据库<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysql_install_db</span></span><br></pre></td></tr></table></figure><br>直接mysqld退出后必须重新启动才能使用，可以通过tmux来管理就不需要重启了<br><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux <span class="keyword">new</span> <span class="type"></span>-s mysql</span><br></pre></td></tr></table></figure><br>启动数据库服务器<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysqld</span></span><br></pre></td></tr></table></figure><br>4.打开一个新窗口修改密码<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysql_secure_installation</span></span><br></pre></td></tr></table></figure><br>输入当前输入密码<br>因为是空密码, 这里默认 回车<br><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter <span class="keyword">current</span> <span class="keyword">password</span> <span class="keyword">for</span> root (enter <span class="keyword">for</span> <span class="keyword">none</span>):</span><br></pre></td></tr></table></figure><br>设置新密码<br>这里设置新的root密码<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span> root <span class="keyword">password</span>? [Y/n] y</span><br><span class="line"><span class="keyword">New</span> <span class="keyword">password</span>:</span><br><span class="line">Re-enter <span class="keyword">new</span> <span class="keyword">password</span>:</span><br></pre></td></tr></table></figure><br>其他设置下面根据个人偏好来进行设置,没有绝对的要求<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Remove</span> anonymous users? [Y/n] Y                <span class="comment">#是否移除匿名用户</span></span><br><span class="line">Disallow root login remotely? [Y/n] n          <span class="comment">#是否不允许root远程登录</span></span><br><span class="line"><span class="keyword">Remove</span> <span class="keyword">test</span> database <span class="keyword">and</span> access to it? [Y/n] n <span class="comment">#是否移除test数据库</span></span><br><span class="line">Reload privilege tables now? [Y/n] y           <span class="comment">#是否重新加载表的权限</span></span><br></pre></td></tr></table></figure><br>~~</p>
+<ol>
 <li>修改数据库密码<blockquote>
 <p>新版本升级修改密码有了一些变化，具体信息访问<a href="">termux wiki</a></p>
 <h1 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h1><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> php</span><br></pre></td></tr></table></figure>
-<escape><a id="more"></a></escape>
+<escape><span id="more"></span></escape>
 
 </blockquote>
 </li>
@@ -452,8 +448,9 @@ show_date_time();
 <li>进入wordpress文件夹<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> wordpress</span><br></pre></td></tr></table></figure></li>
 <li>配置wp -config<br>图下是设置需要修改数据库名用户名和密码<br><img data-src="01.jpg" alt=""></li>
 <li>浏览器输入172.0.0.1:9000登录<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php -S <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">9000</span></span><br></pre></td></tr></table></figure>
-设置配置文件用户名密码<br><img data-src="https://i.bmp.ovh/imgs/2019/02/b961fded72875694.jpg" alt=""><br>然后配置网站标题用户名密码登录，详细内容这里就不做演示了。</li>
+</li>
 </ol>
+<p>设置配置文件用户名密码<br><img data-src="https://i.bmp.ovh/imgs/2019/02/b961fded72875694.jpg" alt=""><br>然后配置网站标题用户名密码登录，详细内容这里就不做演示了。</p>
 <h1 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h1><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nginx</span><br></pre></td></tr></table></figure>
 <h1 id="安装模拟root环境"><a href="#安装模拟root环境" class="headerlink" title="安装模拟root环境"></a>安装模拟root环境</h1><p>由于termux的特殊性，nginx和php-fpm的修改都必须在模拟root环境下，才能成功。<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> proot</span><br></pre></td></tr></table></figure></p>
 <h2 id="进入模拟root模式"><a href="#进入模拟root模式" class="headerlink" title="进入模拟root模式"></a>进入模拟root模式</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">termux-chroot</span></span><br></pre></td></tr></table></figure>
@@ -764,7 +761,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -806,7 +803,7 @@ if (document.querySelectorAll('.mermaid').length) {
 
   
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

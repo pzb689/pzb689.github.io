@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="&amp;emsp;&amp;emsp; Linux系统是非常强大的，期中有很多内置命令，随和用户的增加很多人自己贡献了很多优秀的工具，使我们可以更加方便捷的使用及工作。 exa exa是使用 Rust语言编写的ls文件列表命令替代品；同时还可以替代tree命令。 1. 安装ubuntu安装1sudo apt install exa  archLinux1sudo pacman -S exa CentOS1yum">
 <meta property="og:type" content="article">
@@ -481,7 +481,7 @@ show_date_time();
 
 <p><img data-src="df.svg" alt="df"></p>
 <p><a href="#fd">点击这里回到fd</a></p>
-<escape><a id="more"></a></escape>
+<escape><span id="more"></span></escape>
 
 <h1 id="ag"><a href="#ag" class="headerlink" title="ag"></a>ag</h1><blockquote>
 <p>silversearcher-ag—— The silver searcher，这个软件用c编写的，速度极快，用它替代grep。</p>
@@ -489,8 +489,8 @@ show_date_time();
 <h3 id="archLinux-3"><a href="#archLinux-3" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S silversearcher-ag</span></span><br></pre></td></tr></table></figure>
 <h3 id="安卓termux-3"><a href="#安卓termux-3" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> silversearcher-ag</span><br></pre></td></tr></table></figure>
 <h2 id="2-使用-2"><a href="#2-使用-2" class="headerlink" title="2. 使用"></a>2. 使用</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig <span class="string">| ag inet</span></span><br></pre></td></tr></table></figure>
-<p><img data-src="ag.svg" alt="ag" width="100%" height="100%" ></p>
 </blockquote>
+<p><img data-src="ag.svg" alt="ag" width="100%" height="100%" ></p>
 <p><a href="#ag">点击这里回到ag</a></p>
 <h1 id="axel"><a href="#axel" class="headerlink" title="axel"></a>axel</h1><blockquote>
 <p> Axel 是 Linux 下一个不错的HTTP/FTP高速下载工具。支持多线程下载、断点续传，且可以从多个地址或者从一个地址的多个连接来下载同一个文件。适合网速不给力时多线程下载提高下载速度;可以用来替代curl wget 。  </p>
@@ -789,7 +789,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -831,7 +831,7 @@ if (document.querySelectorAll('.mermaid').length) {
 
   
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

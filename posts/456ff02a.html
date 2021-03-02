@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="&amp;emsp;&amp;emsp; 在添加 Hexo 博客 加密功能的模块有2个，一个是hexo-blog-encrypt，另一个是hexo-encrypt。可任选一个。 hexo-blog-encrypt插件安装hexo-blog-encrypt插件1npm install --save hexo-blog-encrypt 配置启用插件123# Securityencrypt: # hexo-blog-e">
 <meta property="og:type" content="article">
@@ -416,7 +416,7 @@ show_date_time();
 <h1 id="hexo-blog-encrypt插件"><a href="#hexo-blog-encrypt插件" class="headerlink" title="hexo-blog-encrypt插件"></a>hexo-blog-encrypt插件</h1><h2 id="安装hexo-blog-encrypt插件"><a href="#安装hexo-blog-encrypt插件" class="headerlink" title="安装hexo-blog-encrypt插件"></a>安装hexo-blog-encrypt插件</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
 <h2 id="配置启用插件"><a href="#配置启用插件" class="headerlink" title="配置启用插件"></a>配置启用插件</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <h2 id="加密文章"><a href="#加密文章" class="headerlink" title="加密文章"></a>加密文章</h2><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">---</span></span><br><span class="line">title: Hello World</span><br><span class="line"><span class="type">date</span>: <span class="number">2016</span><span class="number">-03</span><span class="number">-30</span> <span class="number">21</span>:<span class="number">18</span>:<span class="number">02</span></span><br><span class="line"><span class="keyword">password</span>: <span class="number">123456</span>  #密码</span><br><span class="line">abstract: Something was <span class="keyword">encrypted</span>, please enter <span class="keyword">password</span> <span class="keyword">to</span> <span class="keyword">read</span>.  #摘要</span><br><span class="line">message: Welcome <span class="keyword">to</span> my blog, enter <span class="keyword">password</span> <span class="keyword">to</span> <span class="keyword">read</span>. # 描述性文字</span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure>
-<escape><a id="more"></a></escape>
+<escape><span id="more"></span></escape>
 
 <h1 id="hexo-encrypt插件"><a href="#hexo-encrypt插件" class="headerlink" title="hexo-encrypt插件"></a>hexo-encrypt插件</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-<span class="keyword">encrypt</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 <h2 id="博客设置-config-yml添加"><a href="#博客设置-config-yml添加" class="headerlink" title="博客设置_config.yml添加"></a>博客设置<strong>_config.yml</strong>添加</h2><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># encrypt</span></span><br><span class="line"><span class="symbol">  encrypt:</span>     </span><br><span class="line"><span class="symbol">  pwdfile:</span> encrypt_password</span><br></pre></td></tr></table></figure>
@@ -684,7 +684,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -726,7 +726,7 @@ if (document.querySelectorAll('.mermaid').length) {
 
   
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

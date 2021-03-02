@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="termux安装hugo1apt install hugo 新建网站1hugo new site blog 主题配置 进入网站根目录1cd blog 2.下载子模主题1git submodule init https:&#x2F;&#x2F;github.com&#x2F;olOwOlo&#x2F;hugo-theme-even themes&#x2F;even 配置主题请参考官方主题设置  重要: 在主题的 exampleSite 目录下有一个">
 <meta property="og:type" content="article">
@@ -428,18 +428,20 @@ show_date_time();
 <p>重要: 在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp themes<span class="regexp">/even/</span>exampleSite/config.toml ~</span><br></pre></td></tr></table></figure><br>注意: 对于这个主题，你应该使用 post 而不是 posts，即 hugo new post/some-content.md。</p>
 <ol>
 <li>启动本地服务器<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo<span class="built_in"> server </span></span><br></pre></td></tr></table></figure>
-<h1 id="netlify配置文件"><a href="#netlify配置文件" class="headerlink" title="netlify配置文件"></a>netlify配置文件</h1></li>
+</li>
 </ol>
-<p>要部署到netlify，必须建一个netlify配置文件,可以参考<br><a target="_blank" rel="noopener" href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/">https://gohugo.io/hosting-and-deployment/hosting-on-netlify/</a></p>
+<h1 id="netlify配置文件"><a href="#netlify配置文件" class="headerlink" title="netlify配置文件"></a>netlify配置文件</h1><p>要部署到netlify，必须建一个netlify配置文件,可以参考<br><a target="_blank" rel="noopener" href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/">https://gohugo.io/hosting-and-deployment/hosting-on-netlify/</a></p>
 <ol>
 <li>在网站根目录<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">vim</span> <span class="selector-tag">netlify</span><span class="selector-class">.toml</span></span><br></pre></td></tr></table></figure>
 输入如下内容<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[build]</span></span><br><span class="line"><span class="attr">publish</span> = <span class="string">&quot;public&quot;</span></span><br><span class="line"><span class="attr">command</span> = <span class="string">&quot;hugo --gc --minify&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.production.environment]</span></span><br><span class="line"><span class="attr">HUGO_VERSION</span> = <span class="string">&quot;0.55.6&quot;</span></span><br><span class="line"><span class="attr">HUGO_ENV</span> = <span class="string">&quot;production&quot;</span></span><br><span class="line"><span class="attr">HUGO_ENABLEGITINFO</span> = <span class="string">&quot;true&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.split1]</span></span><br><span class="line"><span class="attr">command</span> = <span class="string">&quot;hugo --gc --minify --enableGitInfo&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.split1.environment]</span></span><br><span class="line"><span class="attr">HUGO_VERSION</span> = <span class="string">&quot;0.55.6&quot;</span></span><br><span class="line"><span class="attr">HUGO_ENV</span> = <span class="string">&quot;production&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.deploy-preview]</span></span><br><span class="line"><span class="attr">command</span> = <span class="string">&quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.deploy-preview.environment]</span></span><br><span class="line"><span class="attr">HUGO_VERSION</span> = <span class="string">&quot;0.55.6&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.branch-deploy]</span></span><br><span class="line"><span class="attr">command</span> = <span class="string">&quot;hugo --gc --minify -b $DEPLOY_PRIME_URL&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.branch-deploy.environment]</span></span><br><span class="line"><span class="attr">HUGO_VERSION</span> = <span class="string">&quot;0.55.6&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[context.next.environment]</span></span><br><span class="line"><span class="attr">HUGO_ENABLEGITINFO</span> = <span class="string">&quot;true&quot;</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
 </li>
 </ol>
+<span id="more"></span>
 <h1 id="上传源代码"><a href="#上传源代码" class="headerlink" title="上传源代码"></a>上传源代码</h1><ol>
 <li>进入博客目录<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure></li>
-<li>创建版本库<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure></li>
+<li><p>创建版本库</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p>在<a target="_blank" rel="noopener" href="https://www.github.com">github</a>或者<a target="_blank" rel="noopener" href="https://www.gitee.com">gitee</a>新建一个仓库blog</p>
 </li>
 <li><p>生成ssh密匙</p>
@@ -458,8 +460,12 @@ show_date_time();
 </ol>
 <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> -A</span></span><br></pre></td></tr></table></figure>
 <ol>
-<li>注释<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -m <span class="string">&quot;hugo博客&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>第一次部署强制上传到服务器<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure></li>
+<li><p>注释</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -m <span class="string">&quot;hugo博客&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第一次部署强制上传到服务器</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>以后在更新直接更新</p>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
 <h1 id="部署网站到netlify"><a href="#部署网站到netlify" class="headerlink" title="部署网站到netlify"></a>部署网站到netlify</h1></li>
@@ -738,7 +744,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -780,7 +786,7 @@ if (document.querySelectorAll('.mermaid').length) {
 
   
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

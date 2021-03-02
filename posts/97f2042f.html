@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="Mathjax介绍&amp;emsp;&amp;emsp; hexo默认的渲染器是marked，并不支持mathjax。kramed是在marked基础上修改的，支持了mathjax。在的hexo工程目录下的node_modules中可以找到对应的渲染器文件夹。同时在你的工程目录下用以下命令安装kramed。另外补充一个NexT配置中推荐的渲染器hexo-renderer-pandoc，功能很强大不仅可以渲染ma">
 <meta property="og:type" content="article">
@@ -430,7 +430,7 @@ show_date_time();
 <h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>math:<br>  enable: true #开启</p>
 <p>  engine: mathjax 取消注释</p>
 <h1 id="文章Front-matter中开启mathjax"><a href="#文章Front-matter中开启mathjax" class="headerlink" title="文章Front-matter中开启mathjax"></a>文章Front-matter中开启mathjax</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> </span><br><span class="line"><span class="attr">category:</span></span><br><span class="line"><span class="attr">date:</span> </span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span>  <span class="comment">#开启后才会渲染数学公式</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-<escape><a id="more"></a></escape>
+<escape><span id="more"></span></escape>
 
 <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>下面来测试一下</p>
 <h2 id="麦克斯韦方程组"><a href="#麦克斯韦方程组" class="headerlink" title="麦克斯韦方程组"></a>麦克斯韦方程组</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="formula">$$</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">begin</span><span class="string">&#123;eqnarray&#125;</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">nabla</span></span><span class="tag">\<span class="name">cdot</span></span><span class="tag">\<span class="name">vec</span><span class="string">&#123;E&#125;</span></span> &amp;=&amp; <span class="tag">\<span class="name">frac</span><span class="string">&#123;\rho&#125;</span><span class="string">&#123;\epsilon_0&#125;</span></span> <span class="tag">\<span class="name">\</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">nabla</span></span><span class="tag">\<span class="name">cdot</span></span><span class="tag">\<span class="name">vec</span><span class="string">&#123;B&#125;</span></span> &amp;=&amp; 0 <span class="tag">\<span class="name">\</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">nabla</span></span><span class="tag">\<span class="name">times</span></span><span class="tag">\<span class="name">vec</span><span class="string">&#123;E&#125;</span></span> &amp;=&amp; -<span class="tag">\<span class="name">frac</span><span class="string">&#123;\partial B&#125;</span><span class="string">&#123;\partial t&#125;</span></span> <span class="tag">\<span class="name">\</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">nabla</span></span><span class="tag">\<span class="name">times</span></span><span class="tag">\<span class="name">vec</span><span class="string">&#123;B&#125;</span></span> &amp;=&amp; <span class="tag">\<span class="name">mu</span></span>_0<span class="tag">\<span class="name">left</span></span>(<span class="tag">\<span class="name">vec</span><span class="string">&#123;J&#125;</span></span>+<span class="tag">\<span class="name">epsilon</span></span>_0<span class="tag">\<span class="name">frac</span><span class="string">&#123;\partial E&#125;</span><span class="string">&#123;\partial t&#125;</span></span> <span class="tag">\<span class="name">right</span></span>)</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">end</span><span class="string">&#123;eqnarray&#125;</span></span></span></span><br><span class="line"><span class="formula">$$</span></span><br></pre></td></tr></table></figure>
@@ -723,7 +723,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -796,7 +796,7 @@ if (document.querySelectorAll('.mermaid').length) {
 </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

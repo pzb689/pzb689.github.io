@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="Tor简介&amp;emsp;&amp;emsp; Tor用户在本机运行一个洋葱代理服务器（onion proxy），这个代理周期性地与其他Tor交流，从而在Tor网络中构成虚电路（virtual circuit）。Tor是在5层协议栈中的应用层进行加密（也就是按照’onion’的模式）。而它之所以被称为onion，是因为它的结构就跟洋葱相同，你只能看出它的外表，而想要看到核心，就必须把它层层的剥开。即每个路由器">
 <meta property="og:type" content="article">
@@ -419,7 +419,7 @@ show_date_time();
     
     <div class="post-body" itemprop="articleBody">
         <h1 id="Tor简介"><a href="#Tor简介" class="headerlink" title="Tor简介"></a>Tor简介</h1><p><img data-src="https://i.bmp.ovh/imgs/2019/04/07b5c785087abb9c.jpg" alt=""><br>&emsp;&emsp; Tor用户在本机运行一个洋葱代理服务器（onion proxy），这个代理周期性地与其他Tor交流，从而在Tor网络中构成虚电路（virtual circuit）。Tor是在5层协议栈中的应用层进行加密（也就是按照’onion’的模式）。而它之所以被称为onion，是因为它的结构就跟洋葱相同，你只能看出它的外表，而想要看到核心，就必须把它层层的剥开。即每个路由器间的传输都经过对等密钥（symmetric key）来加密，形成有层次的结构。它中间所经过的各节点，都好像洋葱的一层皮，把客户端包在里面，算是保护信息来源的一种方式，这样在洋葱路由器之间可以保持通讯安全。同时对于客户端，洋葱代理服务器又作为SOCKS接口。一些应用程序就可以将Tor作为代理服务器，网络通讯就可以通过Tor的虚拟环路来进行。用户通过它可以在因特网上进行匿名交流从而保护用户的隐私及资讯安全。<br>  termux可以安装tor在利用lighttpd服务器映射，下面来在termux里面安装。</p>
-<escape><a id="more"></a></escape>
+<escape><span id="more"></span></escape>
 
 <h1 id="1-安装tor和lighttpd服务器"><a href="#1-安装tor和lighttpd服务器" class="headerlink" title="1. 安装tor和lighttpd服务器"></a>1. 安装tor和lighttpd服务器</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pkg in tor lighttpd</span> </span><br></pre></td></tr></table></figure>
 <h1 id="2-编辑Torrc"><a href="#2-编辑Torrc" class="headerlink" title="2.编辑Torrc"></a>2.编辑Torrc</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; <span class="variable">$PREFIX</span><span class="regexp">/etc/</span>tor/torrc &lt;&lt;EOF</span><br><span class="line"><span class="comment">#Enable TOR SOCKS proxy</span></span><br><span class="line">SOCKSPort <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">9050</span></span><br><span class="line"><span class="comment">#Hidden Service: Http</span></span><br><span class="line">HiddenServiceDir <span class="regexp">/data/</span>data<span class="regexp">/com.termux/</span>files<span class="regexp">/home/</span>.tor/hiddenservice</span><br><span class="line">HiddenServicePort <span class="number">80</span> <span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">8080</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
@@ -706,7 +706,7 @@ if (document.querySelectorAll('.pdf-container').length) {
 
 <script data-pjax>
 if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.1/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -748,7 +748,7 @@ if (document.querySelectorAll('.mermaid').length) {
 
   
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({
