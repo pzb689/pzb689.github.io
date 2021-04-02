@@ -1995,7 +1995,7 @@ pre code {
   height: 3px;
   position: fixed;
   z-index: 1500;
-  width: calc(100% - var(--progress));
+  width: var(--progress);
   left: 0;
   top: 0;
 }
@@ -3086,7 +3086,7 @@ mjx-container[display="true"] + br {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #ff614a;
+  background: #6aff91;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
