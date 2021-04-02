@@ -614,22 +614,22 @@
 <h1 id="图片墙"><a href="#图片墙" class="headerlink" title="图片墙"></a>图片墙</h1><figure class="highlight arcade"><table><tr><td class="code"><pre><span class="line">&#123;% gp <span class="number">4</span><span class="number">-4</span> %&#125;</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">1.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">2.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">3.</span>jpeg)</span><br><span class="line">  ![](<span class="regexp">/photos/im</span>ages/<span class="number">4.</span>jpeg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
 <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/1.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/2.jpeg" alt=""></div><div class="group-picture-column"><img data-src="/photos/images/3.jpeg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/photos/images/4.jpeg" alt=""></div></div></div>
 <h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><figure class="highlight erlang-repl"><table><tr><td class="code"><pre><span class="line">&#123;<span class="comment">% mermaid graph TD %&#125;</span></span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br><span class="line">&#123;<span class="comment">% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
-<div class="mermaid">
+<pre class="mermaid">
 graph TD
 A--&gt;B;
 A--&gt;C;
 B--&gt;D;
 C--&gt;D;
-</div>
+</pre>
 <figure class="highlight coq"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">A[Christmas] --&gt;|<span class="type">Get</span> money| <span class="type">B</span>(Go shopping)</span><br><span class="line">B --&gt; C&#123;<span class="keyword">Let</span> me thinksssss&lt;br/&gt;ssssssssssssssssssssss&lt;br/&gt;sssssssssssssssssssssssssss&#125;</span><br><span class="line">C --&gt;|<span class="type">One</span>| <span class="type">D</span>[Laptop]</span><br><span class="line">C --&gt;|<span class="type">Two</span>| <span class="type">E</span>[iPhone]</span><br><span class="line">C --&gt;|<span class="type">Three</span>| <span class="type">F</span>[Car]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<div class="mermaid">
+<pre class="mermaid">
 graph TD
 A[Christmas] --&gt;|Get money| B(Go shopping)
 B --&gt; C{Let me thinksssss&lt;br&#x2F;&gt;ssssssssssssssssssssss&lt;br&#x2F;&gt;sssssssssssssssssssssssssss}
 C --&gt;|One| D[Laptop]
 C --&gt;|Two| E[iPhone]
 C --&gt;|Three| F[Car]
-</div>
+</pre>
 <h1 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h1><figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">button</span> #, 开始 %&#125;</span></span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">开始</a>
 <figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">btn</span> #, Text %&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name">btn</span> #, 取消,, Title %&#125;</span></span><br></pre></td></tr></table></figure>
@@ -691,9 +691,12 @@ C --&gt;|Three| F[Car]
 <li>登录设置个人信息地址 <strong>地址一定要要正确</strong>因为广告收入达到<strong>10美元</strong>要<strong>验证地址</strong>，会从美国发一个pin验证邮件，我地址没有完整，又没有留电话☎️😂这注定收不到pin，需要修改地址在次申请，中间差不多需要4周左右。</li>
 <li><p>在Google AdSense主页广告下自动广告中设置自动广告里的代码复制到博客主题设置里。  </p>
 </li>
-<li><p>添加到<myblog/themes/next/layout/_partials/head/head.swig>最后面即可。我使用的是 next主题，其他主题没有用过，设置应该大同小异。</p>
+<li><p>最新的next主题直接新建添加到sou/_date下 </p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--谷歌广告--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"> (adsbygoogle = <span class="built_in">window</span>.adsbygoogle || []).push(&#123; <span class="attr">google_ad_client</span>: <span class="string">&quot;ca-pub-1860534692691231&quot;</span>, <span class="attr">enable_page_level_ads</span>: <span class="literal">true</span> &#125;); </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
-<li>需要等待Google AdSense审核通过后才可以显示广告，网站必须要10多箱文章，太少了可能审核可能不能通过我应该开启了实验室功能广告显示在标题栏。<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1860534692691231", enable_page_level_ads: true }); </script></li>
+<li><p>需要等待Google AdSense审核通过后才可以显示广告，网站必须要10多箱文章，太少了可能审核可能不能通过我应该开启了实验室功能广告显示在标题栏。</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1860534692691231", enable_page_level_ads: true }); </script>
+</li>
 </ol>
 ]]></content>
       <categories>
